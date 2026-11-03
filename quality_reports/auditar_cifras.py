@@ -22,9 +22,10 @@ def check(id,slide,reported,expected,method,tolerance=Decimal(0),shown=None,kind
 u=Decimal(52374);sm=Decimal(1750905)
 def roundpeso(x):return x.quantize(Decimal(1),rounding=ROUND_HALF_UP)
 defs={k:v for k,v in re.findall(r'\\newcommand\{\\(\w+)\}\{([0-9.]+)\}',(ROOT/'data/conversiones.tex').read_text(encoding='utf-8'))}
+source_slide=next(i+1 for i,t in enumerate(pages) if 'Anexo. Convenciones y fuentes' in t)
 formulas={
- 'UVTpesos':(1,u,'UVT2026 según resolución238/2025'),
- 'SMpesos':(1,sm,'SMLMV2026 según decreto159/2026'),
+ 'UVTpesos':(source_slide,u,'UVT2026 según resolución238/2025'),
+ 'SMpesos':(source_slide,sm,'SMLMV2026 según decreto159/2026'),
  'PisoAnual':(6,720*u,'720*52374'), 'PisoMensual':(6,720*u/12,'720*52374/12'),
  'TechoAnual':(6,1090*u,'1090*52374'),'TechoMensual':(6,1090*u/12,'1090*52374/12'),
  'EjemploImpuesto':(6,(900-720)*Decimal('.09')*u,'(900-720)*0.09*52374'),
