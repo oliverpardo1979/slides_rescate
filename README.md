@@ -10,13 +10,13 @@ Abrir `main.tex` en Overleaf, con pdfLaTeX, XeLaTeX o Tectonic. El repositorio c
 tectonic main.tex
 ```
 
-El PDF se genera como `main.pdf`. Las primeras 18 diapositivas constituyen la presentación. Al final hay dos anexos.
+El PDF se genera como `main.pdf`. Las primeras 19 diapositivas constituyen la presentación. Al final hay dos anexos.
 
 ## Unidades y fuentes
 
 Las conversiones usan UVT 2026 de $52.374 y salario mínimo 2026 de $1.750.905. Los pesos son equivalencias ilustrativas. Las unidades de las vigencias de aplicación serán diferentes. Los equivalentes mensuales de renta dividen la base o impuesto anual entre 12 y no equivalen a salario bruto o retención mensual.
 
-Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. El rubro «otros efectos netos» es residual e incluye efectos macroeconómicos. `data/ajuste_oficial.json` documenta la clasificación.
+Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. Las diapositivas 3 y 4 distinguen gasto neto, cotizaciones, impuestos netos, reasignación de las cajas y efectos macroeconómicos. `data/clasificacion_medidas.json` identifica cada fila fuente. `data/ajuste_oficial.csv` y `.json` reconstruyen 2027–2030 sin duplicar medidas. Las diferencias entre los componentes redondeados y el total publicado permanecen visibles: 0,00, −0,02, 0,00 y −0,01 puntos del PIB, respectivamente. No se presenta esa diferencia como una medida fiscal.
 
 Las referencias aparecen al pie de cada diapositiva. [Proyecto oficial](https://www.camara.gov.co/ley-rescate-economico/).
 
@@ -28,7 +28,7 @@ El repositorio no incluye los documentos privados de trabajo ni los originales p
 
 ## Revisión
 
-[Meta Skill Review Oliver](quality_reports/meta_skill_review.md): lectura, revisión independiente y 48 comprobaciones numéricas y gráficas de la versión corregida.
+[Meta Skill Review Oliver](quality_reports/meta_skill_review.md): lectura y revisión independiente de la versión inicial. La última desagregación se cotejó contra las 20 filas de medidas de la tabla 14, con 154 comprobaciones aprobadas. El historial distingue cada versión.
 
 Para repetir el cotejo, descargar el PDF oficial de 334 páginas y ejecutar:
 
@@ -40,4 +40,4 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 ## Formato académico
 
-El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La actualización de formato mantiene 18 diapositivas y dos anexos.
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 19 diapositivas y dos anexos.

@@ -1,31 +1,139 @@
 {
-  "fuente": "Exposición PL477/2026C, tabla14, página204",
+  "fuente": "PL 477/2026C, exposición de motivos, tabla 14, página 204",
   "unidad": "puntos del PIB",
-  "naturaleza": "Estimaciones oficiales. Otros efectos netos es residuo contable e incluye retroalimentación macroeconómica. No es reproducción independiente desde microdatos.",
+  "criterio": "Clasificación económica del mecanismo, no de quien soporta el ajuste. Las cotizaciones sustituyen transferencias de la Nación y su impacto fiscal se cuenta una sola vez.",
+  "naturaleza": "Estimaciones oficiales reclasificadas por mecanismo. La diferencia de suma se muestra explícitamente y no se trata como medida fiscal.",
+  "limites": [
+    "La columna de IVA es neta de EfectIVA, no recaudación bruta.",
+    "Reasignar un punto de las cajas no eleva la cotización total.",
+    "El componente de gestión y los efectos macro son estimaciones, no ingresos asegurados.",
+    "La tabla no desagrega costos de RUGE y artículo 95. Ausencia de cuantificación no significa costo cero.",
+    "La clasificación de eficiencia sigue la exposición. Su ejecución y el ahorro efectivo siguen pendientes de auditoría."
+  ],
   "datos": {
     "2027": {
-      "gasto_neto": "0.58",
-      "financiacion_social": "1.46",
-      "otros_efectos_netos": "0.31",
-      "total_ley": "2.35"
+      "medidas": {
+        "eficiencia_gasto": "0.39",
+        "personal": "0.00",
+        "ops": "0.19",
+        "sgp": "0.00",
+        "cotizaciones_empleador": "0.56",
+        "cotizaciones_personas": "0.27",
+        "impuestos_salud": "0.49",
+        "iva_neto": "0.17",
+        "renta_personas": "0.13",
+        "otros_impuestos_gestion": "0.05",
+        "normalizacion": "0.12",
+        "rebajas_tributarias": "-0.24",
+        "ccf": "0.14",
+        "efectos_macro": "0.08",
+        "diferencia_suma": "0.00",
+        "total_ley": "2.35"
+      },
+      "resumen": {
+        "recortes_brutos": "0.58",
+        "mayor_gasto_sgp": "0.00",
+        "menor_gasto_neto": "0.58",
+        "cotizaciones": "0.83",
+        "impuestos_y_gestion_netos": "0.72",
+        "reasignacion_cajas": "0.14",
+        "efectos_macro": "0.08",
+        "diferencia_suma": "0.00",
+        "total_ley": "2.35"
+      }
     },
     "2028": {
-      "gasto_neto": "0.73",
-      "financiacion_social": "1.31",
-      "otros_efectos_netos": "1.54",
-      "total_ley": "3.58"
+      "medidas": {
+        "eficiencia_gasto": "0.31",
+        "personal": "0.24",
+        "ops": "0.19",
+        "sgp": "-0.01",
+        "cotizaciones_empleador": "0.41",
+        "cotizaciones_personas": "0.23",
+        "impuestos_salud": "0.53",
+        "iva_neto": "1.05",
+        "renta_personas": "0.57",
+        "otros_impuestos_gestion": "0.18",
+        "normalizacion": "0.00",
+        "rebajas_tributarias": "-0.47",
+        "ccf": "0.14",
+        "efectos_macro": "0.23",
+        "diferencia_suma": "-0.02",
+        "total_ley": "3.58"
+      },
+      "resumen": {
+        "recortes_brutos": "0.74",
+        "mayor_gasto_sgp": "0.01",
+        "menor_gasto_neto": "0.73",
+        "cotizaciones": "0.64",
+        "impuestos_y_gestion_netos": "1.86",
+        "reasignacion_cajas": "0.14",
+        "efectos_macro": "0.23",
+        "diferencia_suma": "-0.02",
+        "total_ley": "3.58"
+      }
     },
     "2029": {
-      "gasto_neto": "0.86",
-      "financiacion_social": "1.37",
-      "otros_efectos_netos": "1.64",
-      "total_ley": "3.87"
+      "medidas": {
+        "eficiencia_gasto": "0.31",
+        "personal": "0.47",
+        "ops": "0.18",
+        "sgp": "-0.10",
+        "cotizaciones_empleador": "0.44",
+        "cotizaciones_personas": "0.24",
+        "impuestos_salud": "0.54",
+        "iva_neto": "1.05",
+        "renta_personas": "0.56",
+        "otros_impuestos_gestion": "0.20",
+        "normalizacion": "0.00",
+        "rebajas_tributarias": "-0.47",
+        "ccf": "0.15",
+        "efectos_macro": "0.30",
+        "diferencia_suma": "0.00",
+        "total_ley": "3.87"
+      },
+      "resumen": {
+        "recortes_brutos": "0.96",
+        "mayor_gasto_sgp": "0.10",
+        "menor_gasto_neto": "0.86",
+        "cotizaciones": "0.68",
+        "impuestos_y_gestion_netos": "1.88",
+        "reasignacion_cajas": "0.15",
+        "efectos_macro": "0.30",
+        "diferencia_suma": "0.00",
+        "total_ley": "3.87"
+      }
     },
     "2030": {
-      "gasto_neto": "0.81",
-      "financiacion_social": "1.38",
-      "otros_efectos_netos": "1.90",
-      "total_ley": "4.09"
+      "medidas": {
+        "eficiencia_gasto": "0.31",
+        "personal": "0.52",
+        "ops": "0.18",
+        "sgp": "-0.20",
+        "cotizaciones_empleador": "0.45",
+        "cotizaciones_personas": "0.24",
+        "impuestos_salud": "0.54",
+        "iva_neto": "1.06",
+        "renta_personas": "0.57",
+        "otros_impuestos_gestion": "0.21",
+        "normalizacion": "0.00",
+        "rebajas_tributarias": "-0.47",
+        "ccf": "0.15",
+        "efectos_macro": "0.54",
+        "diferencia_suma": "-0.01",
+        "total_ley": "4.09"
+      },
+      "resumen": {
+        "recortes_brutos": "1.01",
+        "mayor_gasto_sgp": "0.20",
+        "menor_gasto_neto": "0.81",
+        "cotizaciones": "0.69",
+        "impuestos_y_gestion_netos": "1.91",
+        "reasignacion_cajas": "0.15",
+        "efectos_macro": "0.54",
+        "diferencia_suma": "-0.01",
+        "total_ley": "4.09"
+      }
     }
   }
 }

@@ -39,32 +39,59 @@ def main():
         for k,v in VALUES.items():w.writerow([k,str(v),pesos(v)])
     (ROOT/'data/conversiones.tex').write_text('\n'.join('\\newcommand{\\'+k+'}{'+pesos(v)+'}' for k,v in VALUES.items())+'\n',encoding='utf-8')
     original=json.loads((ROOT/'data/tabla14_fuente.json').read_text(encoding='utf-8'))
+    config=json.loads((ROOT/'data/clasificacion_medidas.json').read_text(encoding='utf-8'))
+    excluded={r['concepto'] for r in original['filas'] if r['concepto'].startswith(('I.','II.','III.','IV.','VI.'))}
+    excluded.update(['Efecto de la Ley de Rescate en el Balance Primario','Otras medidas de ajuste fiscal','Efecto Total de la Estrategia de Ajuste Fiscal','Enajenaciones'])
+    used=[k for r in config['filas'] for k in r['filas_fuente']]
+    assert len(used)==len(set(used)), 'Una fila de fuente se cuenta más de una vez'
+    assert set(used)=={r['concepto'] for r in original['filas']}-excluded, 'Faltan medidas o entran filas externas a la ley'
     fiscal={}
+    detailed=[]
     for year in ['2027','2028','2029','2030']:
-        rows={r['concepto']:Decimal(r[year]) for r in original['filas']}
-        spending=sum(rows[k] for k in [
-            'Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)',
-            'Variación de Gastos de Personal - Facultades Extraordinarias',
-            'Reducción en contratación por OPS - Austeridad en la contratación estatal',
-            'Mayor Gasto - Incremento en SGP'])
-        social=sum(rows[k] for k in [
-            'Exoneración de aportes al empleador (Sena, ICBF, Salud)',
-            'Cotizaciones a salud de empleados independientes y regimenes especiales',
-            'Redirigir un punto de cotización de CCF a salud',
-            'Impuesto al consumo de tabaco y bebidas alcohólicas para salud'])
-        total=rows['Efecto de la Ley de Rescate en el Balance Primario']
-        fiscal[year]={'gasto_neto':str(spending),'financiacion_social':str(social),
-                      'otros_efectos_netos':str(total-spending-social),'total_ley':str(total)}
+        raw={r['concepto']:Decimal(r[year]) for r in original['filas']}
+        vals={r['id']:sum((raw[k] for k in r['filas_fuente']),Decimal(0)) for r in config['filas']}
+        total=raw['Efecto de la Ley de Rescate en el Balance Primario']
+        difference=total-sum(vals.values())
+        vals['diferencia_suma']=difference
+        vals['total_ley']=total
+        fiscal[year]={'medidas':{k:f'{v:.2f}' for k,v in vals.items()},'resumen':{
+          'recortes_brutos':f"{sum(vals[k] for k in ['eficiencia_gasto','personal','ops']):.2f}",
+          'mayor_gasto_sgp':f"{-vals['sgp']:.2f}",
+          'menor_gasto_neto':f"{sum(vals[r['id']] for r in config['filas'] if r['grupo']=='gasto'):.2f}",
+          'cotizaciones':f"{sum(vals[r['id']] for r in config['filas'] if r['grupo']=='cotizaciones'):.2f}",
+          'impuestos_y_gestion_netos':f"{sum(vals[r['id']] for r in config['filas'] if r['grupo']=='impuestos'):.2f}",
+          'reasignacion_cajas':f"{vals['ccf']:.2f}",'efectos_macro':f"{vals['efectos_macro']:.2f}",
+          'diferencia_suma':f'{difference:.2f}','total_ley':f'{total:.2f}'}}
+        for r in config['filas']:
+            detailed.append([year,r['id'],r['etiqueta'],r['grupo'],f"{vals[r['id']]:.2f}",' | '.join(r['filas_fuente'])])
+        detailed.extend([[year,'diferencia_suma','Diferencia frente al total publicado','conciliacion',f'{difference:.2f}','Total publicado menos suma de componentes redondeados'],[year,'total_ley','Total del proyecto','total',f'{total:.2f}','Efecto de la Ley de Rescate en el Balance Primario']])
+        assert sum(vals[r['id']] for r in config['filas'])+difference==total
     with (ROOT/'data/ajuste_oficial.csv').open('w',newline='',encoding='utf-8') as f:
-        w=csv.writer(f);w.writerow(['vigencia','gasto_neto','financiacion_social','otros_efectos_netos','total_ley'])
-        for y,r in fiscal.items():
-            assert sum(Decimal(r[k]) for k in ['gasto_neto','financiacion_social','otros_efectos_netos'])==Decimal(r['total_ley'])
-            w.writerow([y,*r.values()])
-    doc={'fuente':'Exposición PL477/2026C, tabla14, página204',
-         'unidad':'puntos del PIB',
-         'naturaleza':'Estimaciones oficiales. Otros efectos netos es residuo contable e incluye retroalimentación macroeconómica. No es reproducción independiente desde microdatos.',
-         'datos':fiscal}
+        w=csv.writer(f);w.writerow(['vigencia','id','medida','grupo','impacto_pp_PIB','filas_fuente']);w.writerows(detailed)
+    doc={'fuente':config['fuente'],'unidad':config['unidad'],'criterio':config['criterio'],
+         'naturaleza':'Estimaciones oficiales reclasificadas por mecanismo. La diferencia de suma se muestra explícitamente y no se trata como medida fiscal.',
+         'limites':config['limites'],'datos':fiscal}
     (ROOT/'data/ajuste_oficial.json').write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    def number(id,year):return fiscal[year]['medidas'][id].replace('.',',')
+    def summary_number(id,year):return fiscal[year]['resumen'][id].replace('.',',')
+    def line(label,id,summary=False,bold=False):
+        get=summary_number if summary else number
+        cells=[label,get(id,'2027'),get(id,'2030')]
+        if bold:cells=[r'\textbf{'+c+'}' for c in cells]
+        return ' & '.join(cells)+r'\\'
+    latex=[line('Menor gasto neto','menor_gasto_neto',summary=True,bold=True)]
+    for r in config['filas']:
+        if r['grupo']=='gasto':latex.append(line(r'\quad '+r['etiqueta'],r['id']))
+    latex.extend([r'\midrule',line('Mayores cotizaciones','cotizaciones',summary=True),
+      line('Impuestos y gestión, netos de rebajas','impuestos_y_gestion_netos',summary=True),
+      line('Reasignación de las cajas a salud','ccf'),line('Ingresos esperados por efectos macroeconómicos','efectos_macro'),
+      line('Diferencia frente al total publicado','diferencia_suma'),r'\midrule',
+      line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
+    (ROOT/'data/cuadro_ajuste.tex').write_text('\n'.join(latex)+'\n',encoding='utf-8')
+    income=[line(r['etiqueta'],r['id']) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']]
+    vals={y:sum(Decimal(fiscal[y]['medidas'][r['id']]) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']) for y in fiscal}
+    income.extend([r'\midrule',r'\textbf{Mayores ingresos netos por estas medidas} & \textbf{'+f"{vals['2027']:.2f}".replace('.',',')+r'} & \textbf{'+f"{vals['2030']:.2f}".replace('.',',')+r'}\\',r'\bottomrule'])
+    (ROOT/'data/cuadro_ingresos.tex').write_text('\n'.join(income)+'\n',encoding='utf-8')
     for threshold in [8140000,5530000,2580000]:print('RUGE',threshold,'UVT =',threshold*UVT,'COP')
     print('Conversiones regeneradas y sumas conciliadas para 2027-2030.')
 

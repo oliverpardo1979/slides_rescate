@@ -90,22 +90,30 @@ El objetivo es frenar el crecimiento de la deuda. La magnitud efectiva depende d
 \src{\ley{204}{Exposición de motivos, tabla 14, p. 204}. Estimaciones de Hacienda, pendientes de verificación independiente. Estrategia completa, con medidas adicionales, llega a 4,73 puntos en 2030.}
 \end{frame}
 
-\begin{frame}{Una parte del ajuste cambia quién financia los servicios}
+\begin{frame}{El ajuste combina recortes y mayores ingresos}
 \centering
+{\small
 \begin{tabular}{lrr}
 \toprule
-\textbf{Mejora del balance (puntos del PIB)} & \textbf{2027} & \textbf{2030}\\
+\textbf{Efecto en el balance primario (puntos del PIB)} & \textbf{2027} & \textbf{2030}\\
 \midrule
-Menor gasto neto en rubros seleccionados & 0,58 & 0,81\\
-Nuevas fuentes de financiación social & 1,46 & 1,38\\
-Otros efectos netos & 0,31 & 1,90\\
+\input{data/cuadro_ajuste.tex}
+\end{tabular}}
+\src{Cálculos sobre \ley{204}{tabla 14, p. 204}. Estimaciones de Hacienda. Las cotizaciones sustituyen transferencias de la Nación y se cuentan una sola vez. Cajas: reasignación del aporte existente. Diferencia de suma entre cifras publicadas redondeadas. Gestión y efectos macro no son ingresos asegurados.}
+\end{frame}
+
+\begin{frame}{El aumento de ingresos incluye cotizaciones y tributos}
+\centering
+{\small
+\begin{tabular}{lrr}
+\toprule
+\textbf{Medida (puntos del PIB)} & \textbf{2027} & \textbf{2030}\\
 \midrule
-\textbf{Total del proyecto} & \textbf{2,35} & \textbf{4,09}\\
-\bottomrule
-\end{tabular}
+\input{data/cuadro_ingresos.tex}
+\end{tabular}}
 \par\raggedright\medskip
-\textbf{Más cotizaciones y otros ingresos sociales permiten reducir las transferencias de la Nación.} El costo de prestar salud y otros servicios no desaparece.
-\src{Puntos del PIB. Cálculos sobre \ley{204}{tabla 14, p. 204}. Menor gasto = eficiencia + personal + OPS menos mayor SGP. Otros efectos netos es residuo, incluye impuestos, rebajas y efectos macro. OPS: contratos de prestación de servicios. Véase data/ajuste\_oficial.csv.}
+Las cotizaciones son mayores ingresos sociales que permiten reducir las transferencias de la Nación.
+\src{Cálculos sobre \ley{204}{tabla 14, p. 204}. IVA neto de EfectIVA. Las rebajas incluyen tarifa general y tasa de tributación depurada de empresas, patrimonio y plásticos. No se suman aquí ni la reasignación de las cajas ni los efectos macroeconómicos. RUGE y artículo 95 no tienen costo separado en esa tabla.}
 \end{frame}
 
 \begin{frame}{El gasto se ajusta en contratación y personal}

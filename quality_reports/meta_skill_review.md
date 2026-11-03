@@ -45,3 +45,14 @@ La presentación conserva 18 diapositivas principales y 2 anexos. La revisión y
 Referencia principal: `Again-Firm-Size-Paper/presentacion_javeriana.tex`, commit `3bc4cca`. Se compararon los PDF de tamaño de firma, tributación empresarial (mayo de 2024 y diciembre de 2025) y *El Laberinto Fiscal de Colombia*. Se adoptó el formato de tamaño de firma, con fuentes visibles por la naturaleza jurídica de esta presentación.
 
 Se reemplazaron los porcentajes grandes de contratación y personal por dos viñetas. Se conservan las cifras, condiciones y orden. Las 20 páginas se renderizaron y revisaron. El log no presenta desbordamientos ni advertencias de LaTeX. El entorno vuelve a emitir el aviso de Fontconfig ya documentado, sin defecto visible de fuentes. Las 48 comprobaciones de la corrida `formato_academico` pasan. Esta actualización de diseño no constituye una nueva auditoría integral ni una segunda revisión independiente.
+
+
+## Desagregación de gasto e ingresos solicitada por Oliver
+
+Las diapositivas 3 y 4 sustituyen la agrupación anterior y su residuo «otros efectos netos». La 3 muestra menor gasto neto con eficiencia, personal, OPS y mayor SGP. Se distinguen las cotizaciones, los impuestos netos de rebajas, la reasignación de las cajas y los efectos macro. La 4 desagrega las cotizaciones y los impuestos. La presentación pasa a 19 diapositivas principales y dos anexos.
+
+La clasificación cubre las 20 filas de medidas de la tabla 14 una vez cada una. No incorpora subtotales de la fuente, medidas externas a la ley ni enajenaciones en la suma del proyecto. Las cotizaciones son ingresos sociales que permiten sustituir transferencias de la Nación. Su efecto fiscal se cuenta una sola vez. La reasignación de cajas no es una nueva cotización. El IVA se conserva neto de EfectIVA. Los efectos macro y la gestión no son ingresos asegurados. La eficiencia sigue siendo una estimación oficial pendiente de contrastar con la ejecución.
+
+En 2030, los recortes previstos suman 1,01 puntos del PIB y el mayor gasto SGP resta 0,20, dejando 0,81 de menor gasto neto. Las cotizaciones suman 0,69 y los impuestos netos 1,91. Los 2,60 de mayores ingresos se complementan con 0,15 de reasignación de cajas y 0,54 de efectos macro. Los componentes suman 4,10 frente al total publicado de 4,09. Se conserva −0,01 como diferencia de suma de las cifras publicadas redondeadas, sin atribuirla a una medida identificada. En 2028 hay una diferencia de −0,02. RUGE y artículo 95 no tienen costo separado en la tabla y no se presupone costo cero.
+
+Cotejo contra el PDF oficial de la página 204: 154 PASS y 0 FAIL en `desagregacion_ajuste`. Incluye fuentes, agregaciones, salidas de las cuatro vigencias y cuadros del PDF. Se revisaron visualmente ambas diapositivas nuevas. La compilación final no presenta desbordamientos ni advertencias de LaTeX. No es una nueva revisión independiente ni una certificación del ahorro desde microdatos.

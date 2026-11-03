@@ -1,5 +1,65 @@
-vigencia,gasto_neto,financiacion_social,otros_efectos_netos,total_ley
-2027,0.58,1.46,0.31,2.35
-2028,0.73,1.31,1.54,3.58
-2029,0.86,1.37,1.64,3.87
-2030,0.81,1.38,1.90,4.09
+vigencia,id,medida,grupo,impacto_pp_PIB,filas_fuente
+2027,eficiencia_gasto,"Eficiencia, fondos y transferencias",gasto,0.39,"Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)"
+2027,personal,Personal,gasto,0.00,Variación de Gastos de Personal - Facultades Extraordinarias
+2027,ops,Contratos de prestación de servicios,gasto,0.19,Reducción en contratación por OPS - Austeridad en la contratación estatal
+2027,sgp,Mayor gasto en SGP,gasto,0.00,Mayor Gasto - Incremento en SGP
+2027,cotizaciones_empleador,"Aportes de empleadores a salud, SENA e ICBF",cotizaciones,0.56,"Exoneración de aportes al empleador (Sena, ICBF, Salud)"
+2027,cotizaciones_personas,Cotizaciones de personas a salud,cotizaciones,0.27,Cotizaciones a salud de empleados independientes y regimenes especiales
+2027,impuestos_salud,Tabaco y bebidas alcohólicas para salud,impuestos,0.49,Impuesto al consumo de tabaco y bebidas alcohólicas para salud
+2027,iva_neto,"IVA, neto de EfectIVA",impuestos,0.17,IVA - EfectIVA y reducción de beneficios tributarios injustos
+2027,renta_personas,Renta de personas naturales,impuestos,0.13,Impuesto de Renta Personas Naturales
+2027,otros_impuestos_gestion,"Carbono, otros saludables, sobretasa financiera y gestión",impuestos,0.05,"Impuesto al Carbono | Equidad horizontal en impuestos saludables | Extensión de la sobretasa financiera | Tributación de activos digitales, lucha contra la evasión y modernización de la administración fiscal"
+2027,normalizacion,Normalización y alivios tributarios,impuestos,0.12,Normalización y alivios tributarios
+2027,rebajas_tributarias,"Rebajas de renta empresarial, patrimonio y plásticos",impuestos,-0.24,Tarifa general para personas jurídicas (33% en 2027 y 31% de 2028 en adelante) | Eliminación del impuesto nacional sobre productos plásticos de un solo uso | Modificación del impuesto al patrimonio y derogatoria desde 2031 | Modificación de la tasa de tributación depurada
+2027,ccf,Reasignación de las cajas a salud (sin subir el aporte),reasignacion,0.14,Redirigir un punto de cotización de CCF a salud
+2027,efectos_macro,Ingresos esperados por efectos macroeconómicos,efectos_macro,0.08,Impacto en ingresos fiscales de los efectos macro
+2027,diferencia_suma,Diferencia frente al total publicado,conciliacion,0.00,Total publicado menos suma de componentes redondeados
+2027,total_ley,Total del proyecto,total,2.35,Efecto de la Ley de Rescate en el Balance Primario
+2028,eficiencia_gasto,"Eficiencia, fondos y transferencias",gasto,0.31,"Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)"
+2028,personal,Personal,gasto,0.24,Variación de Gastos de Personal - Facultades Extraordinarias
+2028,ops,Contratos de prestación de servicios,gasto,0.19,Reducción en contratación por OPS - Austeridad en la contratación estatal
+2028,sgp,Mayor gasto en SGP,gasto,-0.01,Mayor Gasto - Incremento en SGP
+2028,cotizaciones_empleador,"Aportes de empleadores a salud, SENA e ICBF",cotizaciones,0.41,"Exoneración de aportes al empleador (Sena, ICBF, Salud)"
+2028,cotizaciones_personas,Cotizaciones de personas a salud,cotizaciones,0.23,Cotizaciones a salud de empleados independientes y regimenes especiales
+2028,impuestos_salud,Tabaco y bebidas alcohólicas para salud,impuestos,0.53,Impuesto al consumo de tabaco y bebidas alcohólicas para salud
+2028,iva_neto,"IVA, neto de EfectIVA",impuestos,1.05,IVA - EfectIVA y reducción de beneficios tributarios injustos
+2028,renta_personas,Renta de personas naturales,impuestos,0.57,Impuesto de Renta Personas Naturales
+2028,otros_impuestos_gestion,"Carbono, otros saludables, sobretasa financiera y gestión",impuestos,0.18,"Impuesto al Carbono | Equidad horizontal en impuestos saludables | Extensión de la sobretasa financiera | Tributación de activos digitales, lucha contra la evasión y modernización de la administración fiscal"
+2028,normalizacion,Normalización y alivios tributarios,impuestos,0.00,Normalización y alivios tributarios
+2028,rebajas_tributarias,"Rebajas de renta empresarial, patrimonio y plásticos",impuestos,-0.47,Tarifa general para personas jurídicas (33% en 2027 y 31% de 2028 en adelante) | Eliminación del impuesto nacional sobre productos plásticos de un solo uso | Modificación del impuesto al patrimonio y derogatoria desde 2031 | Modificación de la tasa de tributación depurada
+2028,ccf,Reasignación de las cajas a salud (sin subir el aporte),reasignacion,0.14,Redirigir un punto de cotización de CCF a salud
+2028,efectos_macro,Ingresos esperados por efectos macroeconómicos,efectos_macro,0.23,Impacto en ingresos fiscales de los efectos macro
+2028,diferencia_suma,Diferencia frente al total publicado,conciliacion,-0.02,Total publicado menos suma de componentes redondeados
+2028,total_ley,Total del proyecto,total,3.58,Efecto de la Ley de Rescate en el Balance Primario
+2029,eficiencia_gasto,"Eficiencia, fondos y transferencias",gasto,0.31,"Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)"
+2029,personal,Personal,gasto,0.47,Variación de Gastos de Personal - Facultades Extraordinarias
+2029,ops,Contratos de prestación de servicios,gasto,0.18,Reducción en contratación por OPS - Austeridad en la contratación estatal
+2029,sgp,Mayor gasto en SGP,gasto,-0.10,Mayor Gasto - Incremento en SGP
+2029,cotizaciones_empleador,"Aportes de empleadores a salud, SENA e ICBF",cotizaciones,0.44,"Exoneración de aportes al empleador (Sena, ICBF, Salud)"
+2029,cotizaciones_personas,Cotizaciones de personas a salud,cotizaciones,0.24,Cotizaciones a salud de empleados independientes y regimenes especiales
+2029,impuestos_salud,Tabaco y bebidas alcohólicas para salud,impuestos,0.54,Impuesto al consumo de tabaco y bebidas alcohólicas para salud
+2029,iva_neto,"IVA, neto de EfectIVA",impuestos,1.05,IVA - EfectIVA y reducción de beneficios tributarios injustos
+2029,renta_personas,Renta de personas naturales,impuestos,0.56,Impuesto de Renta Personas Naturales
+2029,otros_impuestos_gestion,"Carbono, otros saludables, sobretasa financiera y gestión",impuestos,0.20,"Impuesto al Carbono | Equidad horizontal en impuestos saludables | Extensión de la sobretasa financiera | Tributación de activos digitales, lucha contra la evasión y modernización de la administración fiscal"
+2029,normalizacion,Normalización y alivios tributarios,impuestos,0.00,Normalización y alivios tributarios
+2029,rebajas_tributarias,"Rebajas de renta empresarial, patrimonio y plásticos",impuestos,-0.47,Tarifa general para personas jurídicas (33% en 2027 y 31% de 2028 en adelante) | Eliminación del impuesto nacional sobre productos plásticos de un solo uso | Modificación del impuesto al patrimonio y derogatoria desde 2031 | Modificación de la tasa de tributación depurada
+2029,ccf,Reasignación de las cajas a salud (sin subir el aporte),reasignacion,0.15,Redirigir un punto de cotización de CCF a salud
+2029,efectos_macro,Ingresos esperados por efectos macroeconómicos,efectos_macro,0.30,Impacto en ingresos fiscales de los efectos macro
+2029,diferencia_suma,Diferencia frente al total publicado,conciliacion,0.00,Total publicado menos suma de componentes redondeados
+2029,total_ley,Total del proyecto,total,3.87,Efecto de la Ley de Rescate en el Balance Primario
+2030,eficiencia_gasto,"Eficiencia, fondos y transferencias",gasto,0.31,"Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)"
+2030,personal,Personal,gasto,0.52,Variación de Gastos de Personal - Facultades Extraordinarias
+2030,ops,Contratos de prestación de servicios,gasto,0.18,Reducción en contratación por OPS - Austeridad en la contratación estatal
+2030,sgp,Mayor gasto en SGP,gasto,-0.20,Mayor Gasto - Incremento en SGP
+2030,cotizaciones_empleador,"Aportes de empleadores a salud, SENA e ICBF",cotizaciones,0.45,"Exoneración de aportes al empleador (Sena, ICBF, Salud)"
+2030,cotizaciones_personas,Cotizaciones de personas a salud,cotizaciones,0.24,Cotizaciones a salud de empleados independientes y regimenes especiales
+2030,impuestos_salud,Tabaco y bebidas alcohólicas para salud,impuestos,0.54,Impuesto al consumo de tabaco y bebidas alcohólicas para salud
+2030,iva_neto,"IVA, neto de EfectIVA",impuestos,1.06,IVA - EfectIVA y reducción de beneficios tributarios injustos
+2030,renta_personas,Renta de personas naturales,impuestos,0.57,Impuesto de Renta Personas Naturales
+2030,otros_impuestos_gestion,"Carbono, otros saludables, sobretasa financiera y gestión",impuestos,0.21,"Impuesto al Carbono | Equidad horizontal en impuestos saludables | Extensión de la sobretasa financiera | Tributación de activos digitales, lucha contra la evasión y modernización de la administración fiscal"
+2030,normalizacion,Normalización y alivios tributarios,impuestos,0.00,Normalización y alivios tributarios
+2030,rebajas_tributarias,"Rebajas de renta empresarial, patrimonio y plásticos",impuestos,-0.47,Tarifa general para personas jurídicas (33% en 2027 y 31% de 2028 en adelante) | Eliminación del impuesto nacional sobre productos plásticos de un solo uso | Modificación del impuesto al patrimonio y derogatoria desde 2031 | Modificación de la tasa de tributación depurada
+2030,ccf,Reasignación de las cajas a salud (sin subir el aporte),reasignacion,0.15,Redirigir un punto de cotización de CCF a salud
+2030,efectos_macro,Ingresos esperados por efectos macroeconómicos,efectos_macro,0.54,Impacto en ingresos fiscales de los efectos macro
+2030,diferencia_suma,Diferencia frente al total publicado,conciliacion,-0.01,Total publicado menos suma de componentes redondeados
+2030,total_ley,Total del proyecto,total,4.09,Efecto de la Ley de Rescate en el Balance Primario

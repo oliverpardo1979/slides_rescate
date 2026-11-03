@@ -1,0 +1,132 @@
+{
+  "fuente": "PL 477/2026C, exposición de motivos, tabla 14, página 204",
+  "unidad": "puntos del PIB",
+  "criterio": "Clasificación económica del mecanismo, no de quien soporta el ajuste. Las cotizaciones sustituyen transferencias de la Nación y su impacto fiscal se cuenta una sola vez.",
+  "limites": [
+    "La columna de IVA es neta de EfectIVA, no recaudación bruta.",
+    "Reasignar un punto de las cajas no eleva la cotización total.",
+    "El componente de gestión y los efectos macro son estimaciones, no ingresos asegurados.",
+    "La tabla no desagrega costos de RUGE y artículo 95. Ausencia de cuantificación no significa costo cero.",
+    "La clasificación de eficiencia sigue la exposición. Su ejecución y el ahorro efectivo siguen pendientes de auditoría."
+  ],
+  "filas": [
+    {
+      "id": "eficiencia_gasto",
+      "etiqueta": "Eficiencia, fondos y transferencias",
+      "grupo": "gasto",
+      "filas_fuente": [
+        "Mejoramiento en la eficiencia del gasto público (RDE, Fondos Especiales, Resto de Transferencias)"
+      ]
+    },
+    {
+      "id": "personal",
+      "etiqueta": "Personal",
+      "grupo": "gasto",
+      "filas_fuente": [
+        "Variación de Gastos de Personal - Facultades Extraordinarias"
+      ]
+    },
+    {
+      "id": "ops",
+      "etiqueta": "Contratos de prestación de servicios",
+      "grupo": "gasto",
+      "filas_fuente": [
+        "Reducción en contratación por OPS - Austeridad en la contratación estatal"
+      ]
+    },
+    {
+      "id": "sgp",
+      "etiqueta": "Mayor gasto en SGP",
+      "grupo": "gasto",
+      "filas_fuente": [
+        "Mayor Gasto - Incremento en SGP"
+      ]
+    },
+    {
+      "id": "cotizaciones_empleador",
+      "etiqueta": "Aportes de empleadores a salud, SENA e ICBF",
+      "grupo": "cotizaciones",
+      "filas_fuente": [
+        "Exoneración de aportes al empleador (Sena, ICBF, Salud)"
+      ]
+    },
+    {
+      "id": "cotizaciones_personas",
+      "etiqueta": "Cotizaciones de personas a salud",
+      "grupo": "cotizaciones",
+      "filas_fuente": [
+        "Cotizaciones a salud de empleados independientes y regimenes especiales"
+      ]
+    },
+    {
+      "id": "impuestos_salud",
+      "etiqueta": "Tabaco y bebidas alcohólicas para salud",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "Impuesto al consumo de tabaco y bebidas alcohólicas para salud"
+      ]
+    },
+    {
+      "id": "iva_neto",
+      "etiqueta": "IVA, neto de EfectIVA",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "IVA - EfectIVA y reducción de beneficios tributarios injustos"
+      ]
+    },
+    {
+      "id": "renta_personas",
+      "etiqueta": "Renta de personas naturales",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "Impuesto de Renta Personas Naturales"
+      ]
+    },
+    {
+      "id": "otros_impuestos_gestion",
+      "etiqueta": "Carbono, otros saludables, sobretasa financiera y gestión",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "Impuesto al Carbono",
+        "Equidad horizontal en impuestos saludables",
+        "Extensión de la sobretasa financiera",
+        "Tributación de activos digitales, lucha contra la evasión y modernización de la administración fiscal"
+      ]
+    },
+    {
+      "id": "normalizacion",
+      "etiqueta": "Normalización y alivios tributarios",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "Normalización y alivios tributarios"
+      ]
+    },
+    {
+      "id": "rebajas_tributarias",
+      "etiqueta": "Rebajas de renta empresarial, patrimonio y plásticos",
+      "grupo": "impuestos",
+      "filas_fuente": [
+        "Tarifa general para personas jurídicas (33% en 2027 y 31% de 2028 en adelante)",
+        "Eliminación del impuesto nacional sobre productos plásticos de un solo uso",
+        "Modificación del impuesto al patrimonio y derogatoria desde 2031",
+        "Modificación de la tasa de tributación depurada"
+      ]
+    },
+    {
+      "id": "ccf",
+      "etiqueta": "Reasignación de las cajas a salud (sin subir el aporte)",
+      "grupo": "reasignacion",
+      "filas_fuente": [
+        "Redirigir un punto de cotización de CCF a salud"
+      ]
+    },
+    {
+      "id": "efectos_macro",
+      "etiqueta": "Ingresos esperados por efectos macroeconómicos",
+      "grupo": "efectos_macro",
+      "filas_fuente": [
+        "Impacto en ingresos fiscales de los efectos macro"
+      ]
+    }
+  ]
+}
