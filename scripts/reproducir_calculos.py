@@ -72,8 +72,12 @@ def main():
          'naturaleza':'Estimaciones oficiales reclasificadas por mecanismo. La diferencia de suma se muestra explícitamente y no se trata como medida fiscal.',
          'limites':config['limites'],'datos':fiscal}
     (ROOT/'data/ajuste_oficial.json').write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    def number(id,year):return fiscal[year]['medidas'][id].replace('.',',')
-    def summary_number(id,year):return fiscal[year]['resumen'][id].replace('.',',')
+    def display(value):
+        rounded=Decimal(value).quantize(Decimal('0.1'),rounding=ROUND_HALF_UP)
+        if rounded==0:rounded=abs(rounded)
+        return f'{rounded:.1f}'.replace('.',',')
+    def number(id,year):return display(fiscal[year]['medidas'][id])
+    def summary_number(id,year):return display(fiscal[year]['resumen'][id])
     def line(label,id,summary=False,bold=False):
         get=summary_number if summary else number
         cells=[label,get(id,'2027'),get(id,'2030')]
@@ -85,12 +89,12 @@ def main():
     latex.extend([r'\midrule',line('Mayores cotizaciones','cotizaciones',summary=True),
       line('Impuestos y gestión, netos de rebajas','impuestos_y_gestion_netos',summary=True),
       line('Reasignación de las cajas a salud','ccf'),line('Ingresos esperados por efectos macroeconómicos','efectos_macro'),
-      line('Diferencia frente al total publicado','diferencia_suma'),r'\midrule',
+      r'\midrule',
       line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
     (ROOT/'data/cuadro_ajuste.tex').write_text('\n'.join(latex)+'\n',encoding='utf-8')
     income=[line(r['etiqueta'],r['id']) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']]
     vals={y:sum(Decimal(fiscal[y]['medidas'][r['id']]) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']) for y in fiscal}
-    income.extend([r'\midrule',r'\textbf{Mayores ingresos netos por estas medidas} & \textbf{'+f"{vals['2027']:.2f}".replace('.',',')+r'} & \textbf{'+f"{vals['2030']:.2f}".replace('.',',')+r'}\\',r'\bottomrule'])
+    income.extend([r'\midrule',r'\textbf{Mayores ingresos netos por estas medidas} & \textbf{'+display(vals['2027'])+r'} & \textbf{'+display(vals['2030'])+r'}\\',r'\bottomrule'])
     (ROOT/'data/cuadro_ingresos.tex').write_text('\n'.join(income)+'\n',encoding='utf-8')
     for threshold in [8140000,5530000,2580000]:print('RUGE',threshold,'UVT =',threshold*UVT,'COP')
     print('Conversiones regeneradas y sumas conciliadas para 2027-2030.')

@@ -52,7 +52,7 @@ for row in table['filas']:
 totals=direct['Efecto de la Ley de Rescate en el Balance Primario']
 plot=re.search(r'\\addplot\[fill=teal,draw=none\] coordinates \{([^}]+)\}',tex).group(1)
 for i,(year,value) in enumerate(re.findall(r'\((\d{4}),([0-9.]+)\)',plot)):
-    check('GRAFICO_'+year,2,value,totals[i],'PDF oficial p204, fila efecto de la ley',shown=value)
+    check('GRAFICO_'+year,2,value,totals[i].quantize(Decimal('0.1'),rounding=ROUND_HALF_UP),'PDF oficial p204, redondeado a un decimal',shown=value)
 
 summary=json.loads((ROOT/'data/ajuste_oficial.json').read_text(encoding='utf-8'))['datos']
 config=json.loads((ROOT/'data/clasificacion_medidas.json').read_text(encoding='utf-8'))
@@ -78,12 +78,12 @@ def check_tex_row(label,id,slide,filename,values):
     match=re.search(pattern,rawtex,re.M)
     if not match:raise ValueError('Fila generada no localizada: '+label)
     for year,raw in zip(['2027','2030'],match.groups()):
-        check('FISCAL_'+id+'_'+year,slide,raw.replace(',','.'),values[year],'TeX y PDF de diapositivas contra sumas del PDF oficial p204',shown=raw)
+        check('FISCAL_'+id+'_'+year,slide,raw.replace(',','.'),values[year].quantize(Decimal('0.1'),rounding=ROUND_HALF_UP),'TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal',shown=raw)
 for row in config['filas']:
     slide=3 if row['grupo'] in ['gasto','reasignacion','efectos_macro'] else 4
     filename='cuadro_ajuste.tex' if slide==3 else 'cuadro_ingresos.tex'
     check_tex_row(row['etiqueta'] if row['id']!='ccf' else 'Reasignación de las cajas a salud',row['id'],slide,filename,{y:expected[y][row['id']] for y in expected})
-for id,label in [('diferencia_suma','Diferencia frente al total publicado'),('total_ley','Total del proyecto')]:
+for id,label in [('total_ley','Total del proyecto')]:
     check_tex_row(label,id,3,'cuadro_ajuste.tex',{y:expected[y][id] for y in expected})
 for key,label,group in [('menor_gasto_neto','Menor gasto neto','gasto'),('cotizaciones','Mayores cotizaciones','cotizaciones'),('impuestos_y_gestion_netos','Impuestos y gestión, netos de rebajas','impuestos')]:
     vals={y:sum(expected[y][r['id']] for r in config['filas'] if r['grupo']==group) for y in expected}

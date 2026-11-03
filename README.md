@@ -16,7 +16,7 @@ El PDF se genera como `main.pdf`. Las primeras 19 diapositivas constituyen la pr
 
 Las conversiones usan UVT 2026 de $52.374 y salario mínimo 2026 de $1.750.905. Los pesos son equivalencias ilustrativas. Las unidades de las vigencias de aplicación serán diferentes. Los equivalentes mensuales de renta dividen la base o impuesto anual entre 12 y no equivalen a salario bruto o retención mensual.
 
-Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. Las diapositivas 3 y 4 distinguen gasto neto, cotizaciones, impuestos netos, reasignación de las cajas y efectos macroeconómicos. `data/clasificacion_medidas.json` identifica cada fila fuente. `data/ajuste_oficial.csv` y `.json` reconstruyen 2027–2030 sin duplicar medidas. Las diferencias entre los componentes redondeados y el total publicado permanecen visibles: 0,00, −0,02, 0,00 y −0,01 puntos del PIB, respectivamente. No se presenta esa diferencia como una medida fiscal.
+Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. Las diapositivas 3 y 4 distinguen gasto neto, cotizaciones, impuestos netos, reasignación de las cajas y efectos macroeconómicos. `data/clasificacion_medidas.json` identifica cada fila fuente. `data/ajuste_oficial.csv` y `.json` reconstruyen 2027–2030 sin duplicar medidas. Los cuadros y el gráfico fiscal muestran una sola cifra decimal. Los cálculos conservan la precisión de la fuente y los totales se redondean después de sumar. Las diferencias pequeñas de conciliación se conservan solo en los archivos de cálculo.
 
 Las referencias aparecen al pie de cada diapositiva. [Proyecto oficial](https://www.camara.gov.co/ley-rescate-economico/).
 
@@ -28,7 +28,7 @@ El repositorio no incluye los documentos privados de trabajo ni los originales p
 
 ## Revisión
 
-[Meta Skill Review Oliver](quality_reports/meta_skill_review.md): lectura y revisión independiente de la versión inicial. La última desagregación se cotejó contra las 20 filas de medidas de la tabla 14, con 154 comprobaciones aprobadas. El historial distingue cada versión.
+[Meta Skill Review Oliver](quality_reports/meta_skill_review.md): lectura y revisión independiente de la versión inicial. La última desagregación se cotejó contra las 20 filas de medidas de la tabla 14, con comprobaciones de fuentes, sumas y redondeo aprobadas. El historial distingue cada versión.
 
 Para repetir el cotejo, descargar el PDF oficial de 334 páginas y ejecutar:
 
