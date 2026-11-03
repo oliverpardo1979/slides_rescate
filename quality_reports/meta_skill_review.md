@@ -38,3 +38,10 @@ Se verificaron identidad, fecha, artículos/páginas y respaldo pertinente de la
 **High** sobre las correcciones de lectura y los cálculos aislados cotejados. La auditoría verifica lo expuesto, no certifica el ahorro fiscal neto desde microdatos, la cobertura efectiva de EfectIVA, el costo agregado de RUGE ni la elegibilidad final de empresas al artículo 95. El juicio de distribución sigue siendo una valoración identificable del autor. **Medium** sobre legibilidad a distancia, porque no se especificaron sala ni duración.
 
 La presentación conserva 18 diapositivas principales y 2 anexos. La revisión y sus reparaciones están terminadas dentro de este alcance. La auditoría general del proyecto de ley continúa por separado.
+
+
+## Actualización de formato solicitada por Oliver, 3 de noviembre
+
+Referencia principal: `Again-Firm-Size-Paper/presentacion_javeriana.tex`, commit `3bc4cca`. Se compararon los PDF de tamaño de firma, tributación empresarial (mayo de 2024 y diciembre de 2025) y *El Laberinto Fiscal de Colombia*. Se adoptó el formato de tamaño de firma, con fuentes visibles por la naturaleza jurídica de esta presentación.
+
+Se reemplazaron los porcentajes grandes de contratación y personal por dos viñetas. Se conservan las cifras, condiciones y orden. Las 20 páginas se renderizaron y revisaron. El log no presenta desbordamientos ni advertencias de LaTeX. El entorno vuelve a emitir el aviso de Fontconfig ya documentado, sin defecto visible de fuentes. Las 48 comprobaciones de la corrida `formato_academico` pasan. Esta actualización de diseño no constituye una nueva auditoría integral ni una segunda revisión independiente.

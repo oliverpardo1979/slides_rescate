@@ -1,43 +1,69 @@
-\documentclass[aspectratio=169,14pt]{beamer}
+\documentclass[aspectratio=169,11pt]{beamer}
 \usepackage{iftex}
 \ifPDFTeX\usepackage[utf8]{inputenc}\fi
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-nodecimaldot]{babel}
-\usepackage{lmodern,booktabs,tabularx,tikz,pgfplots}
+\usepackage{lmodern,graphicx,booktabs,tabularx,tikz,pgfplots}
 \pgfplotsset{compat=1.18}
-\definecolor{navy}{HTML}{19394D}
-\definecolor{teal}{HTML}{007F86}
-\definecolor{rust}{HTML}{AC5034}
-\definecolor{muted}{HTML}{51616C}
-\setbeamercolor{normal text}{fg=navy,bg=white}
+% Formato de presentacion_javeriana.tex (Beyond Formality, Pardo y Orozco).
+\usetheme{default}
+\definecolor{navy}{HTML}{000000}
+\definecolor{teal}{HTML}{1F5EA8}
+\definecolor{rust}{HTML}{9E2A2B}
+\definecolor{muted}{HTML}{4A4A4A}
+\definecolor{cjcyellow}{HTML}{F2C400}
+\setbeamercolor{normal text}{fg=black,bg=white}
 \setbeamercolor{structure}{fg=teal}
-\setbeamercolor{frametitle}{fg=navy}
+\setbeamercolor{frametitle}{fg=teal}
+\setbeamercolor{title}{fg=teal}
 \setbeamercolor{alerted text}{fg=rust}
+\setbeamercolor{author in head/foot}{fg=white,bg=teal}
+\setbeamercolor{date in head/foot}{fg=white,bg=muted}
 \setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{headline}{}
-\setbeamertemplate{itemize item}{\small\raisebox{.12ex}{\textbullet}}
-\setbeamertemplate{footline}{\hfill\usebeamerfont{page number in head/foot}\color{muted}\scriptsize\insertframenumber\hspace{5mm}\vspace{3mm}}
+\setbeamertemplate{itemize item}{\color{teal}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{teal}$\bullet$}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.78\paperwidth,ht=2.4ex,dp=1.1ex,leftskip=1.5em]{author in head/foot}%
+      \scriptsize Centro Javeriano de Competitividad
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.22\paperwidth,ht=2.4ex,dp=1.1ex,rightskip=1.5em plus1fil]{date in head/foot}%
+      \scriptsize \insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
 \setbeamersize{text margin left=8mm,text margin right=8mm}
 \setlength{\parskip}{5pt}
 \hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal}
 \newcommand{\src}[1]{\par\vfill{\fontsize{7.3}{8.4}\selectfont\color{muted}#1\par}}
-\newcommand{\take}[1]{\par\medskip{\color{teal}\bfseries #1}\par}
+\newcommand{\take}[1]{\par\medskip{\bfseries #1}\par}
 \newcommand{\ley}[2]{\href{https://www.camara.gov.co/wp-content/uploads/2026/10/proyectos-ley/documentos/proyecto-36548/PROYECTO-DE-LEY-Rescate-Economico-2026-VSD-RADICADA-1.pdf\#page=#1}{#2}}
 \newcommand{\bulletspace}{\setlength\itemsep{7pt}}
+\newcommand{\cjcbar}{\textcolor{cjcyellow}{\rule{0.18\textwidth}{1.6pt}}\hspace{0.3em}\textcolor{teal}{\rule{0.72\textwidth}{1.6pt}}}
 \input{data/conversiones.tex}
 \begin{document}
 
 \begin{frame}[plain]
-\vspace{7mm}
-{\color{teal}\large Proyecto de Ley 477 de 2026 Cámara\par}
-\vspace{6mm}
-{\fontsize{30}{34}\selectfont\bfseries La Ley de Rescate\\Económico\par}
-\vspace{5mm}
+\vspace{0.25cm}
+\includegraphics[height=1.1cm]{assets/logo_cjc_palatino_horizontal.png}
+\vspace{0.5cm}
+
+{\large\color{muted}Proyecto de Ley 477 de 2026 Cámara\par}
+\vspace{0.25cm}
+\cjcbar
+\vspace{0.5cm}
+
+{\LARGE\bfseries\color{teal}La Ley de Rescate Económico\par}
+\medskip
 {\large Qué cambia, quién paga y qué conviene corregir\par}
-\vspace{7mm}
-Oliver Pardo\\[1mm]
-{\small 3 de noviembre de 2026}
+\vfill
+{\large Oliver Pardo\par}
+Centro Javeriano de Competitividad\\
+3 de noviembre de 2026
 \src{Texto radicado el 29 de octubre de 2026. Proyecto en trámite. Conversión ilustrativa con UVT 2026 de \$\UVTpesos{} y salario mínimo de \$\SMpesos{}. Los valores de 2027 y 2028 cambiarán con sus respectivas unidades.}
 \end{frame}
 
@@ -83,20 +109,10 @@ Otros efectos netos & 0,31 & 1,90\\
 \end{frame}
 
 \begin{frame}{El gasto se ajusta en contratación y personal}
-\begin{columns}[T]
-\begin{column}{.47\textwidth}
-{\color{teal}\fontsize{32}{36}\selectfont\bfseries 50\%}\par
-\textbf{Menos gasto en OPS en 2027} frente a 2026, en las entidades del presupuesto nacional.
-\medskip
-Desde 2028, el gasto puede crecer hasta la inflación.
-\end{column}
-\begin{column}{.47\textwidth}
-{\color{teal}\fontsize{32}{36}\selectfont\bfseries 20\%}\par
-\textbf{Menos gasto nominal de personal en 2028} frente a 2027, excluyendo a la Fuerza Pública.
-\medskip
-En 2029 y 2030, el límite es la meta de inflación más 0,5 puntos.
-\end{column}
-\end{columns}
+\begin{itemize}\bulletspace
+\item \textbf{OPS.} El gasto se reduce 50\% en 2027 frente a 2026, en las entidades del presupuesto nacional. Desde 2028 puede crecer hasta la inflación.
+\item \textbf{Personal.} El gasto nominal se reduce 20\% en 2028 frente a 2027, excluyendo a la Fuerza Pública. En 2029 y 2030, el límite es la meta de inflación más 0,5 puntos.
+\end{itemize}
 \take{El ahorro neto depende de cómo se ejecuten los recortes.}
 \src{\ley{227}{Artículos 16 y 17}. Suprimir cargos o contratos puede implicar costos de transición y afectar servicios. El ahorro no equivale automáticamente al porcentaje de la apropiación.}
 \end{frame}

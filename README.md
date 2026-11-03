@@ -37,3 +37,7 @@ python quality_reports/auditar_cifras.py nueva_revision /ruta/proyecto_oficial.p
 ```
 
 El historial de comprobaciones se conserva en `quality_reports/replication-log.md`. Las estimaciones fiscales siguen siendo las oficiales, no una auditoría independiente del ajuste neto.
+
+## Formato académico
+
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La actualización de formato mantiene 18 diapositivas y dos anexos.
