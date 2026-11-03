@@ -1,14 +1,325 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-
-\title{slides rescate}
-\author{oliverpardo }
-\date{November 2026}
-
+\documentclass[aspectratio=169,14pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern,booktabs,tabularx,tikz,pgfplots}
+\pgfplotsset{compat=1.18}
+\definecolor{navy}{HTML}{19394D}
+\definecolor{teal}{HTML}{007F86}
+\definecolor{rust}{HTML}{AC5034}
+\definecolor{muted}{HTML}{51616C}
+\setbeamercolor{normal text}{fg=navy,bg=white}
+\setbeamercolor{structure}{fg=teal}
+\setbeamercolor{frametitle}{fg=navy}
+\setbeamercolor{alerted text}{fg=rust}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{itemize item}{\small\raisebox{.12ex}{\textbullet}}
+\setbeamertemplate{footline}{\hfill\usebeamerfont{page number in head/foot}\color{muted}\scriptsize\insertframenumber\hspace{5mm}\vspace{3mm}}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setlength{\parskip}{5pt}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal}
+\newcommand{\src}[1]{\par\vfill{\fontsize{7.3}{8.4}\selectfont\color{muted}#1\par}}
+\newcommand{\take}[1]{\par\medskip{\color{teal}\bfseries #1}\par}
+\newcommand{\ley}[2]{\href{https://www.camara.gov.co/wp-content/uploads/2026/10/proyectos-ley/documentos/proyecto-36548/PROYECTO-DE-LEY-Rescate-Economico-2026-VSD-RADICADA-1.pdf\#page=#1}{#2}}
+\newcommand{\bulletspace}{\setlength\itemsep{7pt}}
+\input{data/conversiones.tex}
 \begin{document}
 
-\maketitle
+\begin{frame}[plain]
+\vspace{7mm}
+{\color{teal}\large Proyecto de Ley 477 de 2026 Cámara\par}
+\vspace{6mm}
+{\fontsize{30}{34}\selectfont\bfseries La Ley de Rescate\\Económico\par}
+\vspace{5mm}
+{\large Qué cambia, quién paga y qué conviene corregir\par}
+\vspace{7mm}
+Oliver Pardo\\[1mm]
+{\small 3 de noviembre de 2026}
+\src{Texto radicado el 29 de octubre de 2026. Proyecto en trámite. Conversión ilustrativa con UVT 2026 de \$\UVTpesos{} y salario mínimo de \$\SMpesos{}. Los valores de 2027 y 2028 cambiarán con sus respectivas unidades.}
+\end{frame}
 
-\section{Introduction}
+\begin{frame}{El proyecto plantea un ajuste grande y gradual}
+\begin{columns}[T]
+\begin{column}{.62\textwidth}
+\begin{tikzpicture}
+\begin{axis}[width=\linewidth,height=5cm,ybar,bar width=22pt,ymin=0,ymax=4.8,
+symbolic x coords={2027,2028,2029,2030},xtick=data,ytick={0,1,2,3,4},
+axis lines=left,ymajorgrids=true,grid style={gray!15},tick label style={font=\small},
+ylabel={Puntos del PIB},ylabel style={font=\small},nodes near coords,
+every node near coord/.append style={font=\small},enlarge x limits=.2]
+\addplot[fill=teal,draw=none] coordinates {(2027,2.35)(2028,3.58)(2029,3.87)(2030,4.09)};
+\end{axis}
+\end{tikzpicture}
+\end{column}
+\begin{column}{.35\textwidth}
+\vspace{6mm}
+\textbf{4,09 puntos del PIB}\\es la mejora anual prevista en 2030 frente al escenario sin la ley.
+\medskip
+Las cuatro cifras son efectos por vigencia. No se suman como si fueran un ahorro anual permanente.
+\end{column}
+\end{columns}
+\src{\ley{204}{Exposición de motivos, tabla 14, p. 204}. Estimaciones de Hacienda, pendientes de verificación independiente. Estrategia completa, con medidas adicionales, llega a 4,73 puntos en 2030.}
+\end{frame}
 
+\begin{frame}{Una parte del ajuste cambia quién financia los servicios}
+\centering
+\begin{tabular}{lrr}
+\toprule
+\textbf{Mejora del balance primario} & \textbf{2027} & \textbf{2030}\\
+\midrule
+Menor gasto neto en rubros seleccionados & 0,58 & 0,81\\
+Nuevas fuentes de financiación social & 1,46 & 1,38\\
+Otros efectos netos & 0,31 & 1,90\\
+\midrule
+\textbf{Total del proyecto} & \textbf{2,35} & \textbf{4,09}\\
+\bottomrule
+\end{tabular}
+\par\raggedright\medskip
+\textbf{Más cotizaciones y otros ingresos sociales permiten reducir las transferencias de la Nación.} El costo de prestar salud y otros servicios no desaparece.
+\src{Puntos del PIB. Cálculos sobre \ley{204}{tabla 14, p. 204}. Menor gasto = eficiencia + personal + OPS menos mayor SGP. Otros efectos netos es residuo, incluye impuestos, rebajas y efectos macro. Véase data/ajuste\_oficial.csv.}
+\end{frame}
+
+\begin{frame}{El gasto se ajusta en contratación y personal}
+\begin{columns}[T]
+\begin{column}{.47\textwidth}
+{\color{teal}\fontsize{32}{36}\selectfont\bfseries 50\%}\par
+\textbf{Menos gasto en OPS en 2027} frente a 2026, en el ámbito definido por el artículo 17.
+\medskip
+Desde 2028, el gasto puede crecer hasta la inflación.
+\end{column}
+\begin{column}{.47\textwidth}
+{\color{teal}\fontsize{32}{36}\selectfont\bfseries 20\%}\par
+\textbf{Menos gasto nominal de personal en 2028} frente a 2027, excluyendo a la Fuerza Pública.
+\medskip
+En 2029 y 2030, el límite es inflación más 0,5 puntos.
+\end{column}
+\end{columns}
+\take{El ahorro neto depende de cómo se ejecuten los recortes.}
+\src{\ley{227}{Artículos 16 y 17}. Suprimir cargos o contratos puede implicar costos de transición y afectar servicios. El ahorro no equivale automáticamente al porcentaje de la apropiación.}
+\end{frame}
+
+\begin{frame}{Renta incorpora una tarifa marginal del 9\%}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Base gravable anual} & \textbf{Hoy} & \textbf{Proyecto}\\
+\midrule
+Hasta 720 UVT & 0\% & 0\%\\
+Más de 720 y hasta 1.090 UVT & 0\% & 9\%\\
+\bottomrule
+\end{tabular}
+\par\medskip
+720 UVT = \$\PisoAnual{} al año, o \$\PisoMensual{} por mes.\\
+1.090 UVT = \$\TechoAnual{} al año, o \$\TechoMensual{} por mes.
+\take{Son ingresos gravables después de la depuración. No son salarios brutos.}
+\small Ejemplo con base de 900 UVT: impuesto de $(900-720)\times9\%=16,2$ UVT. Equivale a \$\EjemploImpuesto{} al año o \$\EjemploMes{} por mes.
+\src{\ley{258}{Artículo 48}. Conversión con UVT 2026. El equivalente mensual divide la base anual entre 12. La tarifa del tramo solo se aplica al exceso sobre 720 UVT.}
+\end{frame}
+
+\begin{frame}{Menores deducciones elevan la base del impuesto}
+\small
+\begin{tabularx}{\textwidth}{Xrr}
+\toprule
+\textbf{Beneficio y tope anual} & \textbf{Hoy} & \textbf{Proyecto}\\
+\midrule
+Deducción adicional por dependiente & 72 UVT & Se elimina\\
+Tope de la exención laboral del 25\% & 790 UVT & 630 UVT\\
+Tope global de exentas y deducciones & 1.340 UVT & 1.180 UVT\\
+\bottomrule
+\end{tabularx}
+\par\normalsize\medskip
+\textbf{La exención laboral máxima pasa de \$\ExentaAntes{} a \$\ExentaDespues{} al año.}
+\medskip
+La deducción adicional eliminada equivale a \$\Dependiente{} por dependiente al año, hasta cuatro dependientes.
+\src{\ley{258}{Artículos 47, 49 y 106}. UVT 2026. Se conserva el límite global del 40\%. La deducción por dependientes del artículo 387 del ET es distinta y no se elimina por esta disposición. Una deducción reduce la base, no el impuesto peso por peso.}
+\end{frame}
+
+\begin{frame}{El trabajador aporta más a salud por encima de dos mínimos}
+\begin{columns}[T]
+\begin{column}{.53\textwidth}
+\small
+\begin{tabular}{lr}
+\toprule
+\textbf{Salarios mínimos} & \textbf{Aporte}\\
+\midrule
+Hasta 2 & 4\%\\
+Más de 2 y hasta 4 & 5,5\%\\
+Más de 4 y hasta 5 & 6\%\\
+Más de 5 y hasta 10 & 6,5\%\\
+Más de 10 y hasta 15 & 7\%\\
+Más de 15 y hasta 20 & 7,5\%\\
+Más de 20 y hasta 25 & 8\%\\
+\bottomrule
+\end{tabular}
+\end{column}
+\begin{column}{.44\textwidth}
+Hoy, el aporte ordinario del trabajador dependiente es \textbf{4\%}.
+\medskip
+Con cuatro mínimos, o \$\SalarioEjemplo{} mensuales, pasa de \$\SaludAntes{} a \$\SaludDespues{}.
+\take{\$\SaludDiferencia{} menos de ingreso disponible cada mes.}
+\end{column}
+\end{columns}
+\src{\ley{230}{Artículo 21}, desde enero de 2027. Ejemplo con salario e IBC iguales y mínimo 2026. La tarifa aplica a todo el IBC del tramo. Independientes y regímenes especiales tienen reglas diferentes.}
+\end{frame}
+
+\begin{frame}{Las empresas recuperan aportes que hoy están exonerados}
+\small
+\begin{tabularx}{\textwidth}{Xrrr}
+\toprule
+\textbf{Salario del trabajador} & \textbf{Salud} & \textbf{SENA} & \textbf{ICBF}\\
+\midrule
+Hasta 2 mínimos & 0\% & 0\% & 0\%\\
+Más de 2 y hasta 3 & 4\% & 1\% & 1\%\\
+Más de 3 & 8,5\% & 2\% & 3\%\\
+\bottomrule
+\end{tabularx}
+\par\normalsize\medskip
+Hoy, las sociedades elegibles están exoneradas por trabajadores con salarios inferiores a diez mínimos.
+\take{Con cuatro mínimos, el aporte adicional de la empresa suma \$\EmpresaTotal{} al mes.}
+\src{\ley{228}{Artículo 20}, desde enero de 2027. Ejemplo con mínimo 2026 y sociedad hoy exonerada: 13,5\% de \$\SalarioEjemplo{}. No incluye el aporte del trabajador. Hay reglas especiales, incluida exoneración para personas naturales con dos a cinco trabajadores.}
+\end{frame}
+
+\begin{frame}{SENA e ICBF dependerían más de la nómina}
+\begin{itemize}\bulletspace
+\item Las mayores contribuciones empresariales sustituyen parte de los recursos que hoy aporta la Nación.
+\item El artículo 106 deroga el artículo 243 del ET, que reserva una parte de renta empresarial y establece garantías de financiación.
+\item El aporte adicional \textbf{no implica un aumento equivalente del presupuesto total} de estas entidades.
+\end{itemize}
+\take{La ley aumenta sus recursos propios y flexibiliza la transferencia de la Nación.}
+\src{\ley{50}{Exposición, pp. 50--51}, y \ley{333}{artículo 106}. ET 243 asigna 2,2 puntos de tarifa al ICBF y 1,4 al SENA. El artículo 20 conserva ajustes presupuestales por necesidades, sin reproducir el piso automático de ET 243.}
+\end{frame}
+
+\begin{frame}{Un cuarto del aporte a las cajas pasa a salud}
+\begin{center}
+\begin{tikzpicture}
+\fill[teal] (0,0) rectangle (2,1.15);
+\fill[navy!70] (2.1,0) rectangle (8.3,1.15);
+\node[white,font=\bfseries] at (1,.58) {1 punto};
+\node[white,font=\bfseries] at (5.2,.58) {3 puntos};
+\node[font=\small] at (1,-.42) {ADRES};
+\node[font=\small] at (5.2,-.42) {Cajas y sus demás destinaciones};
+\end{tikzpicture}
+\end{center}
+\medskip
+\textbf{El aporte empresarial se mantiene en 4\% de la nómina.} Cambia su distribución.
+\medskip
+Además, el FOSFEC aporta excedentes disponibles al cierre de 2026 y permite usar ciertos saldos posteriores para sanear pasivos de salud.
+\src{\ley{231}{Artículos 22--24}. El punto a ADRES representa el 25\% del aporte del 4\%, no de todos los ingresos de las cajas. Los saldos del FOSFEC tienen condiciones y protección de obligaciones. Su traslado no es ingreso permanente.}
+\end{frame}
+
+\begin{frame}{La reforma amplía el IVA y devuelve una parte}
+\begin{itemize}\bulletspace
+\item Desde 2028 se eliminan las tarifas reducidas de 5\% de los artículos 468-1 y 468-3 y se revisan los bienes excluidos.
+\item Se conservan tratamientos especiales para una selección de bienes y servicios esenciales.
+\item Los hogares sin devolución asumen el mayor IVA sobre las compras afectadas, según su traslado a precios.
+\end{itemize}
+\take{Un bien con precio sin IVA de \$100.000 pasa de \$105.000 a \$119.000 si cambia de 5\% a 19\%.}
+\src{\ley{248}{Artículos 42 y siguientes}, y \ley{333}{artículo 106}. Ejemplo con precio sin IVA constante: aumento del precio final de 13,3\%. Algunas modificaciones de IVA rigen antes de 2028. No todos los bienes pasan al 19\%.}
+\end{frame}
+
+\begin{frame}{EfectIVA depende del IVA atribuible a cada persona}
+\begin{itemize}\bulletspace
+\item Desde 2028 devuelve 100\% a pobres y al tramo de menores ingresos de población vulnerable. Otros tramos reciben 50\%, 40\% o 30\%.
+\item El techo legal mensual es de hasta 5,5 UVT por beneficiario, equivalente a \textbf{\$\DevolucionTope{}} con UVT 2026.
+\item La pobreza extrema tiene un monto mínimo, aun sin IVA registrado. La reglamentación fija su valor.
+\end{itemize}
+\take{El reto operativo es identificar las compras y pagar la devolución completa y a tiempo.}
+\src{\ley{241}{Artículos 38--40}. Tope y tramos sujetos a reglas de actualización y reglamentación. Se incluyen facturas y documentos equivalentes. No se exige tarjeta de manera general para compras al contado.}
+\end{frame}
+
+\begin{frame}{El cambio de minimis afecta una exclusión de IVA}
+\begin{itemize}\bulletspace
+\item Se elimina el literal j) del artículo 428 del ET, aplicable a ciertos envíos de hasta \textbf{US\$200}, según tratados y condiciones.
+\item Los bienes quedan sujetos a su tratamiento general de IVA. Para un artículo gravado al 19\%, una base de US\$100 genera US\$19 de IVA.
+\item La aplicación debe conciliarse con los acuerdos comerciales. El arancel tiene reglas distintas.
+\end{itemize}
+\take{Una compra en Shein o Temu no está exenta hoy solo por costar menos de US\$200.}
+\src{\ley{333}{Artículo 106.4.a}, desde la vigencia general de la ley. \ley{96}{Exposición, pp. 96--97}. DIAN, \href{https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_1470_2026.htm}{Concepto 1470/2026}. El ejemplo supone tarifa general y base gravable de US\$100.}
+\end{frame}
+
+\begin{frame}{La tarifa empresarial general baja al 31\%}
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+& \textbf{Hoy} & \textbf{2027} & \textbf{Desde 2028}\\
+\midrule
+Tarifa general de renta & 35\% & 33\% & 31\%\\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+Una empresa con renta gravable de \$1.000 millones pagaría \$350 millones a la tarifa actual y \$310 millones al 31\%, antes de otros ajustes.
+\take{Hacienda estima un costo de 0,42 puntos del PIB anual entre 2028 y 2030 por esta rebaja.}
+\src{\ley{266}{Artículo 57} y \ley{204}{tabla 14}. Ejemplo aislado, con base constante y sin sobretasas, descuentos ni tasa mínima. El mayor crecimiento no garantiza por sí solo recuperar el recaudo perdido.}
+\end{frame}
+
+\begin{frame}{RUGE ofrece tarifas menores a grandes inversiones}
+\small
+\begin{tabularx}{\textwidth}{Xrr}
+\toprule
+\textbf{Sector} & \textbf{Mínimo UVT} & \textbf{Miles de millones \$}\\
+\midrule
+Infraestructura, energía, recursos naturales & 8.140.000 & 426,3\\
+Industria y economía digital & 5.530.000 & 289,6\\
+Agroindustria, turismo y otros servicios & 2.580.000 & 135,1\\
+\bottomrule
+\end{tabularx}
+\par\normalsize\medskip
+\textbf{Renta de 20\%} si la ejecución empieza en 2027--2028, o \textbf{26\%} desde 2029, con estabilidad de 16 años.
+\medskip
+Incluye minería, hidrocarburos, energía y construcción, además de otras actividades. El comercio y las actividades inmobiliarias están excluidos.
+\src{\ley{274}{Artículo 69}. Umbrales en UVT de la fecha de solicitud, aquí convertidos con UVT 2026. Exige inversión nueva, ejecución y compras nacionales. Prima anual de 0,1\% de inversión acumulada ejecutada. Costo fiscal agregado no cuantificado en tabla 14.}
+\end{frame}
+
+\begin{frame}{La normalización ofrece un trato especial al incumplimiento}
+\begin{itemize}\bulletspace
+\item Quien tenga activos omitidos o pasivos inexistentes a enero de 2027 puede normalizarlos con una tarifa de \textbf{15\%}.
+\item La inclusión evita las consecuencias tributarias y penales que el artículo enumera por esa omisión.
+\item Un activo omitido con base de \textbf{\$1.000 millones} genera \textbf{\$150 millones} de normalización.
+\end{itemize}
+\take{Recauda una vez y plantea un problema de equidad frente a quienes declararon oportunamente.}
+\src{\ley{286}{Artículo 70}. Declaración independiente hasta el 30 de junio de 2027. La tarifa grava la base del activo o pasivo, no una renta anual. No legaliza activos de origen ilícito. Activos digitales tienen un régimen separado.}
+\end{frame}
+
+\begin{frame}{El artículo 95 abre una vía de alivio a Ecopetrol}
+\begin{itemize}\bulletspace
+\item La DIAN podrá transar o conciliar tributos de importación de combustibles, por declaraciones hasta diciembre de 2025.
+\item Exige disputas superiores a \textbf{2 millones de UVT}, cerca de \textbf{\$104.748 millones} con UVT 2026.
+\item Permite liquidar con una interpretación oficial más favorable vigente al realizar las operaciones, bajo condiciones.
+\end{itemize}
+\take{Ecopetrol y Reficar tienen disputas documentadas. Su beneficio efectivo depende de cada expediente.}
+\src{\ley{321}{Artículo 95}. Ecopetrol, comunicados de \href{https://www.ecopetrol.com.co/wps/wcm/connect/e0f637ae-7f70-47c8-bca6-db04c49a68c4/comunicado-dian-esp-original.pdf?MOD=AJPERES}{6 de mayo} y 26 de junio de 2025. La norma no las nombra ni limita el beneficio a ellas. El umbral usa UVT al determinar la obligación.}
+\end{frame}
+
+\begin{frame}{El ajuste necesita una distribución defendible}
+\begin{itemize}\bulletspace
+\item El proyecto combina recortes, mayores aportes y cambios tributarios. La necesidad del ajuste sigue vigente.
+\item Su efecto depende de ejecutar los recortes, recaudar los ingresos y hacer funcionar la compensación del IVA.
+\item Las preferencias de RUGE, la normalización y los tratamientos sectoriales exigen justificar beneficiarios y costos.
+\end{itemize}
+\take{Pedir un esfuerzo amplio exige explicar por qué algunos contribuyentes reciben un trato preferencial.}
+\src{Valoración del autor sobre el texto radicado. El costo de los beneficios no cuantificados permanece desconocido. Esta presentación explica una selección de medidas y no certifica el ajuste neto del proyecto.}
+\end{frame}
+
+\appendix
+\begin{frame}{Anexo. La facturación creció, su cobertura social sigue pendiente}
+\begin{itemize}\bulletspace
+\item La DIAN dispuso reportes de facturas para \textbf{17,4 millones de personas} en 2025. No informa allí su distribución por ingresos.
+\item Una factura a ``consumidor final'' registra la venta, pero no identifica al beneficiario de la devolución.
+\item Para evaluar EfectIVA hace falta cruzar compras e IVA identificados con población elegible, territorio y tipo de comercio.
+\end{itemize}
+\src{DIAN, \href{https://www.dian.gov.co/atencionciudadano/Documents/Informe-de-Gestion-DIAN-2025-30012026.pdf}{Informe de gestión 2025, pp. 14--15}. Personas con reportes disponibles no equivale a compradores frecuentes ni a cobertura de todo su consumo.}
+\end{frame}
+
+\begin{frame}{Anexo. Convenciones y fuentes}
+\small
+\begin{itemize}\bulletspace
+\item \textbf{Versión}: proyecto radicado de 334 páginas, exposición y 106 artículos. \ley{1}{Documento oficial de Cámara}.
+\item \textbf{UVT}: \$\UVTpesos{} en 2026. \href{https://www.dian.gov.co/scripts/HPublishing?id=4114\&type=NewsPdf}{DIAN, Resolución 238 de 2025}. Conversiones ilustrativas, no valores nominales futuros.
+\item \textbf{Salario mínimo}: \$\SMpesos{} en 2026. \href{https://normograma.sena.edu.co/compilacion/docs/decreto_0159_2026.htm}{Decreto 159 de 2026}. Sin auxilio de transporte.
+\item \textbf{Billón}: un millón de millones de pesos. Las tasas de renta de personas naturales son marginales. Las de salud se aplican al IBC del tramo.
+\end{itemize}
+\src{Fuentes por diapositiva y cálculos reproducibles en el repositorio. El texto radicado es una propuesta, no una ley vigente. Corte de preparación: 3 de noviembre de 2026.}
+\end{frame}
 \end{document}

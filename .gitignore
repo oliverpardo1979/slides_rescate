@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+*.xdv
+*.fls
+*.fdb_latexmk
+__pycache__/
+preview/

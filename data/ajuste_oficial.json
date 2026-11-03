@@ -1,0 +1,31 @@
+{
+  "fuente": "Exposición PL477/2026C, tabla14, página204",
+  "unidad": "puntos del PIB",
+  "naturaleza": "Estimaciones oficiales. Otros efectos netos es residuo contable e incluye retroalimentación macroeconómica. No es reproducción independiente desde microdatos.",
+  "datos": {
+    "2027": {
+      "gasto_neto": "0.58",
+      "financiacion_social": "1.46",
+      "otros_efectos_netos": "0.31",
+      "total_ley": "2.35"
+    },
+    "2028": {
+      "gasto_neto": "0.73",
+      "financiacion_social": "1.31",
+      "otros_efectos_netos": "1.54",
+      "total_ley": "3.58"
+    },
+    "2029": {
+      "gasto_neto": "0.86",
+      "financiacion_social": "1.37",
+      "otros_efectos_netos": "1.64",
+      "total_ley": "3.87"
+    },
+    "2030": {
+      "gasto_neto": "0.81",
+      "financiacion_social": "1.38",
+      "otros_efectos_netos": "1.90",
+      "total_ley": "4.09"
+    }
+  }
+}
