@@ -14,8 +14,8 @@ pages=[re.sub(r'\s+',' ',doc[i].get_textpage().get_text_range()) for i in range(
 claims=[]
 # Localizar por título permite reordenar el deck conservando el cotejo de cada cifra.
 anchors={
- 2:'El proyecto plantea un ajuste grande y gradual',
- 3:'Las medidas por magnitud del efecto fiscal',
+ 2:'Efecto sobre el balance fiscal',
+ 3:'Desagregación del ajuste',
  5:'Renta incorpora una tarifa marginal del 9',
  6:'Menores deducciones elevan la base del impuesto',
  7:'El trabajador aporta más a salud por encima de dos mínimos',
