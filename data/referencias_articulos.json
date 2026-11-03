@@ -1,0 +1,294 @@
+{
+  "version": "PL 477/2026C, radicado 29 de octubre de 2026, PDF oficial de 334 páginas",
+  "criterio": "Subtítulos enlazados al inicio de cada artículo o grupo. Las estimaciones agregadas se vinculan a la exposición, no se presentan como disposiciones legales.",
+  "diapositivas": [
+    {
+      "titulo": "Efecto sobre el balance fiscal",
+      "tipo": "Exposición de motivos",
+      "referencias": [
+        {
+          "pagina_pdf": 204,
+          "etiqueta": "Tabla 14"
+        }
+      ]
+    },
+    {
+      "titulo": "Desagregación del ajuste",
+      "tipo": "Exposición de motivos",
+      "referencias": [
+        {
+          "pagina_pdf": 204,
+          "etiqueta": "Tabla 14"
+        }
+      ]
+    },
+    {
+      "titulo": "La reforma amplía el IVA y devuelve una parte",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 248,
+          "etiqueta": "Art. 42"
+        },
+        {
+          "pagina_pdf": 254,
+          "etiqueta": "46"
+        },
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "106.4.b"
+        }
+      ]
+    },
+    {
+      "titulo": "EfectIVA depende del IVA atribuible a cada persona",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 241,
+          "etiqueta": "Art. 38"
+        },
+        {
+          "pagina_pdf": 243,
+          "etiqueta": "39"
+        },
+        {
+          "pagina_pdf": 244,
+          "etiqueta": "40"
+        }
+      ]
+    },
+    {
+      "titulo": "El IVA llega a más envíos de bajo valor",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "Art. 106.4.a"
+        }
+      ]
+    },
+    {
+      "titulo": "El gasto se ajusta en contratación y personal",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 227,
+          "etiqueta": "Art. 17 (OPS)"
+        },
+        {
+          "pagina_pdf": 227,
+          "etiqueta": "16 (personal)"
+        }
+      ]
+    },
+    {
+      "titulo": "Renta incorpora una tarifa marginal del 9%",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 258,
+          "etiqueta": "Art. 48"
+        }
+      ]
+    },
+    {
+      "titulo": "Menores deducciones elevan la base del impuesto",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 258,
+          "etiqueta": "Art. 47"
+        },
+        {
+          "pagina_pdf": 259,
+          "etiqueta": "49"
+        },
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "106.1"
+        }
+      ]
+    },
+    {
+      "titulo": "Las empresas vuelven a pagar aportes hoy exonerados",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 228,
+          "etiqueta": "Art. 20"
+        }
+      ]
+    },
+    {
+      "titulo": "SENA e ICBF dependerían más de la nómina",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 228,
+          "etiqueta": "Art. 20"
+        },
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "106.1"
+        }
+      ]
+    },
+    {
+      "titulo": "La tarifa empresarial general baja al 31%",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 266,
+          "etiqueta": "Art. 57"
+        }
+      ]
+    },
+    {
+      "titulo": "El trabajador aporta más a salud por encima de dos mínimos",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 230,
+          "etiqueta": "Art. 21"
+        }
+      ]
+    },
+    {
+      "titulo": "Un cuarto del aporte a las cajas pasa a salud",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 231,
+          "etiqueta": "Art. 22"
+        },
+        {
+          "pagina_pdf": 231,
+          "etiqueta": "23"
+        },
+        {
+          "pagina_pdf": 232,
+          "etiqueta": "24"
+        }
+      ]
+    },
+    {
+      "titulo": "La normalización ofrece un trato especial al incumplimiento",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 286,
+          "etiqueta": "Art. 70"
+        }
+      ]
+    },
+    {
+      "titulo": "RUGE ofrece tarifas menores a grandes inversiones",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 274,
+          "etiqueta": "Art. 69"
+        }
+      ]
+    },
+    {
+      "titulo": "El artículo 95 abre una vía de alivio a Ecopetrol",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 321,
+          "etiqueta": "Art. 95"
+        }
+      ]
+    },
+    {
+      "titulo": "Las ganancias de los hogares pobres dependen de la devolución",
+      "tipo": "Medidas simuladas",
+      "referencias": [
+        {
+          "pagina_pdf": 228,
+          "etiqueta": "Arts. 20--21"
+        },
+        {
+          "pagina_pdf": 234,
+          "etiqueta": "27--40"
+        },
+        {
+          "pagina_pdf": 248,
+          "etiqueta": "42--49"
+        },
+        {
+          "pagina_pdf": 262,
+          "etiqueta": "56"
+        },
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "106"
+        }
+      ]
+    },
+    {
+      "titulo": "El ajuste necesita una distribución defendible",
+      "tipo": "Preferencias comentadas",
+      "referencias": [
+        {
+          "pagina_pdf": 274,
+          "etiqueta": "Art. 69"
+        },
+        {
+          "pagina_pdf": 286,
+          "etiqueta": "70"
+        },
+        {
+          "pagina_pdf": 321,
+          "etiqueta": "95"
+        }
+      ]
+    },
+    {
+      "titulo": "Anexo. Falta medir la cobertura de las compras",
+      "tipo": "Marco propuesto para EfectIVA",
+      "referencias": [
+        {
+          "pagina_pdf": 241,
+          "etiqueta": "Art. 38"
+        },
+        {
+          "pagina_pdf": 243,
+          "etiqueta": "39"
+        },
+        {
+          "pagina_pdf": 244,
+          "etiqueta": "40"
+        }
+      ]
+    },
+    {
+      "titulo": "Anexo. Qué supone la incidencia por deciles",
+      "tipo": "Medidas simuladas",
+      "referencias": [
+        {
+          "pagina_pdf": 228,
+          "etiqueta": "Arts. 20--21"
+        },
+        {
+          "pagina_pdf": 234,
+          "etiqueta": "27--40"
+        },
+        {
+          "pagina_pdf": 248,
+          "etiqueta": "42--49"
+        },
+        {
+          "pagina_pdf": 262,
+          "etiqueta": "56"
+        },
+        {
+          "pagina_pdf": 333,
+          "etiqueta": "106"
+        }
+      ]
+    }
+  ]
+}

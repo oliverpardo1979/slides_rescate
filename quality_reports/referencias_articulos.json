@@ -1,0 +1,472 @@
+{
+  "diapositivas_con_referencias": 20,
+  "referencias_comprobadas": 42,
+  "enlaces_pdf_en_esas_diapositivas": 78,
+  "incidencias": [],
+  "comprobaciones": [
+    {
+      "diapositiva": 2,
+      "pagina_pdf": 204,
+      "etiqueta": "Tabla 14",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 3,
+      "pagina_pdf": 204,
+      "etiqueta": "Tabla 14",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 4,
+      "pagina_pdf": 248,
+      "etiqueta": "Art. 42",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 4,
+      "pagina_pdf": 254,
+      "etiqueta": "46",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 4,
+      "pagina_pdf": 333,
+      "etiqueta": "106.4.b",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 5,
+      "pagina_pdf": 241,
+      "etiqueta": "Art. 38",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 5,
+      "pagina_pdf": 243,
+      "etiqueta": "39",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 5,
+      "pagina_pdf": 244,
+      "etiqueta": "40",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 6,
+      "pagina_pdf": 333,
+      "etiqueta": "Art. 106.4.a",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 7,
+      "pagina_pdf": 227,
+      "etiqueta": "Art. 17 (OPS)",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 7,
+      "pagina_pdf": 227,
+      "etiqueta": "16 (personal)",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 8,
+      "pagina_pdf": 258,
+      "etiqueta": "Art. 48",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 9,
+      "pagina_pdf": 258,
+      "etiqueta": "Art. 47",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 9,
+      "pagina_pdf": 259,
+      "etiqueta": "49",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 9,
+      "pagina_pdf": 333,
+      "etiqueta": "106.1",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 10,
+      "pagina_pdf": 228,
+      "etiqueta": "Art. 20",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 11,
+      "pagina_pdf": 228,
+      "etiqueta": "Art. 20",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 11,
+      "pagina_pdf": 333,
+      "etiqueta": "106.1",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 12,
+      "pagina_pdf": 266,
+      "etiqueta": "Art. 57",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 13,
+      "pagina_pdf": 230,
+      "etiqueta": "Art. 21",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 14,
+      "pagina_pdf": 231,
+      "etiqueta": "Art. 22",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 14,
+      "pagina_pdf": 231,
+      "etiqueta": "23",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 14,
+      "pagina_pdf": 232,
+      "etiqueta": "24",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 15,
+      "pagina_pdf": 286,
+      "etiqueta": "Art. 70",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 16,
+      "pagina_pdf": 274,
+      "etiqueta": "Art. 69",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 17,
+      "pagina_pdf": 321,
+      "etiqueta": "Art. 95",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 18,
+      "pagina_pdf": 228,
+      "etiqueta": "Arts. 20--21",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 18,
+      "pagina_pdf": 234,
+      "etiqueta": "27--40",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 18,
+      "pagina_pdf": 248,
+      "etiqueta": "42--49",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 18,
+      "pagina_pdf": 262,
+      "etiqueta": "56",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 18,
+      "pagina_pdf": 333,
+      "etiqueta": "106",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 19,
+      "pagina_pdf": 274,
+      "etiqueta": "Art. 69",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 19,
+      "pagina_pdf": 286,
+      "etiqueta": "70",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 19,
+      "pagina_pdf": 321,
+      "etiqueta": "95",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 20,
+      "pagina_pdf": 241,
+      "etiqueta": "Art. 38",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 20,
+      "pagina_pdf": 243,
+      "etiqueta": "39",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 20,
+      "pagina_pdf": 244,
+      "etiqueta": "40",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 21,
+      "pagina_pdf": 228,
+      "etiqueta": "Arts. 20--21",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 21,
+      "pagina_pdf": 234,
+      "etiqueta": "27--40",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 21,
+      "pagina_pdf": 248,
+      "etiqueta": "42--49",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 21,
+      "pagina_pdf": 262,
+      "etiqueta": "56",
+      "enlace_presente": true
+    },
+    {
+      "diapositiva": 21,
+      "pagina_pdf": 333,
+      "etiqueta": "106",
+      "enlace_presente": true
+    }
+  ],
+  "cotejo_destinos_con_original": [
+    {
+      "etiqueta": "Tabla 14",
+      "pagina_pdf": 204,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Tabla 14",
+      "pagina_pdf": 204,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 42",
+      "pagina_pdf": 248,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "46",
+      "pagina_pdf": 254,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "106.4.b",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 38",
+      "pagina_pdf": 241,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "39",
+      "pagina_pdf": 243,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "40",
+      "pagina_pdf": 244,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 106.4.a",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 17 (OPS)",
+      "pagina_pdf": 227,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "16 (personal)",
+      "pagina_pdf": 227,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 48",
+      "pagina_pdf": 258,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 47",
+      "pagina_pdf": 258,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "49",
+      "pagina_pdf": 259,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "106.1",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 20",
+      "pagina_pdf": 228,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 20",
+      "pagina_pdf": 228,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "106.1",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 57",
+      "pagina_pdf": 266,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 21",
+      "pagina_pdf": 230,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 22",
+      "pagina_pdf": 231,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "23",
+      "pagina_pdf": 231,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "24",
+      "pagina_pdf": 232,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 70",
+      "pagina_pdf": 286,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 69",
+      "pagina_pdf": 274,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 95",
+      "pagina_pdf": 321,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Arts. 20--21",
+      "pagina_pdf": 228,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "27--40",
+      "pagina_pdf": 234,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "42--49",
+      "pagina_pdf": 248,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "56",
+      "pagina_pdf": 262,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "106",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 69",
+      "pagina_pdf": 274,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "70",
+      "pagina_pdf": 286,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "95",
+      "pagina_pdf": 321,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Art. 38",
+      "pagina_pdf": 241,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "39",
+      "pagina_pdf": 243,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "40",
+      "pagina_pdf": 244,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "Arts. 20--21",
+      "pagina_pdf": 228,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "27--40",
+      "pagina_pdf": 234,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "42--49",
+      "pagina_pdf": 248,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "56",
+      "pagina_pdf": 262,
+      "inicio_en_fuente": true
+    },
+    {
+      "etiqueta": "106",
+      "pagina_pdf": 333,
+      "inicio_en_fuente": true
+    }
+  ]
+}

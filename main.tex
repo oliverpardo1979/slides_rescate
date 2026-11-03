@@ -21,6 +21,8 @@
 \setbeamercolor{date in head/foot}{fg=white,bg=muted}
 \setbeamerfont{frametitle}{size=\large,series=\bfseries}
 \setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\scriptsize,series=\mdseries}
+\setbeamercolor{framesubtitle}{fg=muted}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{headline}{}
 \setbeamertemplate{itemize item}{\color{teal}$\blacktriangleright$}
@@ -68,6 +70,7 @@ Centro Javeriano de Competitividad\\
 \end{frame}
 
 \begin{frame}{Efecto sobre el balance fiscal}
+\framesubtitle{Exposición de motivos\quad \ley{204}{Tabla 14}}
 \begin{columns}[T]
 \begin{column}{.62\textwidth}
 \begin{tikzpicture}
@@ -89,6 +92,7 @@ every node near coord/.append style={font=\small},enlarge x limits=.2]
 \end{frame}
 
 \begin{frame}{Desagregación del ajuste}
+\framesubtitle{Exposición de motivos\quad \ley{204}{Tabla 14}}
 \centering
 {\fontsize{9.5}{11.4}\selectfont\renewcommand{\arraystretch}{0.87}
 \begin{tabular}{clrr}
@@ -103,21 +107,22 @@ every node near coord/.append style={font=\small},enlarge x limits=.2]
 \end{frame}
 
 \begin{frame}{La reforma amplía el IVA y devuelve una parte}
+\framesubtitle{Proyecto de Ley\quad \ley{248}{Art. 42}\quad \ley{254}{46}\quad \ley{333}{106.4.b}}
 {\fontsize{9.5}{11.4}\selectfont\color{black}\mdseries\renewcommand{\arraystretch}{1.0}
-\begin{tabular}{lll}
+\begin{tabular}{llll}
 \toprule
-\textbf{Bien (selección)} & \textbf{Antes (2026)} & \textbf{Proyecto (2028)}\\
+\textbf{Bien (selección)} & \textbf{Antes (2026)} & \textbf{Proyecto (2028)} & \textbf{Art. PL}\\
 \midrule
-Papa y yuca & Excluidos & Excluidos\\
-Pan horneado y arepa de maíz & Excluidos & Excluidos\\
-Banano y manzana & Excluidos & \textcolor{rust}{19\%}\\
-Tomate y cebolla frescos & Excluidos & \textcolor{rust}{19\%}\\
-Carne de res, pollo, leche y huevos & 0\% (exentos) & 0\% (exentos)\\
-Queso fresco & 0\% (exento) & \textcolor{rust}{19\%}\\
-Medicamentos (30.03 y 30.04) & 0\% (exentos) & 0\% (exentos)\\
-Café tostado & 5\% & \textcolor{rust}{19\%}\\
-Pastas sin cocer ni rellenar & 5\% & \textcolor{rust}{19\%}\\
-Ropa de uso corriente & 19\% & 19\%\\
+Papa y yuca & Excluidos & Excluidos & \ley{248}{42}\\
+Pan horneado y arepa de maíz & Excluidos & Excluidos & \ley{248}{42}\\
+Banano y manzana & Excluidos & \textcolor{rust}{19\%} & \ley{248}{42}\\
+Tomate y cebolla frescos & Excluidos & \textcolor{rust}{19\%} & \ley{248}{42}\\
+Carne de res, pollo, leche y huevos & 0\% (exentos) & 0\% (exentos) & \ley{254}{46}\\
+Queso fresco & 0\% (exento) & \textcolor{rust}{19\%} & \ley{254}{46}\\
+Medicamentos (30.03 y 30.04) & 0\% (exentos) & 0\% (exentos) & \ley{254}{46}\\
+Café tostado & 5\% & \textcolor{rust}{19\%} & \ley{333}{106.4.b}\\
+Pastas sin cocer ni rellenar & 5\% & \textcolor{rust}{19\%} & \ley{333}{106.4.b}\\
+Ropa de uso corriente & 19\% & 19\% & \textemdash\\
 \bottomrule
 \end{tabular}}
 \par\smallskip
@@ -126,6 +131,7 @@ Ropa de uso corriente & 19\% & 19\%\\
 \end{frame}
 
 \begin{frame}{EfectIVA depende del IVA atribuible a cada persona}
+\framesubtitle{Proyecto de Ley\quad \ley{241}{Art. 38}\quad \ley{243}{39}\quad \ley{244}{40}}
 \begin{itemize}\bulletspace
 \item Desde 2028 devuelve 100\% a pobres y al tramo de menores ingresos de población vulnerable. Otros tramos reciben 50\%, 40\% o 30\%.
 \item El techo legal mensual es de hasta 5,5 UVT por beneficiario, equivalente a \textbf{\$\DevolucionTope{}} con UVT 2026.
@@ -136,6 +142,7 @@ Ropa de uso corriente & 19\% & 19\%\\
 \end{frame}
 
 \begin{frame}{El IVA llega a más envíos de bajo valor}
+\framesubtitle{Proyecto de Ley\quad \ley{333}{Art. 106.4.a}}
 \begin{itemize}\bulletspace
 \item Hoy ciertos envíos de hasta \textbf{US\$200} desde EE.UU. ingresan sin IVA, según las condiciones del tratado.
 \item Según Inexmoda, parte de los pedidos de \textbf{Shein y Temu sale de EE.UU.}, aunque los bienes se fabriquen en China.
@@ -146,6 +153,7 @@ Ropa de uso corriente & 19\% & 19\%\\
 \end{frame}
 
 \begin{frame}{El gasto se ajusta en contratación y personal}
+\framesubtitle{Proyecto de Ley\quad \ley{227}{Art. 17 (OPS)}\quad \ley{227}{16 (personal)}}
 \begin{itemize}\bulletspace
 \item \textbf{OPS.} El gasto se reduce 50\% en 2027 frente a 2026, en las entidades del presupuesto nacional. Desde 2028 puede crecer hasta la inflación.
 \item \textbf{Personal.} El gasto nominal se reduce 20\% en 2028 frente a 2027, excluyendo a la Fuerza Pública. En 2029 y 2030, el límite es la meta de inflación más 0,5 puntos.
@@ -155,6 +163,7 @@ Ropa de uso corriente & 19\% & 19\%\\
 \end{frame}
 
 \begin{frame}{Renta incorpora una tarifa marginal del 9\%}
+\framesubtitle{Proyecto de Ley\quad \ley{258}{Art. 48}}
 \begin{tabular}{lrr}
 \toprule
 \textbf{Base gravable anual} & \textbf{Hoy} & \textbf{Proyecto}\\
@@ -172,6 +181,7 @@ Más de 720 y hasta 1.090 UVT & 0\% & 9\%\\
 \end{frame}
 
 \begin{frame}{Menores deducciones elevan la base del impuesto}
+\framesubtitle{Proyecto de Ley\quad \ley{258}{Art. 47}\quad \ley{259}{49}\quad \ley{333}{106.1}}
 \small
 \begin{tabularx}{\textwidth}{Xrr}
 \toprule
@@ -186,10 +196,11 @@ Tope global de exentas y deducciones & 1.340 UVT & 1.180 UVT\\
 \textbf{La exención laboral máxima pasa de \$\ExentaAntes{} a \$\ExentaDespues{} al año.}
 \medskip
 La deducción adicional eliminada equivale a \$\Dependiente{} por dependiente al año, hasta cuatro dependientes.
-\src{\ley{258}{Artículos 47, 49 y 106}. UVT 2026. Se conserva el límite global del 40\%. La deducción por dependientes del artículo 387 del ET es distinta y no se elimina por esta disposición. Una deducción reduce la base, no el impuesto peso por peso.}
+\src{\ley{258}{Art. 47}, \ley{259}{art. 49} y \ley{333}{art. 106.1}. UVT 2026. Se conserva el límite global del 40\%. La deducción por dependientes del artículo 387 del ET es distinta y no se elimina por esta disposición. Una deducción reduce la base, no el impuesto peso por peso.}
 \end{frame}
 
 \begin{frame}{Las empresas vuelven a pagar aportes hoy exonerados}
+\framesubtitle{Proyecto de Ley\quad \ley{228}{Art. 20}}
 \small
 \begin{tabularx}{\textwidth}{Xrrr}
 \toprule
@@ -207,6 +218,7 @@ Hoy, las sociedades elegibles están exoneradas por trabajadores con salarios in
 \end{frame}
 
 \begin{frame}{SENA e ICBF dependerían más de la nómina}
+\framesubtitle{Proyecto de Ley\quad \ley{228}{Art. 20}\quad \ley{333}{106.1}}
 \begin{itemize}\bulletspace
 \item Las mayores contribuciones empresariales sustituyen parte de los recursos que hoy aporta la Nación.
 \item El artículo 106 deroga el artículo 243 del ET, que reserva una parte de renta empresarial y establece garantías de financiación.
@@ -217,6 +229,7 @@ Hoy, las sociedades elegibles están exoneradas por trabajadores con salarios in
 \end{frame}
 
 \begin{frame}{La tarifa empresarial general baja al 31\%}
+\framesubtitle{Proyecto de Ley\quad \ley{266}{Art. 57}}
 \begin{center}
 \begin{tabular}{lrrr}
 \toprule
@@ -233,6 +246,7 @@ Una empresa con renta gravable de \$1.000 millones pagaría \$350 millones a la 
 \end{frame}
 
 \begin{frame}{El trabajador aporta más a salud por encima de dos mínimos}
+\framesubtitle{Proyecto de Ley\quad \ley{230}{Art. 21}}
 \begin{columns}[T]
 \begin{column}{.53\textwidth}
 \small
@@ -261,6 +275,7 @@ Con cuatro mínimos, o \$\SalarioEjemplo{} mensuales, pasa de \$\SaludAntes{} a 
 \end{frame}
 
 \begin{frame}{Un cuarto del aporte a las cajas pasa a salud}
+\framesubtitle{Proyecto de Ley\quad \ley{231}{Art. 22}\quad \ley{231}{23}\quad \ley{232}{24}}
 \begin{center}
 \begin{tikzpicture}
 \fill[teal] (0,0) rectangle (2,1.15);
@@ -279,6 +294,7 @@ El fondo de protección al cesante (FOSFEC) aporta excedentes disponibles al cie
 \end{frame}
 
 \begin{frame}{La normalización ofrece un trato especial al incumplimiento}
+\framesubtitle{Proyecto de Ley\quad \ley{286}{Art. 70}}
 \begin{itemize}\bulletspace
 \item Quien tenga activos omitidos o pasivos inexistentes a enero de 2027 puede normalizarlos con una tarifa de \textbf{15\%}.
 \item La inclusión no genera renta por el activo omitido y excluye sanciones y acción penal por la omisión normalizada.
@@ -289,6 +305,7 @@ El fondo de protección al cesante (FOSFEC) aporta excedentes disponibles al cie
 \end{frame}
 
 \begin{frame}{RUGE ofrece tarifas menores a grandes inversiones}
+\framesubtitle{Proyecto de Ley\quad \ley{274}{Art. 69}}
 \small Régimen especial para proyectos de inversión nueva.
 \par
 \begin{tabularx}{\textwidth}{Xrr}
@@ -308,6 +325,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \end{frame}
 
 \begin{frame}{El artículo 95 abre una vía de alivio a Ecopetrol}
+\framesubtitle{Proyecto de Ley\quad \ley{321}{Art. 95}}
 \begin{itemize}\bulletspace
 \item La DIAN podrá transar o conciliar tributos de importación de combustibles, por declaraciones hasta diciembre de 2025.
 \item Exige disputas superiores a \textbf{2 millones de UVT}, cerca de \textbf{\$104.748 millones} con UVT 2026.
@@ -318,6 +336,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \end{frame}
 
 \begin{frame}{Las ganancias de los hogares pobres dependen de la devolución}
+\framesubtitle{Medidas simuladas\quad \ley{228}{Arts. 20--21}\quad \ley{234}{27--40}\quad \ley{248}{42--49}\quad \ley{262}{56}\quad \ley{333}{106}}
 \centering
 \input{data/grafico_deciles.tex}
 \par\smallskip
@@ -326,6 +345,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \end{frame}
 
 \begin{frame}{El ajuste necesita una distribución defendible}
+\framesubtitle{Preferencias comentadas\quad \ley{274}{Art. 69}\quad \ley{286}{70}\quad \ley{321}{95}}
 \begin{itemize}\bulletspace
 \item El proyecto combina recortes, mayores aportes y cambios tributarios. La necesidad del ajuste sigue vigente.
 \item Su efecto depende de ejecutar los recortes, recaudar los ingresos y hacer funcionar la compensación del IVA.
@@ -338,6 +358,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \appendix
 
 \begin{frame}{Anexo. Falta medir la cobertura de las compras}
+\framesubtitle{Marco propuesto para EfectIVA\quad \ley{241}{Art. 38}\quad \ley{243}{39}\quad \ley{244}{40}}
 \begin{itemize}\bulletspace
 \item La DIAN dispuso reportes de facturas para \textbf{17,4 millones de personas} en 2025. No informa allí su distribución por ingresos.
 \item Una factura a ``consumidor final'' registra la venta, pero no identifica al beneficiario de la devolución.
@@ -347,6 +368,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \end{frame}
 
 \begin{frame}{Anexo. Qué supone la incidencia por deciles}
+\framesubtitle{Medidas simuladas\quad \ley{228}{Arts. 20--21}\quad \ley{234}{27--40}\quad \ley{248}{42--49}\quad \ley{262}{56}\quad \ley{333}{106}}
 \begin{itemize}\bulletspace
 \item \textbf{Base.} ENPH 2016--2017 actualizada y calibrada a los recaudos oficiales. Deciles de gasto, no de ingreso.
 \item \textbf{Factura.} Se aproxima por el lugar de compra. La cobertura simulada no mide la facturación electrónica de 2026.

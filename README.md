@@ -51,3 +51,7 @@ La secuencia de bloques sigue la magnitud absoluta del efecto fiscal en 2030, in
 La tabla de IVA compara una selección de bienes en el régimen general de 2026 con el proyecto desde 2028. `data/iva_antes_despues.json` identifica partidas y artículos. Excluido y exento al 0% no son equivalentes.
 
 La gráfica por deciles da crédito a Jairo Núñez Méndez, *Bienestar social y Ley de Rescate Económico*, borrador para discusión del 30 de octubre de 2026, tabla 1, p. 8. `data/incidencia_nunez.csv` conserva las cifras publicadas con dos decimales y la gráfica las muestra con uno. Compara devolución plena y restringida a compras con factura. Son deciles de gasto per cápita, no de ingreso. La simulación calibrada cubre medidas sobre hogares y no toda la reforma. El anexo precisa sus supuestos. No se reproducen los microdatos ni se publica el documento privado compartido en Mesa Fiscal.
+
+## Referencias al articulado
+
+Las diapositivas de medidas muestran bajo el título los artículos pertinentes del proyecto, con enlaces al inicio de cada disposición en el PDF oficial. La tabla de IVA identifica además el artículo por grupo de bienes. El balance agregado remite a la tabla 14 de la exposición de motivos. Las gráficas de incidencia identifican las medidas simuladas y conservan el crédito a Jairo Núñez. La correspondencia se registra en `data/referencias_articulos.json`. Se cotejaron 42 referencias con sus destinos y las anotaciones del PDF.
