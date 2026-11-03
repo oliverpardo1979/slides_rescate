@@ -10,13 +10,13 @@ Abrir `main.tex` en Overleaf, con pdfLaTeX, XeLaTeX o Tectonic. El repositorio c
 tectonic main.tex
 ```
 
-El PDF se genera como `main.pdf`. Las primeras 19 diapositivas constituyen la presentación. Al final hay dos anexos.
+El PDF se genera como `main.pdf`. Las primeras 18 diapositivas constituyen la presentación. Al final hay dos anexos.
 
 ## Unidades y fuentes
 
 Las conversiones usan UVT 2026 de $52.374 y salario mínimo 2026 de $1.750.905. Los pesos son equivalencias ilustrativas. Las unidades de las vigencias de aplicación serán diferentes. Los equivalentes mensuales de renta dividen la base o impuesto anual entre 12 y no equivalen a salario bruto o retención mensual.
 
-Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. Las diapositivas 3 y 4 distinguen gasto neto, cotizaciones, impuestos netos, reasignación de las cajas y efectos macroeconómicos. `data/clasificacion_medidas.json` identifica cada fila fuente. `data/ajuste_oficial.csv` y `.json` reconstruyen 2027–2030 sin duplicar medidas. Los cuadros y el gráfico fiscal muestran una sola cifra decimal. Los cálculos conservan la precisión de la fuente y los totales se redondean después de sumar. Las diferencias pequeñas de conciliación se conservan solo en los archivos de cálculo.
+Las cifras fiscales son estimaciones de Hacienda, tabla 14 de la exposición de motivos, página 204. No son ahorros certificados desde microdatos. La diapositiva 3 distingue gasto neto, cotizaciones, impuestos netos, reasignación de las cajas y efectos macroeconómicos. `data/clasificacion_medidas.json` identifica cada fila fuente. `data/ajuste_oficial.csv` y `.json` reconstruyen 2027–2030 sin duplicar medidas. Los cuadros y el gráfico fiscal muestran una sola cifra decimal. Los cálculos conservan la precisión de la fuente y los totales se redondean después de sumar. Las diferencias pequeñas de conciliación se conservan solo en los archivos de cálculo.
 
 Las referencias aparecen al pie de cada diapositiva. [Proyecto oficial](https://www.camara.gov.co/ley-rescate-economico/).
 
@@ -40,6 +40,6 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 ## Formato académico
 
-El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 19 diapositivas y dos anexos.
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 18 diapositivas y dos anexos.
 
-Los cuadros 3 y 4 ordenan las medidas de mayor a menor impacto en 2030, con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. El cuadro principal abre los impuestos por medida y el detalle conserva los subtotales de cotizaciones e ingresos tributarios netos.
+El cuadro 3 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por aporte en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.

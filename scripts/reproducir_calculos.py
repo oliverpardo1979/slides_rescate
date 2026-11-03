@@ -89,8 +89,7 @@ def main():
         else:cells=['',*cells]
         return ' & '.join(cells)+r'\\'
     # Orden por impacto de 2030 antes del redondeo. Los efectos negativos quedan al final.
-    mainrows=[dict(r,summary=False) for r in config['filas'] if r['grupo']!='cotizaciones']
-    mainrows.append({'id':'cotizaciones','etiqueta':'Mayores cotizaciones a salud, SENA e ICBF','grupo':'cotizaciones','summary':True})
+    mainrows=[dict(r,summary=False) for r in config['filas']]
     def sortvalue(r):
         values=fiscal['2030']['resumen'] if r['summary'] else fiscal['2030']['medidas']
         return Decimal(values[r['id']])
@@ -98,11 +97,6 @@ def main():
     latex=[line(r['etiqueta'],r['id'],summary=r['summary'],group=r['grupo']) for r in mainrows]
     latex.extend([r'\midrule',line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
     (ROOT/'data/cuadro_ajuste.tex').write_text('\n'.join(latex)+'\n',encoding='utf-8')
-    incomerows=sorted((r for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']),key=lambda r:Decimal(fiscal['2030']['medidas'][r['id']]),reverse=True)
-    income=[line(r['etiqueta'],r['id'],group=r['grupo']) for r in incomerows]
-    vals={y:sum(Decimal(fiscal[y]['medidas'][r['id']]) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']) for y in fiscal}
-    income.extend([r'\midrule',line('Mayores cotizaciones','cotizaciones',summary=True),line('Ingresos tributarios netos','impuestos_y_gestion_netos',summary=True),r'\midrule',r' & \textbf{Mayores ingresos netos por estas medidas} & \textbf{'+display(vals['2027'])+r'} & \textbf{'+display(vals['2030'])+r'}\\',r'\bottomrule'])
-    (ROOT/'data/cuadro_ingresos.tex').write_text('\n'.join(income)+'\n',encoding='utf-8')
     for threshold in [8140000,5530000,2580000]:print('RUGE',threshold,'UVT =',threshold*UVT,'COP')
     print('Conversiones regeneradas y sumas conciliadas para 2027-2030.')
 

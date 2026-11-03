@@ -1148,3 +1148,153 @@ Historial acumulativo. Las correcciones se registran como nuevas corridas.
 | RENTA_EMPRESA31 | 310 | 310.00 | 1000*0.31, millonesCOP | PASS |
 | NORMALIZACION15 | 150 | 150.00 | 1000*0.15, millonesCOP | PASS |
 | DIAGRAMA_CAJAS | 25.00 | 25 | Anchos de segmentos TikZ,1de4puntos | PASS |
+## 2026-11-03T21:40:50.573743+00:00 — cuadro_unico, base d359e98c0ee93d0650cdbe7dcaa58254bb007146
+
+144 PASS, 0 FAIL.
+
+| Afirmación | Mostrado | Recalculado | Método | Resultado |
+|---|---:|---:|---|---|
+| COP_UVTpesos | 52374 | 52374 | UVT2026 según resolución238/2025 | PASS |
+| COP_SMpesos | 1750905 | 1750905 | SMLMV2026 según decreto159/2026 | PASS |
+| COP_PisoAnual | 37709280 | 37709280 | 720*52374 | PASS |
+| COP_PisoMensual | 3142440 | 3142440 | 720*52374/12 | PASS |
+| COP_TechoAnual | 57087660 | 57087660 | 1090*52374 | PASS |
+| COP_TechoMensual | 4757305 | 4757305 | 1090*52374/12 | PASS |
+| COP_EjemploImpuesto | 848459 | 848459 | (900-720)*0.09*52374 | PASS |
+| COP_EjemploMes | 70705 | 70705 | (900-720)*0.09*52374/12 | PASS |
+| COP_ExentaAntes | 41375460 | 41375460 | 790*52374 | PASS |
+| COP_ExentaDespues | 32995620 | 32995620 | 630*52374 | PASS |
+| COP_Dependiente | 3770928 | 3770928 | 72*52374 | PASS |
+| COP_SalarioEjemplo | 7003620 | 7003620 | 4*1750905 | PASS |
+| COP_SaludAntes | 280145 | 280145 | 4*1750905*0.04 | PASS |
+| COP_SaludDespues | 385199 | 385199 | 4*1750905*0.055 | PASS |
+| COP_SaludDiferencia | 105054 | 105054 | 4*1750905*(0.055-0.04), solo aporte a salud | PASS |
+| COP_EmpresaTotal | 945489 | 945489 | 4*1750905*(0.085+0.02+0.03) | PASS |
+| COP_DevolucionTope | 288057 | 288057 | 5.5*52374 | PASS |
+| GRAFICO_2027 | 2.4 | 2.4 | PDF oficial p204, redondeado a un decimal | PASS |
+| GRAFICO_2028 | 3.6 | 3.6 | PDF oficial p204, redondeado a un decimal | PASS |
+| GRAFICO_2029 | 3.9 | 3.9 | PDF oficial p204, redondeado a un decimal | PASS |
+| GRAFICO_2030 | 4.1 | 4.1 | PDF oficial p204, redondeado a un decimal | PASS |
+| FILAS_SIN_DOBLE_CONTEO | 20 | 20 | Cada medida fuente se utiliza una sola vez | PASS |
+| COBERTURA_DE_MEDIDAS | 20 | 20 | Cotejo exhaustivo de filas de medidas, sin subtotales ni estrategia adicional | PASS |
+| SALIDA_eficiencia_gasto_2027 | 0.39 | 0.39 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_personal_2027 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ops_2027 | 0.19 | 0.19 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_sgp_2027 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_empleador_2027 | 0.56 | 0.56 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_personas_2027 | 0.27 | 0.27 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_impuestos_salud_2027 | 0.49 | 0.49 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_iva_neto_2027 | 0.17 | 0.17 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_renta_personas_2027 | 0.13 | 0.13 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_otros_impuestos_gestion_2027 | 0.05 | 0.05 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_normalizacion_2027 | 0.12 | 0.12 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_rebajas_tributarias_2027 | -0.24 | -0.24 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ccf_2027 | 0.14 | 0.14 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_efectos_macro_2027 | 0.08 | 0.08 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_diferencia_suma_2027 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_total_ley_2027 | 2.35 | 2.35 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| CONCILIACION_2027 | 2.35 | 2.35 | Suma de todas las medidas y diferencia publicada, sin duplicación | PASS |
+| SALIDA_eficiencia_gasto_2028 | 0.31 | 0.31 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_personal_2028 | 0.24 | 0.24 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ops_2028 | 0.19 | 0.19 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_sgp_2028 | -0.01 | -0.01 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_empleador_2028 | 0.41 | 0.41 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_personas_2028 | 0.23 | 0.23 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_impuestos_salud_2028 | 0.53 | 0.53 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_iva_neto_2028 | 1.05 | 1.05 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_renta_personas_2028 | 0.57 | 0.57 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_otros_impuestos_gestion_2028 | 0.18 | 0.18 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_normalizacion_2028 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_rebajas_tributarias_2028 | -0.47 | -0.47 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ccf_2028 | 0.14 | 0.14 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_efectos_macro_2028 | 0.23 | 0.23 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_diferencia_suma_2028 | -0.02 | -0.02 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_total_ley_2028 | 3.58 | 3.58 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| CONCILIACION_2028 | 3.58 | 3.58 | Suma de todas las medidas y diferencia publicada, sin duplicación | PASS |
+| SALIDA_eficiencia_gasto_2029 | 0.31 | 0.31 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_personal_2029 | 0.47 | 0.47 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ops_2029 | 0.18 | 0.18 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_sgp_2029 | -0.10 | -0.10 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_empleador_2029 | 0.44 | 0.44 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_personas_2029 | 0.24 | 0.24 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_impuestos_salud_2029 | 0.54 | 0.54 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_iva_neto_2029 | 1.05 | 1.05 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_renta_personas_2029 | 0.56 | 0.56 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_otros_impuestos_gestion_2029 | 0.20 | 0.20 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_normalizacion_2029 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_rebajas_tributarias_2029 | -0.47 | -0.47 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ccf_2029 | 0.15 | 0.15 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_efectos_macro_2029 | 0.30 | 0.30 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_diferencia_suma_2029 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_total_ley_2029 | 3.87 | 3.87 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| CONCILIACION_2029 | 3.87 | 3.87 | Suma de todas las medidas y diferencia publicada, sin duplicación | PASS |
+| SALIDA_eficiencia_gasto_2030 | 0.31 | 0.31 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_personal_2030 | 0.52 | 0.52 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ops_2030 | 0.18 | 0.18 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_sgp_2030 | -0.20 | -0.20 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_empleador_2030 | 0.45 | 0.45 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_cotizaciones_personas_2030 | 0.24 | 0.24 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_impuestos_salud_2030 | 0.54 | 0.54 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_iva_neto_2030 | 1.06 | 1.06 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_renta_personas_2030 | 0.57 | 0.57 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_otros_impuestos_gestion_2030 | 0.21 | 0.21 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_normalizacion_2030 | 0.00 | 0.00 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_rebajas_tributarias_2030 | -0.47 | -0.47 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_ccf_2030 | 0.15 | 0.15 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_efectos_macro_2030 | 0.54 | 0.54 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_diferencia_suma_2030 | -0.01 | -0.01 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| SALIDA_total_ley_2030 | 4.09 | 4.09 | Filas identificadas de la página 204 del PDF oficial | PASS |
+| CONCILIACION_2030 | 4.09 | 4.09 | Suma de todas las medidas y diferencia publicada, sin duplicación | PASS |
+| FISCAL_eficiencia_gasto_2027 | 0.4 | 0.4 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_eficiencia_gasto_2030 | 0.3 | 0.3 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_personal_2027 | 0.0 | 0.0 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_personal_2030 | 0.5 | 0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_ops_2027 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_ops_2030 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_sgp_2027 | 0.0 | 0.0 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_sgp_2030 | -0.2 | -0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_cotizaciones_empleador_2027 | 0.6 | 0.6 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_cotizaciones_empleador_2030 | 0.5 | 0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_cotizaciones_personas_2027 | 0.3 | 0.3 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_cotizaciones_personas_2030 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_impuestos_salud_2027 | 0.5 | 0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_impuestos_salud_2030 | 0.5 | 0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_iva_neto_2027 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_iva_neto_2030 | 1.1 | 1.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_renta_personas_2027 | 0.1 | 0.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_renta_personas_2030 | 0.6 | 0.6 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_otros_impuestos_gestion_2027 | 0.1 | 0.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_otros_impuestos_gestion_2030 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_normalizacion_2027 | 0.1 | 0.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_normalizacion_2030 | 0.0 | 0.0 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_rebajas_tributarias_2027 | -0.2 | -0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_rebajas_tributarias_2030 | -0.5 | -0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_ccf_2027 | 0.1 | 0.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_ccf_2030 | 0.2 | 0.2 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_efectos_macro_2027 | 0.1 | 0.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_efectos_macro_2030 | 0.5 | 0.5 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_total_ley_2027 | 2.4 | 2.4 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| FISCAL_total_ley_2030 | 4.1 | 4.1 | TeX y PDF contra sumas del PDF oficial p204, redondeadas a un decimal | PASS |
+| RESUMEN_menor_gasto_neto_2027 | 0.58 | 0.58 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_menor_gasto_neto_2028 | 0.73 | 0.73 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_menor_gasto_neto_2029 | 0.86 | 0.86 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_menor_gasto_neto_2030 | 0.81 | 0.81 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_cotizaciones_2027 | 0.83 | 0.83 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_cotizaciones_2028 | 0.64 | 0.64 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_cotizaciones_2029 | 0.68 | 0.68 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_cotizaciones_2030 | 0.69 | 0.69 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_impuestos_y_gestion_netos_2027 | 0.72 | 0.72 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_impuestos_y_gestion_netos_2028 | 1.86 | 1.86 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_impuestos_y_gestion_netos_2029 | 1.88 | 1.88 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RESUMEN_impuestos_y_gestion_netos_2030 | 1.91 | 1.91 | Agrupación por mecanismo desde el PDF oficial | PASS |
+| RUGE_8140000 | 426.3 | 426.3 | 8140000*52374/1e9, redondeado a0.1 | PASS |
+| RUGE_5530000 | 289.6 | 289.6 | 5530000*52374/1e9, redondeado a0.1 | PASS |
+| RUGE_2580000 | 135.1 | 135.1 | 2580000*52374/1e9, redondeado a0.1 | PASS |
+| UMBRAL95 | 104748 | 104748 | 2e6*52374/1e6; millones COP | PASS |
+| PRECIO_IVA5 | 105000 | 105000.00 | 100000*1.05 | PASS |
+| PRECIO_IVA19 | 119000 | 119000.00 | 100000*1.19 | PASS |
+| VAR_PRECIO_IVA | 13.3 | 13.33333333333333333333333330 | (119/105-1)*100 | PASS |
+| RENTA_EMPRESA35 | 350 | 350.00 | 1000*0.35, millonesCOP | PASS |
+| RENTA_EMPRESA31 | 310 | 310.00 | 1000*0.31, millonesCOP | PASS |
+| NORMALIZACION15 | 150 | 150.00 | 1000*0.15, millonesCOP | PASS |
+| DIAGRAMA_CAJAS | 25.00 | 25 | Anchos de segmentos TikZ,1de4puntos | PASS |

@@ -66,3 +66,8 @@ Por instrucción de Oliver, los cuadros de gasto e ingresos, el gráfico del aju
 ## Medidas ordenadas y colores por mecanismo
 
 Por instrucción de Oliver, se abre el subtotal tributario en sus medidas en el cuadro 3 y se ordenan los cuadros 3 y 4 por efecto de 2030, antes de redondear. Los efectos negativos quedan al final. Azul (I) identifica ingresos, incluidos los efectos macro esperados y las rebajas de impuestos. Rojo oscuro (G) identifica gasto, incluido el mayor SGP. Gris (R) identifica la reasignación de las cajas. Las letras conservan la distinción al imprimir en blanco y negro. El cuadro 4 mantiene subtotales de cotizaciones y tributos, con mayores ingresos netos de 2,6 puntos del PIB en 2030. Se conserva un decimal. La comprobación de orden descendente y la inspección visual se completaron, con 164 cotejos numéricos aprobados y sin desbordamientos en el PDF final.
+
+
+## Un único cuadro para 2027 y 2030
+
+Por instrucción de Oliver, la diapositiva 3 reúne todas las medidas que antes se repartían entre los cuadros 3 y 4. Se muestran por separado las cotizaciones de empleadores y personas, además de impuestos, gasto, reasignación y efecto macro esperado. Se conserva el orden por aporte en 2030, los colores por mecanismo y una cifra decimal. Se elimina el cuadro de ingresos separado. El deck vuelve a 18 diapositivas y dos anexos. Compilación sin desbordamientos, revisión visual y 144 cotejos aprobados.
