@@ -112,5 +112,10 @@
       "medidas_fuente": [],
       "criterio": "no cuantificado, no se trata como cero"
     }
-  ]
+  ],
+  "cierre_transversal": {
+    "diapositiva": 18,
+    "contenido": "Incidencia de medidas sobre hogares por decil de gasto, antes de conclusión",
+    "fuente": "Jairo Núñez Méndez (2026), tabla 1, p.8"
+  }
 }

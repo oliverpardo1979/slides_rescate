@@ -103,13 +103,26 @@ every node near coord/.append style={font=\small},enlarge x limits=.2]
 \end{frame}
 
 \begin{frame}{La reforma amplía el IVA y devuelve una parte}
-\begin{itemize}\bulletspace
-\item Desde 2028 se eliminan las tarifas reducidas de 5\% de los artículos 468-1 y 468-3 y se revisan los bienes excluidos.
-\item Se conservan tratamientos especiales para una selección de bienes y servicios esenciales.
-\item Los hogares sin devolución asumen el mayor IVA sobre las compras afectadas, según su traslado a precios.
-\end{itemize}
-\take{Un bien con precio sin IVA de \$100.000 pasa de \$105.000 a \$119.000 si cambia de 5\% a 19\%.}
-\src{\ley{248}{Artículos 42 y siguientes}, y \ley{333}{artículo 106}. Ejemplo con precio sin IVA constante: aumento del precio final de 13,3\%. Algunas modificaciones de IVA rigen antes de 2028. No todos los bienes pasan al 19\%.}
+{\fontsize{9.5}{11.4}\selectfont\color{black}\mdseries\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{lll}
+\toprule
+\textbf{Bien (selección)} & \textbf{Antes (2026)} & \textbf{Proyecto (2028)}\\
+\midrule
+Papa y yuca & Excluidos & Excluidos\\
+Pan horneado y arepa de maíz & Excluidos & Excluidos\\
+Banano y manzana & Excluidos & \textcolor{rust}{19\%}\\
+Tomate y cebolla frescos & Excluidos & \textcolor{rust}{19\%}\\
+Carne de res, pollo, leche y huevos & 0\% (exentos) & 0\% (exentos)\\
+Queso fresco & 0\% (exento) & \textcolor{rust}{19\%}\\
+Medicamentos (30.03 y 30.04) & 0\% (exentos) & 0\% (exentos)\\
+Café tostado & 5\% & \textcolor{rust}{19\%}\\
+Pastas sin cocer ni rellenar & 5\% & \textcolor{rust}{19\%}\\
+Ropa de uso corriente & 19\% & 19\%\\
+\bottomrule
+\end{tabular}}
+\par\smallskip
+{\footnotesize Excluido: no cobra IVA y el IVA de insumos queda como costo. Exento al 0\%: permite recuperar el IVA de insumos.}
+\src{\href{https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm}{Estatuto Tributario, arts. 424, 468, 468-1 y 477}. Proyecto, \ley{248}{art. 42}, \ley{254}{art. 46} y \ley{333}{art. 106}. Régimen general, sin excepciones territoriales. Ejemplo: con precio sin IVA constante de \$100.000, pasar de 5\% a 19\% eleva el precio de \$105.000 a \$119.000 (13,3\%).}
 \end{frame}
 
 \begin{frame}{EfectIVA depende del IVA atribuible a cada persona}
@@ -304,6 +317,14 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \src{\ley{321}{Artículo 95}. Ecopetrol, comunicados de \href{https://www.ecopetrol.com.co/wps/wcm/connect/e0f637ae-7f70-47c8-bca6-db04c49a68c4/comunicado-dian-esp-original.pdf?MOD=AJPERES}{6 de mayo} y \href{https://www.ecopetrol.com.co/wps/wcm/connect/75535020-ecc2-44b7-afca-c14f3350145d/segundo-comunicado-dian-final-esp-1.pdf?MOD=AJPERES}{26 de junio de 2025}. La norma no las nombra ni limita el beneficio a ellas. El umbral usa UVT al determinar la obligación.}
 \end{frame}
 
+\begin{frame}{Las ganancias de los hogares pobres dependen de la devolución}
+\centering
+\input{data/grafico_deciles.tex}
+\par\smallskip
+{\small Con devolución plena ganan los tres primeros deciles. Con devolución limitada a factura, todos pierden en promedio.}
+\src{Fuente: Jairo Núñez Méndez (2026), \emph{Bienestar social y Ley de Rescate Económico}, borrador del 30 de octubre, tabla 1, p. 8. ENPH 2016--2017, versión calibrada. Recursos = mayor entre ingreso disponible y gasto. Incluye IVA, renta, cotizaciones e impuestos saludables, no toda la reforma. Supuestos y límites en el anexo.}
+\end{frame}
+
 \begin{frame}{El ajuste necesita una distribución defendible}
 \begin{itemize}\bulletspace
 \item El proyecto combina recortes, mayores aportes y cambios tributarios. La necesidad del ajuste sigue vigente.
@@ -323,6 +344,16 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \item Para evaluar EfectIVA hace falta cruzar compras e IVA identificados con población elegible, territorio y tipo de comercio.
 \end{itemize}
 \src{DIAN, \href{https://www.dian.gov.co/atencionciudadano/Documents/Informe-de-Gestion-DIAN-2025-30012026.pdf}{Informe de gestión 2025, pp. 14--15}. Personas con reportes disponibles no equivale a compradores frecuentes ni a cobertura de todo su consumo.}
+\end{frame}
+
+\begin{frame}{Anexo. Qué supone la incidencia por deciles}
+\begin{itemize}\bulletspace
+\item \textbf{Base.} ENPH 2016--2017 actualizada y calibrada a los recaudos oficiales. Deciles de gasto, no de ingreso.
+\item \textbf{Factura.} Se aproxima por el lugar de compra. La cobertura simulada no mide la facturación electrónica de 2026.
+\item \textbf{Incidencia.} Cantidades y empleo constantes. El mayor aporte del empleador se atribuye íntegramente al trabajador.
+\item \textbf{Devolución.} Elegibilidad aproximada por decil. No simula el mínimo para pobreza extrema ni resta la compensación de IVA vigente. No cubre recortes de gasto ni rebajas empresariales.
+\end{itemize}
+\src{Jairo Núñez Méndez (2026), \emph{Bienestar social y Ley de Rescate Económico: microsimulación con la ENPH, focalización de EfectIVA y escenario de crisis fiscal}. Documento técnico, borrador para discusión del 30 de octubre, pp. 4--7 y 14. Cálculos reproducidos en la gráfica desde su tabla 1, no desde los microdatos. Material compartido por Daniel Wills en Mesa Fiscal el 1 de noviembre.}
 \end{frame}
 
 \begin{frame}{Anexo. Convenciones y fuentes}

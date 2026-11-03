@@ -1,0 +1,16 @@
+% Fuente: Jairo Núñez (2026), tabla 1, página 8. Una cifra decimal.
+\begin{tikzpicture}
+\begin{axis}[width=\textwidth,height=4.65cm,xmin=.7,xmax=10.3,ymin=-6,ymax=3.1,
+xtick={1,...,10},ytick={-6,-4,-2,0,2},axis lines=left,
+xlabel={Decil de gasto por persona (1 = menor gasto)},
+ylabel={Cambio en recursos (\%)},
+xlabel style={font=\small},ylabel style={font=\small},
+tick label style={font=\small},ymajorgrids=true,grid style={gray!15},
+legend style={at={(.02,.04)},anchor=south west,draw=none,font=\scriptsize,fill=white},
+extra y ticks={0},extra y tick labels={},extra y tick style={grid=major,major grid style={black,thin}}]
+\addplot[teal,thick,mark=*] coordinates {(1,2.0)(2,2.4)(3,2.4)(4,-0.1)(5,-0.7)(6,-1.4)(7,-3.4)(8,-3.5)(9,-4.0)(10,-5.2)};
+\addlegendentry{Devolución plena}
+\addplot[rust,thick,dashed,mark=square*] coordinates {(1,-0.4)(2,-0.8)(3,-1.0)(4,-1.8)(5,-2.1)(6,-2.5)(7,-3.4)(8,-3.5)(9,-4.0)(10,-5.2)};
+\addlegendentry{Limitada a compras con factura}
+\end{axis}
+\end{tikzpicture}

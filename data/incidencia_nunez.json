@@ -1,0 +1,85 @@
+{
+  "autor": "Jairo Núñez Méndez",
+  "titulo": "Bienestar social y Ley de Rescate Económico",
+  "version": "Borrador para discusión, 30 de octubre de 2026",
+  "fuente": "Tabla 1, página 8",
+  "sha256_documento": "7af6dcddeda0e3bbf911e9f691bc7cf2d87def3f40247c0f72669ac4f06b8fb3",
+  "recepcion": "Compartido por Daniel Wills en Mesa Fiscal, 1 de noviembre de 2026",
+  "unidad": "Cambio en los recursos del hogar, porcentaje. Recursos = máximo entre ingreso disponible y gasto.",
+  "deciles": "Gasto per cápita del hogar, 1 = menor gasto",
+  "modelo": "Microsimulación estática ENPH 2016-2017, versión calibrada a estimaciones oficiales",
+  "medidas": [
+    "IVA",
+    "EfectIVA",
+    "Renta de personas naturales",
+    "Cotizaciones personales",
+    "Focalización de exoneración patronal",
+    "Impuestos saludables"
+  ],
+  "exclusiones": [
+    "Recortes de gasto público",
+    "Rebaja de renta empresarial",
+    "RUGE",
+    "Patrimonio",
+    "Administración tributaria"
+  ],
+  "supuestos": [
+    "Cantidades y empleo constantes",
+    "Mayor aporte patronal atribuido íntegramente al trabajador",
+    "Lugar de compra como aproximación a la factura",
+    "No incluye mínimo de devolución para pobreza extrema",
+    "No descuenta compensación de IVA vigente"
+  ],
+  "datos": [
+    {
+      "decil": 1,
+      "plena": "1.97",
+      "restringida": "-0.38"
+    },
+    {
+      "decil": 2,
+      "plena": "2.41",
+      "restringida": "-0.77"
+    },
+    {
+      "decil": 3,
+      "plena": "2.44",
+      "restringida": "-1.00"
+    },
+    {
+      "decil": 4,
+      "plena": "-0.05",
+      "restringida": "-1.79"
+    },
+    {
+      "decil": 5,
+      "plena": "-0.65",
+      "restringida": "-2.08"
+    },
+    {
+      "decil": 6,
+      "plena": "-1.38",
+      "restringida": "-2.45"
+    },
+    {
+      "decil": 7,
+      "plena": "-3.38",
+      "restringida": "-3.38"
+    },
+    {
+      "decil": 8,
+      "plena": "-3.53",
+      "restringida": "-3.53"
+    },
+    {
+      "decil": 9,
+      "plena": "-4.03",
+      "restringida": "-4.03"
+    },
+    {
+      "decil": 10,
+      "plena": "-5.16",
+      "restringida": "-5.16"
+    }
+  ]
+}

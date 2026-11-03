@@ -1,0 +1,552 @@
+{
+  "fuente": "Bienestar social y Ley de Rescate Económico",
+  "autor": "Jairo Núñez Méndez",
+  "version": "Borrador para discusión, 30 de octubre de 2026",
+  "pagina": 8,
+  "sha256": "7af6dcddeda0e3bbf911e9f691bc7cf2d87def3f40247c0f72669ac4f06b8fb3",
+  "alcance": "Transcripción de tabla 1, CSV y redondeo de los 20 puntos de la gráfica. No certifica la microsimulación ni la incidencia de toda la reforma.",
+  "PASS": 60,
+  "FAIL": 0,
+  "checks": [
+    {
+      "decil": 1,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "1.97",
+      "esperado": "1.97",
+      "salida": "1.97",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 1,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "1.97",
+      "esperado": "1.97",
+      "salida": "1.97",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 1,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "1.97",
+      "esperado": "2.0",
+      "salida": "2.0",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "2.41",
+      "esperado": "2.41",
+      "salida": "2.41",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "2.41",
+      "esperado": "2.41",
+      "salida": "2.41",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "2.41",
+      "esperado": "2.4",
+      "salida": "2.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "2.44",
+      "esperado": "2.44",
+      "salida": "2.44",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "2.44",
+      "esperado": "2.44",
+      "salida": "2.44",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "2.44",
+      "esperado": "2.4",
+      "salida": "2.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-0.05",
+      "esperado": "-0.05",
+      "salida": "-0.05",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-0.05",
+      "esperado": "-0.05",
+      "salida": "-0.05",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-0.05",
+      "esperado": "-0.1",
+      "salida": "-0.1",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-0.65",
+      "esperado": "-0.65",
+      "salida": "-0.65",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-0.65",
+      "esperado": "-0.65",
+      "salida": "-0.65",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-0.65",
+      "esperado": "-0.7",
+      "salida": "-0.7",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-1.38",
+      "esperado": "-1.38",
+      "salida": "-1.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-1.38",
+      "esperado": "-1.38",
+      "salida": "-1.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-1.38",
+      "esperado": "-1.4",
+      "salida": "-1.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-3.38",
+      "esperado": "-3.38",
+      "salida": "-3.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-3.38",
+      "esperado": "-3.38",
+      "salida": "-3.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-3.38",
+      "esperado": "-3.4",
+      "salida": "-3.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-3.53",
+      "esperado": "-3.53",
+      "salida": "-3.53",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-3.53",
+      "esperado": "-3.53",
+      "salida": "-3.53",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-3.53",
+      "esperado": "-3.5",
+      "salida": "-3.5",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-4.03",
+      "esperado": "-4.03",
+      "salida": "-4.03",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-4.03",
+      "esperado": "-4.03",
+      "salida": "-4.03",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-4.03",
+      "esperado": "-4.0",
+      "salida": "-4.0",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "plena",
+      "canal": "json",
+      "fuente": "-5.16",
+      "esperado": "-5.16",
+      "salida": "-5.16",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "plena",
+      "canal": "csv",
+      "fuente": "-5.16",
+      "esperado": "-5.16",
+      "salida": "-5.16",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "plena",
+      "canal": "grafica",
+      "fuente": "-5.16",
+      "esperado": "-5.2",
+      "salida": "-5.2",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 1,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-0.38",
+      "esperado": "-0.38",
+      "salida": "-0.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 1,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-0.38",
+      "esperado": "-0.38",
+      "salida": "-0.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 1,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-0.38",
+      "esperado": "-0.4",
+      "salida": "-0.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-0.77",
+      "esperado": "-0.77",
+      "salida": "-0.77",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-0.77",
+      "esperado": "-0.77",
+      "salida": "-0.77",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 2,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-0.77",
+      "esperado": "-0.8",
+      "salida": "-0.8",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-1.00",
+      "esperado": "-1.00",
+      "salida": "-1.00",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-1.00",
+      "esperado": "-1.00",
+      "salida": "-1.00",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 3,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-1.00",
+      "esperado": "-1.0",
+      "salida": "-1.0",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-1.79",
+      "esperado": "-1.79",
+      "salida": "-1.79",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-1.79",
+      "esperado": "-1.79",
+      "salida": "-1.79",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 4,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-1.79",
+      "esperado": "-1.8",
+      "salida": "-1.8",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-2.08",
+      "esperado": "-2.08",
+      "salida": "-2.08",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-2.08",
+      "esperado": "-2.08",
+      "salida": "-2.08",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 5,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-2.08",
+      "esperado": "-2.1",
+      "salida": "-2.1",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-2.45",
+      "esperado": "-2.45",
+      "salida": "-2.45",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-2.45",
+      "esperado": "-2.45",
+      "salida": "-2.45",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 6,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-2.45",
+      "esperado": "-2.5",
+      "salida": "-2.5",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-3.38",
+      "esperado": "-3.38",
+      "salida": "-3.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-3.38",
+      "esperado": "-3.38",
+      "salida": "-3.38",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 7,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-3.38",
+      "esperado": "-3.4",
+      "salida": "-3.4",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-3.53",
+      "esperado": "-3.53",
+      "salida": "-3.53",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-3.53",
+      "esperado": "-3.53",
+      "salida": "-3.53",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 8,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-3.53",
+      "esperado": "-3.5",
+      "salida": "-3.5",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-4.03",
+      "esperado": "-4.03",
+      "salida": "-4.03",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-4.03",
+      "esperado": "-4.03",
+      "salida": "-4.03",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 9,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-4.03",
+      "esperado": "-4.0",
+      "salida": "-4.0",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "restringida",
+      "canal": "json",
+      "fuente": "-5.16",
+      "esperado": "-5.16",
+      "salida": "-5.16",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "restringida",
+      "canal": "csv",
+      "fuente": "-5.16",
+      "esperado": "-5.16",
+      "salida": "-5.16",
+      "resultado": "PASS"
+    },
+    {
+      "decil": 10,
+      "escenario": "restringida",
+      "canal": "grafica",
+      "fuente": "-5.16",
+      "esperado": "-5.2",
+      "salida": "-5.2",
+      "resultado": "PASS"
+    }
+  ]
+}

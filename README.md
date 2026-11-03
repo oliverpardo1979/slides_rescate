@@ -10,7 +10,7 @@ Abrir `main.tex` en Overleaf, con pdfLaTeX, XeLaTeX o Tectonic. El repositorio c
 tectonic main.tex
 ```
 
-El PDF se genera como `main.pdf`. Las primeras 18 diapositivas constituyen la presentación. Al final hay dos anexos.
+El PDF se genera como `main.pdf`. Las primeras 19 diapositivas constituyen la presentación. Al final hay tres anexos.
 
 ## Unidades y fuentes
 
@@ -40,8 +40,14 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 ## Formato académico
 
-El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 18 diapositivas y dos anexos.
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 19 diapositivas y tres anexos.
 
 El cuadro 3 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por magnitud del efecto fiscal en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.
 
 La secuencia de bloques sigue la magnitud absoluta del efecto fiscal en 2030, incluido el costo de las rebajas. IVA va primero. Personal y OPS se consideran un bloque. La normalización se presenta como transitoria y RUGE y artículo 95 como beneficios de costo no cuantificado. `data/orden_presentacion.json` documenta el orden y sus fuentes.
+
+## IVA y distribución por deciles
+
+La tabla de IVA compara una selección de bienes en el régimen general de 2026 con el proyecto desde 2028. `data/iva_antes_despues.json` identifica partidas y artículos. Excluido y exento al 0% no son equivalentes.
+
+La gráfica por deciles da crédito a Jairo Núñez Méndez, *Bienestar social y Ley de Rescate Económico*, borrador para discusión del 30 de octubre de 2026, tabla 1, p. 8. `data/incidencia_nunez.csv` conserva las cifras publicadas con dos decimales y la gráfica las muestra con uno. Compara devolución plena y restringida a compras con factura. Son deciles de gasto per cápita, no de ingreso. La simulación calibrada cubre medidas sobre hogares y no toda la reforma. El anexo precisa sus supuestos. No se reproducen los microdatos ni se publica el documento privado compartido en Mesa Fiscal.
