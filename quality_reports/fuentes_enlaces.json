@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_1470_2026.htm",
+    "status": 200,
+    "bytes": 29891,
+    "sha256": "6f68350abb674833b15406a96536dac6decbebcbeae9e57d0a0cc4202e6057c4",
+    "tipo": "text/html"
+  },
+  {
+    "url": "https://normograma.sena.edu.co/compilacion/docs/decreto_0159_2026.htm",
+    "status": 200,
+    "bytes": 116370,
+    "sha256": "ef4836412894d9c8b933fab7fed21ebd68fafb65bbc028656d2bf8dd8894a698",
+    "tipo": "text/html"
+  },
+  {
+    "url": "https://normograma.sena.edu.co/compilacion/docs/estatuto_tributario_pr010.htm",
+    "status": 200,
+    "bytes": 263397,
+    "sha256": "dafcbbcac1dab87b8d41284c529e768e0637e7a1852601624b215afdfa24ba49",
+    "tipo": "text/html"
+  },
+  {
+    "url": "https://www.camara.gov.co/wp-content/uploads/2026/10/proyectos-ley/documentos/proyecto-36548/PROYECTO-DE-LEY-Rescate-Economico-2026-VSD-RADICADA-1.pdf",
+    "status": 200,
+    "bytes": 3084786,
+    "sha256": "4a7e52938b91a30da837c41e3e6ad4a28e667d546aafac4add16892f5a6ef6cf",
+    "tipo": "application/pdf"
+  },
+  {
+    "url": "https://www.dian.gov.co/atencionciudadano/Documents/Informe-de-Gestion-DIAN-2025-30012026.pdf",
+    "status": 200,
+    "bytes": 7153565,
+    "sha256": "98dd7de90da1d1a12ccf7e5ec33956b32ee9a4a78255d4dd5dea19bffb2f80f2",
+    "tipo": "application/pdf"
+  },
+  {
+    "url": "https://www.dian.gov.co/normatividad/Normatividad/Resoluci%C3%B3n%20000238%20de%2015-12-2025.Pdf",
+    "status": 200,
+    "bytes": 1006985,
+    "sha256": "3b9302ecdb461c17efee376021716c410c767314f67d03d11784deed08eb10cc",
+    "tipo": "application/pdf"
+  },
+  {
+    "url": "https://www.ecopetrol.com.co/wps/wcm/connect/75535020-ecc2-44b7-afca-c14f3350145d/segundo-comunicado-dian-final-esp-1.pdf?MOD=AJPERES",
+    "status": 200,
+    "bytes": 132485,
+    "sha256": "a0ac1fda42c718794572364098619ca82bf05084da5aaef3829b7069fa7b8b58",
+    "tipo": "application/pdf"
+  },
+  {
+    "url": "https://www.ecopetrol.com.co/wps/wcm/connect/e0f637ae-7f70-47c8-bca6-db04c49a68c4/comunicado-dian-esp-original.pdf?MOD=AJPERES",
+    "status": 200,
+    "bytes": 134224,
+    "sha256": "b99134740704bff7a0370e60cee33905c4279063805ed84e06b4327e4bbf700e",
+    "tipo": "application/pdf"
+  }
+]

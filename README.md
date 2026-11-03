@@ -25,3 +25,15 @@ Las referencias aparecen al pie de cada diapositiva. [Proyecto oficial](https://
 `scripts/reproducir_calculos.py` regenera `data/conversiones.tex` y los CSV. Solo requiere Python 3. Los umbrales RUGE son inversión, no ingresos. Los 2 millones de UVT del artículo 95 son el valor de la obligación en discusión, no un beneficio fiscal de esa cuantía.
 
 El repositorio no incluye los documentos privados de trabajo ni los originales proporcionados por Oliver. Las fuentes públicas se enlazan.
+
+## Revisión
+
+[Meta Skill Review Oliver](quality_reports/meta_skill_review.md): lectura, revisión independiente y 48 comprobaciones numéricas y gráficas de la versión corregida.
+
+Para repetir el cotejo, descargar el PDF oficial de 334 páginas y ejecutar:
+
+```sh
+python quality_reports/auditar_cifras.py nueva_revision /ruta/proyecto_oficial.pdf
+```
+
+El historial de comprobaciones se conserva en `quality_reports/replication-log.md`. Las estimaciones fiscales siguen siendo las oficiales, no una auditoría independiente del ajuste neto.

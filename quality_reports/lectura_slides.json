@@ -1,0 +1,111 @@
+{
+  "skill": "lectura",
+  "publico": "Público informado interesado en economía y política fiscal, sin conocer el proyecto ni la conversación.",
+  "version_base": "456b4a6",
+  "pasadas": 2,
+  "criterio": "Lectura secuencial de texto, cuadros, gráficos y pies. Relectura de versión corregida. No se exige una clase tributaria exhaustiva.",
+  "cobertura": [
+    {
+      "diapositiva": 1,
+      "tema": "Portada",
+      "resultado": "Proyecto, versión y unidades ilustrativas establecidos."
+    },
+    {
+      "diapositiva": 2,
+      "tema": "Ajuste plurianual",
+      "resultado": "Hacienda identificado en el cuerpo, objetivo de deuda y ejecución explícitos."
+    },
+    {
+      "diapositiva": 3,
+      "tema": "Composición del ajuste",
+      "resultado": "Unidad visible en encabezado, categorías conciliadas, OPS definido al pie."
+    },
+    {
+      "diapositiva": 4,
+      "tema": "Gasto",
+      "resultado": "Ámbito del presupuesto nacional y meta de inflación precisados."
+    },
+    {
+      "diapositiva": 5,
+      "tema": "Renta natural",
+      "resultado": "Tramo marginal y base depurada claros, conversión mensual no equivale a salario bruto."
+    },
+    {
+      "diapositiva": 6,
+      "tema": "Deducciones",
+      "resultado": "Deducción adicional diferenciada de artículo387, límite global no se suma como otro descuento."
+    },
+    {
+      "diapositiva": 7,
+      "tema": "Salud del trabajador",
+      "resultado": "Cálculo expresado como aporte adicional a salud, no ingreso neto total."
+    },
+    {
+      "diapositiva": 8,
+      "tema": "Aporte empresarial",
+      "resultado": "Dirección del pago corregida. Caso de sociedad exonerada identificado."
+    },
+    {
+      "diapositiva": 9,
+      "tema": "SENA/ICBF",
+      "resultado": "Sustitución de financiación y flexibilidad presupuestal, sin aumento automático del total."
+    },
+    {
+      "diapositiva": 10,
+      "tema": "Cajas",
+      "resultado": "Uno de cuatro puntos, FOSFEC explicado y proporción gráfica corregida."
+    },
+    {
+      "diapositiva": 11,
+      "tema": "IVA",
+      "resultado": "Ampliación y ejemplo de precio con base constante, aumento final13,3%."
+    },
+    {
+      "diapositiva": 12,
+      "tema": "EfectIVA",
+      "resultado": "Porcentajes, techo y piso de pobreza extrema. Viabilidad sin certificar."
+    },
+    {
+      "diapositiva": 13,
+      "tema": "Envíos de bajo valor",
+      "resultado": "Título en español, minimis definido, diferencia IVA/arancel conservada."
+    },
+    {
+      "diapositiva": 14,
+      "tema": "Renta empresarial",
+      "resultado": "Tarifa general y ejemplo aislado, costo oficial atribuido."
+    },
+    {
+      "diapositiva": 15,
+      "tema": "RUGE",
+      "resultado": "Inversión nueva y naturaleza especial explícitos, costo agregado desconocido."
+    },
+    {
+      "diapositiva": 16,
+      "tema": "Normalización",
+      "resultado": "Consecuencias de la inclusión precisadas. No legaliza activos ilícitos."
+    },
+    {
+      "diapositiva": 17,
+      "tema": "Artículo95",
+      "resultado": "Condiciones de cambio doctrinal, ausencia de fallo y fraude visibles. Elegibilidad efectiva pendiente."
+    },
+    {
+      "diapositiva": 18,
+      "tema": "Cierre",
+      "resultado": "Propuesta concreta de corregir preferencias injustificadas y asegurar devolución."
+    },
+    {
+      "diapositiva": 19,
+      "tema": "Facturación",
+      "resultado": "Título no presupone crecimiento sin serie. Reportes no equivalen a todo el consumo."
+    },
+    {
+      "diapositiva": 20,
+      "tema": "Convenciones",
+      "resultado": "Fuentes primarias, unidades y estado de proyecto. Enlace directo a resolución238."
+    }
+  ],
+  "pendiente": "Duración y sala no especificadas. Pies documentales se leen en el PDF, no se espera leerlos en voz alta.",
+  "fecha_utc": "2026-11-03T18:22:48.305855+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "fecha_utc": "2026-11-03T18:21:41.367004+00:00",
+  "motor": "Tectonic/XeTeX",
+  "paginas": 20,
+  "avisos_documento": [],
+  "nota_entorno": "El ejecutable imprime Fontconfig error sobre configuración local. No produjo caracteres faltantes ni avisos de LaTeX; el PDF fue renderizado para revisión.",
+  "pdf_sha256": "b5679c5d894a7bb03cd820386eeec931c90b4e3c3ad3de6769ac97160c956874"
+}
