@@ -41,3 +41,5 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 ## Formato académico
 
 El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 19 diapositivas y dos anexos.
+
+Los cuadros 3 y 4 ordenan las medidas de mayor a menor impacto en 2030, con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. El cuadro principal abre los impuestos por medida y el detalle conserva los subtotales de cotizaciones e ingresos tributarios netos.

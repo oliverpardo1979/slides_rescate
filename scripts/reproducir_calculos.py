@@ -78,23 +78,30 @@ def main():
         return f'{rounded:.1f}'.replace('.',',')
     def number(id,year):return display(fiscal[year]['medidas'][id])
     def summary_number(id,year):return display(fiscal[year]['resumen'][id])
-    def line(label,id,summary=False,bold=False):
+    colors={'gasto':('G','rust'),'cotizaciones':('I','teal'),'impuestos':('I','teal'),'efectos_macro':('I','teal'),'reasignacion':('R','muted')}
+    def line(label,id,summary=False,bold=False,group=None):
         get=summary_number if summary else number
         cells=[label,get(id,'2027'),get(id,'2030')]
         if bold:cells=[r'\textbf{'+c+'}' for c in cells]
+        if group:
+            code,color=colors[group]
+            cells=[r'\textcolor{'+color+'}{'+code+'}',r'\textcolor{'+color+'}{'+cells[0]+'}',*cells[1:]]
+        else:cells=['',*cells]
         return ' & '.join(cells)+r'\\'
-    latex=[line('Menor gasto neto','menor_gasto_neto',summary=True,bold=True)]
-    for r in config['filas']:
-        if r['grupo']=='gasto':latex.append(line(r'\quad '+r['etiqueta'],r['id']))
-    latex.extend([r'\midrule',line('Mayores cotizaciones','cotizaciones',summary=True),
-      line('Impuestos y gestión, netos de rebajas','impuestos_y_gestion_netos',summary=True),
-      line('Reasignación de las cajas a salud','ccf'),line('Ingresos esperados por efectos macroeconómicos','efectos_macro'),
-      r'\midrule',
-      line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
+    # Orden por impacto de 2030 antes del redondeo. Los efectos negativos quedan al final.
+    mainrows=[dict(r,summary=False) for r in config['filas'] if r['grupo']!='cotizaciones']
+    mainrows.append({'id':'cotizaciones','etiqueta':'Mayores cotizaciones a salud, SENA e ICBF','grupo':'cotizaciones','summary':True})
+    def sortvalue(r):
+        values=fiscal['2030']['resumen'] if r['summary'] else fiscal['2030']['medidas']
+        return Decimal(values[r['id']])
+    mainrows.sort(key=sortvalue,reverse=True)
+    latex=[line(r['etiqueta'],r['id'],summary=r['summary'],group=r['grupo']) for r in mainrows]
+    latex.extend([r'\midrule',line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
     (ROOT/'data/cuadro_ajuste.tex').write_text('\n'.join(latex)+'\n',encoding='utf-8')
-    income=[line(r['etiqueta'],r['id']) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']]
+    incomerows=sorted((r for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']),key=lambda r:Decimal(fiscal['2030']['medidas'][r['id']]),reverse=True)
+    income=[line(r['etiqueta'],r['id'],group=r['grupo']) for r in incomerows]
     vals={y:sum(Decimal(fiscal[y]['medidas'][r['id']]) for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']) for y in fiscal}
-    income.extend([r'\midrule',r'\textbf{Mayores ingresos netos por estas medidas} & \textbf{'+display(vals['2027'])+r'} & \textbf{'+display(vals['2030'])+r'}\\',r'\bottomrule'])
+    income.extend([r'\midrule',line('Mayores cotizaciones','cotizaciones',summary=True),line('Ingresos tributarios netos','impuestos_y_gestion_netos',summary=True),r'\midrule',r' & \textbf{Mayores ingresos netos por estas medidas} & \textbf{'+display(vals['2027'])+r'} & \textbf{'+display(vals['2030'])+r'}\\',r'\bottomrule'])
     (ROOT/'data/cuadro_ingresos.tex').write_text('\n'.join(income)+'\n',encoding='utf-8')
     for threshold in [8140000,5530000,2580000]:print('RUGE',threshold,'UVT =',threshold*UVT,'COP')
     print('Conversiones regeneradas y sumas conciliadas para 2027-2030.')

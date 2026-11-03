@@ -74,6 +74,8 @@ for i,year in enumerate(['2027','2028','2029','2030']):
 
 def check_tex_row(label,id,slide,filename,values):
     rawtex=(ROOT/'data'/filename).read_text(encoding='utf-8')
+    rawtex=re.sub(r'\\textcolor\{[^}]+\}\{([^{}]*)\}',r'\1',rawtex)
+    rawtex=re.sub(r'^\s*[IGR]?\s*&\s*','',rawtex,flags=re.M)
     pattern=r'^\s*(?:\\quad )?(?:\\textbf\{)?'+re.escape(label)+r'\}?\s*&\s*(?:\\textbf\{)?(-?[0-9,]+)\}?\s*&\s*(?:\\textbf\{)?(-?[0-9,]+)'
     match=re.search(pattern,rawtex,re.M)
     if not match:raise ValueError('Fila generada no localizada: '+label)
@@ -82,13 +84,21 @@ def check_tex_row(label,id,slide,filename,values):
 for row in config['filas']:
     slide=3 if row['grupo'] in ['gasto','reasignacion','efectos_macro'] else 4
     filename='cuadro_ajuste.tex' if slide==3 else 'cuadro_ingresos.tex'
-    check_tex_row(row['etiqueta'] if row['id']!='ccf' else 'Reasignación de las cajas a salud',row['id'],slide,filename,{y:expected[y][row['id']] for y in expected})
+    check_tex_row(row['etiqueta'],row['id'],slide,filename,{y:expected[y][row['id']] for y in expected})
+for row in config['filas']:
+    if row['grupo']=='impuestos':
+        check_tex_row(row['etiqueta'],row['id']+'_principal',3,'cuadro_ajuste.tex',{y:expected[y][row['id']] for y in expected})
 for id,label in [('total_ley','Total del proyecto')]:
     check_tex_row(label,id,3,'cuadro_ajuste.tex',{y:expected[y][id] for y in expected})
-for key,label,group in [('menor_gasto_neto','Menor gasto neto','gasto'),('cotizaciones','Mayores cotizaciones','cotizaciones'),('impuestos_y_gestion_netos','Impuestos y gestión, netos de rebajas','impuestos')]:
+for key,label,group in [('cotizaciones','Mayores cotizaciones a salud, SENA e ICBF','cotizaciones')]:
     vals={y:sum(expected[y][r['id']] for r in config['filas'] if r['grupo']==group) for y in expected}
     check_tex_row(label,key,3,'cuadro_ajuste.tex',vals)
+for key,group in [('menor_gasto_neto','gasto'),('cotizaciones','cotizaciones'),('impuestos_y_gestion_netos','impuestos')]:
+    vals={y:sum(expected[y][r['id']] for r in config['filas'] if r['grupo']==group) for y in expected}
     for y,v in vals.items():check('RESUMEN_'+key+'_'+y,3,summary[y]['resumen'][key],v,'Agrupación por mecanismo desde el PDF oficial')
+for key,label,group in [('cotizaciones','Mayores cotizaciones','cotizaciones'),('impuestos_y_gestion_netos','Ingresos tributarios netos','impuestos')]:
+    vals={y:sum(expected[y][r['id']] for r in config['filas'] if r['grupo']==group) for y in expected}
+    check_tex_row(label,key+'_detalle',4,'cuadro_ingresos.tex',vals)
 values={y:sum(expected[y][r['id']] for r in config['filas'] if r['grupo'] in ['cotizaciones','impuestos']) for y in expected}
 check_tex_row('Mayores ingresos netos por estas medidas','ingresos_medidas',4,'cuadro_ingresos.tex',values)
 

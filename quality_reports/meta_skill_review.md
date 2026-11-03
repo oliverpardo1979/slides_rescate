@@ -61,3 +61,8 @@ Cotejo contra el PDF oficial de la página 204: 154 PASS y 0 FAIL en `desagregac
 ## Presentación con una cifra decimal
 
 Por instrucción de Oliver, los cuadros de gasto e ingresos, el gráfico del ajuste y las referencias a puntos del PIB se muestran con una cifra decimal. Se retira del cuadro la fila de diferencias de suma. Los archivos de cálculo mantienen la precisión original, los totales se calculan antes de redondear y no se atribuye significado económico a diferencias pequeñas de presentación. Se revisaron ambos cuadros y la compilación, con 152 comprobaciones PASS y 0 FAIL en `un_decimal`.
+
+
+## Medidas ordenadas y colores por mecanismo
+
+Por instrucción de Oliver, se abre el subtotal tributario en sus medidas en el cuadro 3 y se ordenan los cuadros 3 y 4 por efecto de 2030, antes de redondear. Los efectos negativos quedan al final. Azul (I) identifica ingresos, incluidos los efectos macro esperados y las rebajas de impuestos. Rojo oscuro (G) identifica gasto, incluido el mayor SGP. Gris (R) identifica la reasignación de las cajas. Las letras conservan la distinción al imprimir en blanco y negro. El cuadro 4 mantiene subtotales de cotizaciones y tributos, con mayores ingresos netos de 2,6 puntos del PIB en 2030. Se conserva un decimal. La comprobación de orden descendente y la inspección visual se completaron, con 164 cotejos numéricos aprobados y sin desbordamientos en el PDF final.
