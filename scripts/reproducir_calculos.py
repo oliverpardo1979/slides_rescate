@@ -88,12 +88,12 @@ def main():
             cells=[r'\textcolor{'+color+'}{'+code+'}',r'\textcolor{'+color+'}{'+cells[0]+'}',*cells[1:]]
         else:cells=['',*cells]
         return ' & '.join(cells)+r'\\'
-    # Orden por impacto de 2030 antes del redondeo. Los efectos negativos quedan al final.
+    # Orden por magnitud absoluta del impacto de 2030, antes del redondeo.
     mainrows=[dict(r,summary=False) for r in config['filas']]
     def sortvalue(r):
         values=fiscal['2030']['resumen'] if r['summary'] else fiscal['2030']['medidas']
         return Decimal(values[r['id']])
-    mainrows.sort(key=sortvalue,reverse=True)
+    mainrows.sort(key=lambda r:abs(sortvalue(r)),reverse=True)
     latex=[line(r['etiqueta'],r['id'],summary=r['summary'],group=r['grupo']) for r in mainrows]
     latex.extend([r'\midrule',line('Total del proyecto','total_ley',bold=True),r'\bottomrule'])
     (ROOT/'data/cuadro_ajuste.tex').write_text('\n'.join(latex)+'\n',encoding='utf-8')

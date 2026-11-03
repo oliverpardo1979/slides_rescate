@@ -90,7 +90,7 @@ El objetivo es frenar el crecimiento de la deuda. La magnitud efectiva depende d
 \src{\ley{204}{Exposición de motivos, tabla 14, p. 204}. Estimaciones de Hacienda, pendientes de verificación independiente. Estrategia completa, con medidas adicionales, llega a 4,7 puntos en 2030.}
 \end{frame}
 
-\begin{frame}{Las medidas del ajuste, de mayor a menor aporte}
+\begin{frame}{Las medidas por magnitud del efecto fiscal}
 \centering
 {\fontsize{9.5}{11.4}\selectfont\renewcommand{\arraystretch}{0.87}
 \begin{tabular}{clrr}
@@ -100,11 +100,39 @@ El objetivo es frenar el crecimiento de la deuda. La magnitud efectiva depende d
 \input{data/cuadro_ajuste.tex}
 \end{tabular}}
 \par
-{\footnotesize\textcolor{teal}{I: ingresos}\quad\textcolor{rust}{G: gasto}\quad\textcolor{muted}{R: reasignación}\quad Orden por aporte en 2030.}\par
+{\footnotesize\textcolor{teal}{I: ingresos}\quad\textcolor{rust}{G: gasto}\quad\textcolor{muted}{R: reasignación}\quad Orden por magnitud en 2030.}\par
 \src{Estimaciones de Hacienda, \ley{204}{tabla 14, p. 204}. Las cotizaciones sustituyen transferencias y se cuentan una vez. Cajas: reasignación. Cifras a un decimal. Gestión y efectos macro no asegurados.}
 \end{frame}
 
+\begin{frame}{La reforma amplía el IVA y devuelve una parte}
+\begin{itemize}\bulletspace
+\item Desde 2028 se eliminan las tarifas reducidas de 5\% de los artículos 468-1 y 468-3 y se revisan los bienes excluidos.
+\item Se conservan tratamientos especiales para una selección de bienes y servicios esenciales.
+\item Los hogares sin devolución asumen el mayor IVA sobre las compras afectadas, según su traslado a precios.
+\end{itemize}
+\take{Un bien con precio sin IVA de \$100.000 pasa de \$105.000 a \$119.000 si cambia de 5\% a 19\%.}
+\src{\ley{248}{Artículos 42 y siguientes}, y \ley{333}{artículo 106}. Ejemplo con precio sin IVA constante: aumento del precio final de 13,3\%. Algunas modificaciones de IVA rigen antes de 2028. No todos los bienes pasan al 19\%.}
+\end{frame}
 
+\begin{frame}{EfectIVA depende del IVA atribuible a cada persona}
+\begin{itemize}\bulletspace
+\item Desde 2028 devuelve 100\% a pobres y al tramo de menores ingresos de población vulnerable. Otros tramos reciben 50\%, 40\% o 30\%.
+\item El techo legal mensual es de hasta 5,5 UVT por beneficiario, equivalente a \textbf{\$\DevolucionTope{}} con UVT 2026.
+\item La pobreza extrema tiene un monto mínimo, aun sin IVA registrado. La reglamentación fija su valor.
+\end{itemize}
+\take{El reto operativo es identificar las compras y pagar la devolución completa y a tiempo.}
+\src{\ley{241}{Artículos 38--40}. Tope y tramos sujetos a reglas de actualización y reglamentación. Se incluyen facturas y documentos equivalentes. No se exige tarjeta de manera general para compras al contado.}
+\end{frame}
+
+\begin{frame}{El IVA llega a más envíos de bajo valor}
+\begin{itemize}\bulletspace
+\item Hoy ciertos envíos de hasta \textbf{US\$200} desde EE.UU. ingresan sin IVA, según las condiciones del tratado.
+\item Según Inexmoda, parte de los pedidos de \textbf{Shein y Temu sale de EE.UU.}, aunque los bienes se fabriquen en China.
+\item El proyecto elimina esa exclusión. Para un bien gravado al 19\%, una base de US\$100 genera US\$19 de IVA.
+\end{itemize}
+\take{DIAN proyecta \$1,7 billones en 2027 para el conjunto de importaciones afectadas, no solo estas plataformas.}
+\src{\ley{333}{Art. 106.4.a}, desde la vigencia general. \ley{96}{Exposición, pp. 96--98}, estimación pendiente de reproducción. Ruta logística reportada por \href{https://inexmoda.org.co/stories/temu-y-shein-como-cambia-el-comercio-global-en-2026/}{Inexmoda (2026)}. El arancel tiene reglas distintas. La aplicación del IVA debe conciliarse con el TLC.}
+\end{frame}
 
 \begin{frame}{El gasto se ajusta en contratación y personal}
 \begin{itemize}\bulletspace
@@ -150,6 +178,49 @@ La deducción adicional eliminada equivale a \$\Dependiente{} por dependiente al
 \src{\ley{258}{Artículos 47, 49 y 106}. UVT 2026. Se conserva el límite global del 40\%. La deducción por dependientes del artículo 387 del ET es distinta y no se elimina por esta disposición. Una deducción reduce la base, no el impuesto peso por peso.}
 \end{frame}
 
+\begin{frame}{Las empresas vuelven a pagar aportes hoy exonerados}
+\small
+\begin{tabularx}{\textwidth}{Xrrr}
+\toprule
+\textbf{Salario del trabajador} & \textbf{Salud} & \textbf{SENA} & \textbf{ICBF}\\
+\midrule
+Hasta 2 mínimos & 0\% & 0\% & 0\%\\
+Más de 2 y hasta 3 & 4\% & 1\% & 1\%\\
+Más de 3 & 8,5\% & 2\% & 3\%\\
+\bottomrule
+\end{tabularx}
+\par\normalsize\medskip
+Hoy, las sociedades elegibles están exoneradas por trabajadores con salarios inferiores a diez mínimos.
+\take{Con cuatro mínimos, el aporte adicional de la empresa suma \$\EmpresaTotal{} al mes.}
+\src{\ley{228}{Artículo 20}, desde enero de 2027. Ejemplo con mínimo 2026 y sociedad hoy exonerada: 13,5\% de \$\SalarioEjemplo{}. No incluye el aporte del trabajador. Hay reglas especiales, incluida exoneración para personas naturales con dos a cinco trabajadores.}
+\end{frame}
+
+\begin{frame}{SENA e ICBF dependerían más de la nómina}
+\begin{itemize}\bulletspace
+\item Las mayores contribuciones empresariales sustituyen parte de los recursos que hoy aporta la Nación.
+\item El artículo 106 deroga el artículo 243 del ET, que reserva una parte de renta empresarial y establece garantías de financiación.
+\item El aporte adicional \textbf{no implica un aumento equivalente del presupuesto total} de estas entidades.
+\end{itemize}
+\take{El proyecto aumenta sus recursos propios y flexibiliza la transferencia de la Nación.}
+\src{\ley{50}{Exposición, pp. 50--51}, y \ley{333}{artículo 106}. \href{https://normograma.sena.edu.co/compilacion/docs/estatuto_tributario_pr010.htm}{ET 243} asigna 2,2 puntos de tarifa al ICBF y 1,4 al SENA. El artículo 20 conserva ajustes presupuestales por necesidades, sin reproducir el piso automático de ET 243.}
+\end{frame}
+
+\begin{frame}{La tarifa empresarial general baja al 31\%}
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+& \textbf{Hoy} & \textbf{2027} & \textbf{Desde 2028}\\
+\midrule
+Tarifa general de renta & 35\% & 33\% & 31\%\\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+Una empresa con renta gravable de \$1.000 millones pagaría \$350 millones a la tarifa actual y \$310 millones al 31\%, antes de otros ajustes.
+\take{Hacienda estima un costo de 0,4 puntos del PIB anual entre 2028 y 2030 por esta rebaja.}
+\src{\ley{266}{Artículo 57} y \ley{204}{tabla 14}. Ejemplo aislado, con base constante y sin sobretasas, descuentos ni tasa mínima. El mayor crecimiento no garantiza por sí solo recuperar el recaudo perdido.}
+\end{frame}
+
 \begin{frame}{El trabajador aporta más a salud por encima de dos mínimos}
 \begin{columns}[T]
 \begin{column}{.53\textwidth}
@@ -178,33 +249,6 @@ Con cuatro mínimos, o \$\SalarioEjemplo{} mensuales, pasa de \$\SaludAntes{} a 
 \src{\ley{230}{Artículo 21}, desde enero de 2027. Ejemplo con salario e IBC iguales y mínimo 2026. La tarifa aplica a todo el IBC del tramo. Independientes y regímenes especiales tienen reglas diferentes.}
 \end{frame}
 
-\begin{frame}{Las empresas vuelven a pagar aportes hoy exonerados}
-\small
-\begin{tabularx}{\textwidth}{Xrrr}
-\toprule
-\textbf{Salario del trabajador} & \textbf{Salud} & \textbf{SENA} & \textbf{ICBF}\\
-\midrule
-Hasta 2 mínimos & 0\% & 0\% & 0\%\\
-Más de 2 y hasta 3 & 4\% & 1\% & 1\%\\
-Más de 3 & 8,5\% & 2\% & 3\%\\
-\bottomrule
-\end{tabularx}
-\par\normalsize\medskip
-Hoy, las sociedades elegibles están exoneradas por trabajadores con salarios inferiores a diez mínimos.
-\take{Con cuatro mínimos, el aporte adicional de la empresa suma \$\EmpresaTotal{} al mes.}
-\src{\ley{228}{Artículo 20}, desde enero de 2027. Ejemplo con mínimo 2026 y sociedad hoy exonerada: 13,5\% de \$\SalarioEjemplo{}. No incluye el aporte del trabajador. Hay reglas especiales, incluida exoneración para personas naturales con dos a cinco trabajadores.}
-\end{frame}
-
-\begin{frame}{SENA e ICBF dependerían más de la nómina}
-\begin{itemize}\bulletspace
-\item Las mayores contribuciones empresariales sustituyen parte de los recursos que hoy aporta la Nación.
-\item El artículo 106 deroga el artículo 243 del ET, que reserva una parte de renta empresarial y establece garantías de financiación.
-\item El aporte adicional \textbf{no implica un aumento equivalente del presupuesto total} de estas entidades.
-\end{itemize}
-\take{El proyecto aumenta sus recursos propios y flexibiliza la transferencia de la Nación.}
-\src{\ley{50}{Exposición, pp. 50--51}, y \ley{333}{artículo 106}. \href{https://normograma.sena.edu.co/compilacion/docs/estatuto_tributario_pr010.htm}{ET 243} asigna 2,2 puntos de tarifa al ICBF y 1,4 al SENA. El artículo 20 conserva ajustes presupuestales por necesidades, sin reproducir el piso automático de ET 243.}
-\end{frame}
-
 \begin{frame}{Un cuarto del aporte a las cajas pasa a salud}
 \begin{center}
 \begin{tikzpicture}
@@ -223,50 +267,14 @@ El fondo de protección al cesante (FOSFEC) aporta excedentes disponibles al cie
 \src{\ley{231}{Artículos 22--24}. El punto a ADRES representa el 25\% del aporte del 4\%, no de todos los ingresos de las cajas. Los saldos del FOSFEC tienen condiciones y protección de obligaciones. Su traslado no es ingreso permanente.}
 \end{frame}
 
-\begin{frame}{La reforma amplía el IVA y devuelve una parte}
+\begin{frame}{La normalización ofrece un trato especial al incumplimiento}
 \begin{itemize}\bulletspace
-\item Desde 2028 se eliminan las tarifas reducidas de 5\% de los artículos 468-1 y 468-3 y se revisan los bienes excluidos.
-\item Se conservan tratamientos especiales para una selección de bienes y servicios esenciales.
-\item Los hogares sin devolución asumen el mayor IVA sobre las compras afectadas, según su traslado a precios.
+\item Quien tenga activos omitidos o pasivos inexistentes a enero de 2027 puede normalizarlos con una tarifa de \textbf{15\%}.
+\item La inclusión no genera renta por el activo omitido y excluye sanciones y acción penal por la omisión normalizada.
+\item Un activo omitido con base de \textbf{\$1.000 millones} genera \textbf{\$150 millones} de normalización.
 \end{itemize}
-\take{Un bien con precio sin IVA de \$100.000 pasa de \$105.000 a \$119.000 si cambia de 5\% a 19\%.}
-\src{\ley{248}{Artículos 42 y siguientes}, y \ley{333}{artículo 106}. Ejemplo con precio sin IVA constante: aumento del precio final de 13,3\%. Algunas modificaciones de IVA rigen antes de 2028. No todos los bienes pasan al 19\%.}
-\end{frame}
-
-\begin{frame}{EfectIVA depende del IVA atribuible a cada persona}
-\begin{itemize}\bulletspace
-\item Desde 2028 devuelve 100\% a pobres y al tramo de menores ingresos de población vulnerable. Otros tramos reciben 50\%, 40\% o 30\%.
-\item El techo legal mensual es de hasta 5,5 UVT por beneficiario, equivalente a \textbf{\$\DevolucionTope{}} con UVT 2026.
-\item La pobreza extrema tiene un monto mínimo, aun sin IVA registrado. La reglamentación fija su valor.
-\end{itemize}
-\take{El reto operativo es identificar las compras y pagar la devolución completa y a tiempo.}
-\src{\ley{241}{Artículos 38--40}. Tope y tramos sujetos a reglas de actualización y reglamentación. Se incluyen facturas y documentos equivalentes. No se exige tarjeta de manera general para compras al contado.}
-\end{frame}
-
-\begin{frame}{El IVA llega a más envíos de bajo valor}
-\begin{itemize}\bulletspace
-\item Hoy ciertos envíos de hasta \textbf{US\$200} desde EE.UU. ingresan sin IVA, según las condiciones del tratado.
-\item Según Inexmoda, parte de los pedidos de \textbf{Shein y Temu sale de EE.UU.}, aunque los bienes se fabriquen en China.
-\item El proyecto elimina esa exclusión. Para un bien gravado al 19\%, una base de US\$100 genera US\$19 de IVA.
-\end{itemize}
-\take{DIAN proyecta \$1,7 billones en 2027 para el conjunto de importaciones afectadas, no solo estas plataformas.}
-\src{\ley{333}{Art. 106.4.a}, desde la vigencia general. \ley{96}{Exposición, pp. 96--98}, estimación pendiente de reproducción. Ruta logística reportada por \href{https://inexmoda.org.co/stories/temu-y-shein-como-cambia-el-comercio-global-en-2026/}{Inexmoda (2026)}. El arancel tiene reglas distintas. La aplicación del IVA debe conciliarse con el TLC.}
-\end{frame}
-
-\begin{frame}{La tarifa empresarial general baja al 31\%}
-\begin{center}
-\begin{tabular}{lrrr}
-\toprule
-& \textbf{Hoy} & \textbf{2027} & \textbf{Desde 2028}\\
-\midrule
-Tarifa general de renta & 35\% & 33\% & 31\%\\
-\bottomrule
-\end{tabular}
-\end{center}
-\medskip
-Una empresa con renta gravable de \$1.000 millones pagaría \$350 millones a la tarifa actual y \$310 millones al 31\%, antes de otros ajustes.
-\take{Hacienda estima un costo de 0,4 puntos del PIB anual entre 2028 y 2030 por esta rebaja.}
-\src{\ley{266}{Artículo 57} y \ley{204}{tabla 14}. Ejemplo aislado, con base constante y sin sobretasas, descuentos ni tasa mínima. El mayor crecimiento no garantiza por sí solo recuperar el recaudo perdido.}
+\take{Recauda una vez y plantea un problema de equidad frente a quienes declararon oportunamente.}
+\src{\ley{286}{Artículo 70}. Declaración independiente hasta el 30 de junio de 2027. La tarifa grava la base del activo o pasivo, no una renta anual. No legaliza activos de origen ilícito. Activos digitales tienen un régimen separado.}
 \end{frame}
 
 \begin{frame}{RUGE ofrece tarifas menores a grandes inversiones}
@@ -286,16 +294,6 @@ Agroindustria, turismo y otros servicios & 2.580.000 & 135,1\\
 \smallskip
 Incluye minería, energía y construcción, entre otras actividades. Excluye comercio y actividades inmobiliarias.
 \src{\ley{274}{Artículo 69}. RUGE: Régimen Único para Generar Estabilidad Empresarial. UVT de la fecha de solicitud, aquí convertida con UVT 2026. Exige inversión nueva, ejecución y compras nacionales. Prima anual de 0,1\% de inversión acumulada ejecutada. Costo fiscal agregado no cuantificado en tabla 14.}
-\end{frame}
-
-\begin{frame}{La normalización ofrece un trato especial al incumplimiento}
-\begin{itemize}\bulletspace
-\item Quien tenga activos omitidos o pasivos inexistentes a enero de 2027 puede normalizarlos con una tarifa de \textbf{15\%}.
-\item La inclusión no genera renta por el activo omitido y excluye sanciones y acción penal por la omisión normalizada.
-\item Un activo omitido con base de \textbf{\$1.000 millones} genera \textbf{\$150 millones} de normalización.
-\end{itemize}
-\take{Recauda una vez y plantea un problema de equidad frente a quienes declararon oportunamente.}
-\src{\ley{286}{Artículo 70}. Declaración independiente hasta el 30 de junio de 2027. La tarifa grava la base del activo o pasivo, no una renta anual. No legaliza activos de origen ilícito. Activos digitales tienen un régimen separado.}
 \end{frame}
 
 \begin{frame}{El artículo 95 abre una vía de alivio a Ecopetrol}
@@ -319,6 +317,7 @@ Incluye minería, energía y construcción, entre otras actividades. Excluye com
 \end{frame}
 
 \appendix
+
 \begin{frame}{Anexo. Falta medir la cobertura de las compras}
 \begin{itemize}\bulletspace
 \item La DIAN dispuso reportes de facturas para \textbf{17,4 millones de personas} en 2025. No informa allí su distribución por ingresos.

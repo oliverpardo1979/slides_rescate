@@ -71,3 +71,8 @@ Por instrucción de Oliver, se abre el subtotal tributario en sus medidas en el 
 ## Un único cuadro para 2027 y 2030
 
 Por instrucción de Oliver, la diapositiva 3 reúne todas las medidas que antes se repartían entre los cuadros 3 y 4. Se muestran por separado las cotizaciones de empleadores y personas, además de impuestos, gasto, reasignación y efecto macro esperado. Se conserva el orden por aporte en 2030, los colores por mecanismo y una cifra decimal. Se elimina el cuadro de ingresos separado. El deck vuelve a 18 diapositivas y dos anexos. Compilación sin desbordamientos, revisión visual y 144 cotejos aprobados.
+
+
+## Orden de exposición por magnitud de los efectos
+
+Se mantienen portada, panorama y cuadro al principio. Los bloques cuantificados se ordenan por magnitud absoluta del efecto de 2030: IVA (1,1), personal y OPS (0,7), renta personal (0,6), aportes empresariales (0,5), tarifa general empresarial (−0,4), cotizaciones personales (0,2) y cajas (0,2), en puntos del PIB. La normalización sigue como medida transitoria, y RUGE y artículo 95 como beneficios de costo no cuantificado, sin tratarlos como cero. El cuadro se ordena también por magnitud absoluta, conservando los signos. El contenido de las otras 19 diapositivas se conserva íntegramente. La auditoría localiza cada cifra por el título de su diapositiva, con 144 cotejos aprobados después del cambio de secuencia. La compilación no presenta desbordamientos.

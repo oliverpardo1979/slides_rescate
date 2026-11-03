@@ -42,4 +42,6 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 18 diapositivas y dos anexos.
 
-El cuadro 3 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por aporte en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.
+El cuadro 3 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por magnitud del efecto fiscal en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.
+
+La secuencia de bloques sigue la magnitud absoluta del efecto fiscal en 2030, incluido el costo de las rebajas. IVA va primero. Personal y OPS se consideran un bloque. La normalización se presenta como transitoria y RUGE y artículo 95 como beneficios de costo no cuantificado. `data/orden_presentacion.json` documenta el orden y sus fuentes.
