@@ -1,16 +1,16 @@
 {
   "vigencia_referencia": 2030,
-  "criterio": "Orden de bloques seleccionados por magnitud absoluta de su efecto fiscal. Portada, panorama y cuadro al principio. Conclusión y anexos al final.",
+  "criterio": "Contrafactual de crisis después de portada, seguido por panorama y cuadro fiscal. Bloques de medidas por magnitud absoluta2030. Conclusión y anexos al final.",
   "fuente": "Exposición, tabla 14, p. 204. La tarifa general empresarial se toma de su fila específica (-0.42), no del agregado de todas las rebajas.",
   "bloques": [
     {
       "bloque": "IVA y compensación",
       "impacto_2030_pp_PIB": "1.06",
       "diapositivas": [
-        4,
         5,
         6,
-        7
+        7,
+        8
       ],
       "medidas_fuente": [
         "iva_neto"
@@ -21,7 +21,7 @@
       "bloque": "Personal y contratación",
       "impacto_2030_pp_PIB": "0.70",
       "diapositivas": [
-        8
+        9
       ],
       "medidas_fuente": [
         "personal",
@@ -33,8 +33,8 @@
       "bloque": "Renta de personas naturales",
       "impacto_2030_pp_PIB": "0.57",
       "diapositivas": [
-        9,
-        10
+        10,
+        11
       ],
       "medidas_fuente": [
         "renta_personas"
@@ -45,8 +45,8 @@
       "bloque": "Aportes empresariales y financiación de SENA e ICBF",
       "impacto_2030_pp_PIB": "0.45",
       "diapositivas": [
-        11,
-        12
+        12,
+        13
       ],
       "medidas_fuente": [
         "cotizaciones_empleador"
@@ -57,7 +57,7 @@
       "bloque": "Tarifa general de renta empresarial",
       "impacto_2030_pp_PIB": "-0.42",
       "diapositivas": [
-        13
+        14
       ],
       "medidas_fuente": [],
       "criterio": "magnitud absoluta del impacto del bloque"
@@ -66,7 +66,7 @@
       "bloque": "Cotizaciones personales a salud",
       "impacto_2030_pp_PIB": "0.24",
       "diapositivas": [
-        14
+        15
       ],
       "medidas_fuente": [
         "cotizaciones_personas"
@@ -77,7 +77,7 @@
       "bloque": "Reasignación de las cajas",
       "impacto_2030_pp_PIB": "0.15",
       "diapositivas": [
-        15
+        16
       ],
       "medidas_fuente": [
         "ccf"
@@ -88,7 +88,7 @@
       "bloque": "Normalización: efecto transitorio en 2027",
       "impacto_2030_pp_PIB": "0.00",
       "diapositivas": [
-        16
+        17
       ],
       "medidas_fuente": [
         "normalizacion"
@@ -99,7 +99,7 @@
       "bloque": "RUGE: costo no cuantificado",
       "impacto_2030_pp_PIB": null,
       "diapositivas": [
-        17
+        18
       ],
       "medidas_fuente": [],
       "criterio": "no cuantificado, no se trata como cero"
@@ -108,15 +108,21 @@
       "bloque": "Artículo 95: costo no cuantificado",
       "impacto_2030_pp_PIB": null,
       "diapositivas": [
-        18
+        19
       ],
       "medidas_fuente": [],
       "criterio": "no cuantificado, no se trata como cero"
     }
   ],
   "cierre_transversal": {
-    "diapositiva": 19,
+    "diapositiva": 20,
     "contenido": "Incidencia de medidas sobre hogares por decil de gasto, antes de conclusión",
     "fuente": "Jairo Núñez Méndez (2026), tabla 1, p.8"
+  },
+  "apertura": {
+    "diapositiva": 2,
+    "contenido": "Comparación de incidencia de la reforma y crisis sin reforma, horizonte2030",
+    "fuente": "Jairo Núñez (2026), gráfica Reforma o crisis compartida por Daniel Wills el1nov2026",
+    "criterio": "Presentar el contrafactual al inicio, antes del balance fiscal y el detalle de medidas."
   }
 }

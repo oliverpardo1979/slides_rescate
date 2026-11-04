@@ -1,0 +1,26 @@
+{
+  "credito": "Jairo Núñez Méndez (2026), cálculos compartidos por Daniel Wills en Mesa Fiscal,1nov2026",
+  "titulo_original": "9. Reforma o crisis: ¿qué le cuesta más a cada decil?",
+  "documento_metodologico": "Bienestar social y Ley de Rescate Económico, borrador30oct2026,pp11–12",
+  "escenarios": [
+    "Reforma, EfectIVA plena",
+    "Reforma, restringida a factura",
+    "Crisis sin reforma"
+  ],
+  "horizonte": 2030,
+  "base": "Sin reforma y sin crisis",
+  "clasificacion_deciles": "Gasto per cápita del hogar",
+  "fuente_macro": "MHCP, exposición de motivos,pp200–202. Cierre de mercados en2027, ajuste abrupto del déficit primario y mayor prima de riesgo.",
+  "crisis_ingreso_promedio_pct": "-4.4",
+  "crisis_ingreso_deciles_1_a_3_pct": "-7.1",
+  "crisis_deciles_4_a_10": "Caída uniforme supuesta por Núñez. El documento no tabula su valor exacto. Se conserva la figura recibida sin reconstruir numéricamente esa serie.",
+  "asset": "assets/nunez_reforma_crisis_2030.jpeg",
+  "sha256_original": "7d74603373b18989be0a7ad4bcbf40ec562e5fd6c3fd0a805d60c777b8d9220c",
+  "limites": [
+    "Escenario condicionado, no pronóstico de crisis ni estimación de su probabilidad",
+    "No compara este proyecto con otro paquete de ajuste",
+    "Reforma simulada cubre medidas sobre hogares, no toda la ley",
+    "No incorpora mínimo de pobreza extrema ni compensación vigente",
+    "Figura original preservada. Encuadre omite encabezado y pie repetidos, mantiene ejes, leyenda y barras."
+  ]
+}

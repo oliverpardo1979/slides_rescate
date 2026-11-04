@@ -3,6 +3,16 @@
   "criterio": "Subtítulos enlazados al inicio de cada artículo o grupo. Las estimaciones agregadas se vinculan a la exposición, no se presentan como disposiciones legales.",
   "diapositivas": [
     {
+      "titulo": "El escenario de crisis afecta más a los hogares pobres",
+      "tipo": "Exposición de motivos, escenario de crisis",
+      "referencias": [
+        {
+          "pagina_pdf": 202,
+          "etiqueta": "Escenario de crisis, horizonte2030"
+        }
+      ]
+    },
+    {
       "titulo": "Efecto sobre el balance fiscal",
       "tipo": "Exposición de motivos",
       "referencias": [
