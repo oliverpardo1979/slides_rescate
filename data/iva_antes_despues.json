@@ -20,6 +20,14 @@
       "partidas": "07.02, 07.03"
     },
     {
+      "bien": "Computadores personales hasta 50 UVT",
+      "antes": "Excluidos",
+      "despues": "19%",
+      "articulo_ET_antes": "424.5",
+      "articulo_proyecto": "42",
+      "partidas": "Computadores personales de escritorio o portátiles, según definición reglamentaria"
+    },
+    {
       "bien": "Queso fresco",
       "antes": "0% (exento)",
       "despues": "19%",
@@ -42,6 +50,40 @@
       "articulo_ET_antes": "468-1",
       "articulo_proyecto": "106.4.b",
       "partidas": "19.02.11, 19.02.19"
+    },
+    {
+      "bien": "Azúcar (excepto panela)",
+      "antes": "5%",
+      "despues": "19%",
+      "articulo_ET_antes": "468-1",
+      "articulo_proyecto": "106.4.b",
+      "partidas": "17.01, excepto17.01.13.00.00"
+    },
+    {
+      "bien": "Chocolate de mesa",
+      "antes": "5%",
+      "despues": "19%",
+      "articulo_ET_antes": "468-1",
+      "articulo_proyecto": "106.4.b",
+      "partidas": "18.06.32.00.90"
+    },
+    {
+      "bien": "Harina de trigo",
+      "antes": "5%",
+      "despues": "19%",
+      "articulo_ET_antes": "468-1",
+      "articulo_proyecto": "106.4.b",
+      "partidas": "11.01.00.00.00"
+    },
+    {
+      "bien": "Avena en copos",
+      "antes": "5%",
+      "despues": "19%",
+      "articulo_ET_antes": "468-1",
+      "articulo_proyecto": "106.4.b",
+      "partidas": "11.04.12.00.00"
     }
-  ]
+  ],
+  "fuente_computadores": "https://normograma.dian.gov.co/dian/compilacion/docs/oficio_dian_0014_2026.htm",
+  "equivalente_50_UVT_2026_COP": 2618700
 }
