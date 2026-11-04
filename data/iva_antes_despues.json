@@ -1,24 +1,8 @@
 {
-  "comparacion": "Régimen general 2026 frente a propuesta desde enero de 2028. Selección, no inventario completo.",
+  "comparacion": "Ejemplos de bienes cuyo tratamiento cambia entre el régimen general 2026 y la propuesta desde enero de 2028. Selección no exhaustiva.",
   "fuente_antes": "https://normograma.dian.gov.co/dian/compilacion/docs/estatuto_tributario.htm",
   "fuente_despues": "Proyecto 477/2026C, arts.42,46 y106.4.b",
   "bienes": [
-    {
-      "bien": "Papa y yuca",
-      "antes": "Excluidos",
-      "despues": "Excluidos",
-      "articulo_ET_antes": "424",
-      "articulo_proyecto": "42",
-      "partidas": "07.01, 07.14"
-    },
-    {
-      "bien": "Pan horneado y arepa de maíz",
-      "antes": "Excluidos",
-      "despues": "Excluidos",
-      "articulo_ET_antes": "424",
-      "articulo_proyecto": "42",
-      "partidas": "19.05"
-    },
     {
       "bien": "Banano y manzana",
       "antes": "Excluidos",
@@ -36,28 +20,12 @@
       "partidas": "07.02, 07.03"
     },
     {
-      "bien": "Carne de res, pollo, leche y huevos",
-      "antes": "0% (exentos)",
-      "despues": "0% (exentos)",
-      "articulo_ET_antes": "477",
-      "articulo_proyecto": "46",
-      "partidas": "02.01, 02.07, 04.01, 04.07"
-    },
-    {
       "bien": "Queso fresco",
       "antes": "0% (exento)",
       "despues": "19%",
       "articulo_ET_antes": "477",
       "articulo_proyecto": "46",
       "partidas": "04.06.10.00.00"
-    },
-    {
-      "bien": "Medicamentos (30.03 y 30.04)",
-      "antes": "0% (exentos)",
-      "despues": "0% (exentos)",
-      "articulo_ET_antes": "477",
-      "articulo_proyecto": "46",
-      "partidas": "30.03, 30.04"
     },
     {
       "bien": "Café tostado",
@@ -74,14 +42,6 @@
       "articulo_ET_antes": "468-1",
       "articulo_proyecto": "106.4.b",
       "partidas": "19.02.11, 19.02.19"
-    },
-    {
-      "bien": "Ropa de uso corriente",
-      "antes": "19%",
-      "despues": "19%",
-      "articulo_ET_antes": "468",
-      "articulo_proyecto": "42, 46",
-      "partidas": "Régimen general, sin tratamientos territoriales especiales"
     }
   ]
 }
