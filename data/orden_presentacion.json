@@ -124,5 +124,10 @@
     "contenido": "Comparación de incidencia de la reforma y crisis sin reforma, horizonte2030",
     "fuente": "Jairo Núñez (2026), gráfica Reforma o crisis compartida por Daniel Wills el1nov2026",
     "criterio": "Presentar el contrafactual al inicio, antes del balance fiscal y el detalle de medidas."
+  },
+  "anexo_referencia_ingreso": {
+    "diapositiva": 22,
+    "criterio": "Referencia de ingreso disponible. Clasificación distinta de los deciles de gasto usados en incidencia.",
+    "fuente": "Documento de Jairo Núñez compartido por Daniel Wills, tabla complementaria facilitada por Oliver"
   }
 }

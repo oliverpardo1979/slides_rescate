@@ -10,7 +10,7 @@ Abrir `main.tex` en Overleaf, con pdfLaTeX, XeLaTeX o Tectonic. El repositorio c
 tectonic main.tex
 ```
 
-El PDF se genera como `main.pdf`. Las primeras 21 diapositivas constituyen la presentación. Al final hay tres anexos.
+El PDF se genera como `main.pdf`. Las primeras 21 diapositivas constituyen la presentación. Al final hay cuatro anexos.
 
 ## Unidades y fuentes
 
@@ -40,7 +40,7 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 ## Formato académico
 
-El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 21 diapositivas y tres anexos.
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 21 diapositivas y cuatro anexos.
 
 El cuadro 4 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por magnitud del efecto fiscal en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.
 
@@ -63,3 +63,7 @@ Las diapositivas 6 y 7 distinguen elegibilidad, identificación de compras, cana
 ## Contrafactual de apertura
 
 La diapositiva 2 presenta la figura compartida de Núñez que compara reforma con EfectIVA plena, reforma con devolución limitada a factura y crisis sin reforma, hacia2030. Se conserva la imagen original y su hash en `data/crisis_nunez.json`. El encuadre mantiene barras, ejes y leyenda. El choque macroeconómico procede de Hacienda y el supuesto de caída uniforme en los deciles4–10 de Núñez. El documento metodológico no tabula el valor exacto de esa serie, por lo que no se digitalizaron ni inventaron cifras para reconstruirla. La comparación es condicional a la crisis. No estima su probabilidad ni incluye otro paquete de ajuste.
+
+## Tabla de ingreso y fuente común de Núñez
+
+El primer anexo incorpora los cortes de ingreso disponible de la tabla facilitada por Oliver. No se confunden con los deciles de gasto de las gráficas. Los valores redondeados se conservan tal como se facilitaron, sin recalcular multiplicaciones. JSON, CSV y TeX guardan la transcripción. No se trata de cifras corrientes de DANE para 2026 ni de umbrales legales de EfectIVA. La fuente común del material se identifica como Jairo Núñez Méndez (2026), *Bienestar social y Ley de Rescate Económico*, documento compartido por Daniel Wills. El PDF metodológico conservado tiene 15 páginas y no incluye esta tabla complementaria. No se replicaron sus microdatos.

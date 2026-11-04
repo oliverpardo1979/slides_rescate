@@ -1,0 +1,87 @@
+{
+  "credito": "Jairo Núñez Méndez (2026)",
+  "documento": "Bienestar social y Ley de Rescate Económico, documento compartido por Daniel Wills",
+  "proveniencia": "Oliver proporciona imagen de tabla17 y confirma que la fuente del material de Núñez es ese documento.",
+  "variable": "Ingreso disponible mensual del hogar por persona",
+  "precios": "Valores aproximados de2026, ENPH2016–2017 actualizada por crecimiento del PIB nominal per cápita",
+  "tabla": "Máximo del ingreso mensual del hogar en D1–D9. D10 excede el corte D9.",
+  "clasificacion_distinta": "Las gráficas de incidencia usan gasto per cápita. Estos cortes no permiten identificar automáticamente el decil de gasto. Tampoco son umbrales legales de EfectIVA.",
+  "limites": "Transcripción de los valores facilitados. No se recalcularon microdatos. Los cortes no se localizaron en el PDF metodológico de15páginas conservado.",
+  "sha256_imagen_archivada": "0b7d7d4895fbe3657215385b7fcbc01d0a3bc8c61e6b85992887ef00c73cbd97",
+  "filas": [
+    [
+      "D1",
+      "193 mil",
+      "386 mil",
+      "580 mil",
+      "773 mil"
+    ],
+    [
+      "D2",
+      "308 mil",
+      "615 mil",
+      "923 mil",
+      "1,2 mill."
+    ],
+    [
+      "D3",
+      "409 mil",
+      "819 mil",
+      "1,2 mill.",
+      "1,6 mill."
+    ],
+    [
+      "D4",
+      "519 mil",
+      "1,0 mill.",
+      "1,6 mill.",
+      "2,1 mill."
+    ],
+    [
+      "D5",
+      "647 mil",
+      "1,3 mill.",
+      "1,9 mill.",
+      "2,6 mill."
+    ],
+    [
+      "D6",
+      "807 mil",
+      "1,6 mill.",
+      "2,4 mill.",
+      "3,2 mill."
+    ],
+    [
+      "D7",
+      "1,0 mill.",
+      "2,0 mill.",
+      "3,0 mill.",
+      "4,1 mill."
+    ],
+    [
+      "D8",
+      "1,3 mill.",
+      "2,7 mill.",
+      "4,0 mill.",
+      "5,4 mill."
+    ],
+    [
+      "D9",
+      "2,1 mill.",
+      "4,1 mill.",
+      "6,2 mill.",
+      "8,2 mill."
+    ],
+    [
+      "D10",
+      ">2,1 mill.",
+      ">4,1 mill.",
+      ">6,2 mill.",
+      ">8,2 mill."
+    ]
+  ],
+  "p99": [
+    "Más de7,2millones por persona al mes",
+    "Más de28,6millones para hogar de4"
+  ]
+}
