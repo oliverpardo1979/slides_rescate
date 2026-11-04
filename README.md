@@ -10,7 +10,7 @@ Abrir `main.tex` en Overleaf, con pdfLaTeX, XeLaTeX o Tectonic. El repositorio c
 tectonic main.tex
 ```
 
-El PDF se genera como `main.pdf`. Las primeras 19 diapositivas constituyen la presentación. Al final hay tres anexos.
+El PDF se genera como `main.pdf`. Las primeras 20 diapositivas constituyen la presentación. Al final hay tres anexos.
 
 ## Unidades y fuentes
 
@@ -40,7 +40,7 @@ El historial de comprobaciones se conserva en `quality_reports/replication-log.m
 
 ## Formato académico
 
-El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 19 diapositivas y tres anexos.
+El formato reproduce `presentacion_javeriana.tex` del paper *Beyond Formality* (Pardo y Orozco): Beamer de 11 puntos, fondo blanco, texto negro, títulos azules y pie institucional. El logo procede de esa misma presentación. Se conservan las referencias visibles para consultar las medidas del proyecto. La versión actual incluye 20 diapositivas y tres anexos.
 
 El cuadro 3 reúne todas las medidas presentadas en un único cuadro con columnas para 2027 y 2030, ordenado por magnitud del efecto fiscal en 2030 y con una cifra decimal. Azul (I): ingresos, rojo oscuro (G): gasto y gris (R): reasignación. El signo indica si la medida mejora o reduce el ajuste. Las cotizaciones de empleadores y personas figuran por separado.
 
@@ -54,4 +54,8 @@ La gráfica por deciles da crédito a Jairo Núñez Méndez, *Bienestar social y
 
 ## Referencias al articulado
 
-Las diapositivas de medidas muestran bajo el título los artículos pertinentes del proyecto, con enlaces al inicio de cada disposición en el PDF oficial. La tabla de IVA identifica además el artículo por grupo de bienes. El balance agregado remite a la tabla 14 de la exposición de motivos. Las gráficas de incidencia identifican las medidas simuladas y conservan el crédito a Jairo Núñez. La correspondencia se registra en `data/referencias_articulos.json`. Se cotejaron 42 referencias con sus destinos y las anotaciones del PDF.
+Las diapositivas de medidas muestran bajo el título los artículos pertinentes del proyecto, con enlaces al inicio de cada disposición en el PDF oficial. La tabla de IVA identifica además el artículo por grupo de bienes. El balance agregado remite a la tabla 14 de la exposición de motivos. Las gráficas de incidencia identifican las medidas simuladas y conservan el crédito a Jairo Núñez. La correspondencia se registra en `data/referencias_articulos.json`. Se cotejaron 44 referencias con sus destinos y las anotaciones del PDF.
+
+## Requisitos y garantías de EfectIVA
+
+Las diapositivas 5 y 6 distinguen elegibilidad, identificación de compras, canales de pago, porcentajes devueltos, topes y mínimos. Artículos 38–40 del texto radicado. Existe un mínimo para pobreza extrema independiente del IVA registrado, con cuantía definida por Hacienda. El transitorio 3 del artículo 40 garantiza que la suma de devoluciones del hogar al migrar desde la compensación vigente no sea inferior a la compensación previa. No se exige tarjeta para toda compra ni cuenta como requisito universal para recibir el pago.

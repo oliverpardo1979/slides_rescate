@@ -41,7 +41,7 @@
       ]
     },
     {
-      "titulo": "EfectIVA depende del IVA atribuible a cada persona",
+      "titulo": "EfectIVA usa facturas y documentos equivalentes",
       "tipo": "Proyecto de Ley",
       "referencias": [
         {
@@ -55,6 +55,20 @@
         {
           "pagina_pdf": 244,
           "etiqueta": "40"
+        }
+      ]
+    },
+    {
+      "titulo": "EfectIVA tiene topes y garantías mínimas",
+      "tipo": "Proyecto de Ley",
+      "referencias": [
+        {
+          "pagina_pdf": 242,
+          "etiqueta": "Art. 38 y parágrafo"
+        },
+        {
+          "pagina_pdf": 246,
+          "etiqueta": "40, transitorio 3"
         }
       ]
     },

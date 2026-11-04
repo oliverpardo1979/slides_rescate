@@ -9,7 +9,8 @@
       "diapositivas": [
         4,
         5,
-        6
+        6,
+        7
       ],
       "medidas_fuente": [
         "iva_neto"
@@ -20,7 +21,7 @@
       "bloque": "Personal y contratación",
       "impacto_2030_pp_PIB": "0.70",
       "diapositivas": [
-        7
+        8
       ],
       "medidas_fuente": [
         "personal",
@@ -32,8 +33,8 @@
       "bloque": "Renta de personas naturales",
       "impacto_2030_pp_PIB": "0.57",
       "diapositivas": [
-        8,
-        9
+        9,
+        10
       ],
       "medidas_fuente": [
         "renta_personas"
@@ -44,8 +45,8 @@
       "bloque": "Aportes empresariales y financiación de SENA e ICBF",
       "impacto_2030_pp_PIB": "0.45",
       "diapositivas": [
-        10,
-        11
+        11,
+        12
       ],
       "medidas_fuente": [
         "cotizaciones_empleador"
@@ -56,7 +57,7 @@
       "bloque": "Tarifa general de renta empresarial",
       "impacto_2030_pp_PIB": "-0.42",
       "diapositivas": [
-        12
+        13
       ],
       "medidas_fuente": [],
       "criterio": "magnitud absoluta del impacto del bloque"
@@ -65,7 +66,7 @@
       "bloque": "Cotizaciones personales a salud",
       "impacto_2030_pp_PIB": "0.24",
       "diapositivas": [
-        13
+        14
       ],
       "medidas_fuente": [
         "cotizaciones_personas"
@@ -76,7 +77,7 @@
       "bloque": "Reasignación de las cajas",
       "impacto_2030_pp_PIB": "0.15",
       "diapositivas": [
-        14
+        15
       ],
       "medidas_fuente": [
         "ccf"
@@ -87,7 +88,7 @@
       "bloque": "Normalización: efecto transitorio en 2027",
       "impacto_2030_pp_PIB": "0.00",
       "diapositivas": [
-        15
+        16
       ],
       "medidas_fuente": [
         "normalizacion"
@@ -98,7 +99,7 @@
       "bloque": "RUGE: costo no cuantificado",
       "impacto_2030_pp_PIB": null,
       "diapositivas": [
-        16
+        17
       ],
       "medidas_fuente": [],
       "criterio": "no cuantificado, no se trata como cero"
@@ -107,14 +108,14 @@
       "bloque": "Artículo 95: costo no cuantificado",
       "impacto_2030_pp_PIB": null,
       "diapositivas": [
-        17
+        18
       ],
       "medidas_fuente": [],
       "criterio": "no cuantificado, no se trata como cero"
     }
   ],
   "cierre_transversal": {
-    "diapositiva": 18,
+    "diapositiva": 19,
     "contenido": "Incidencia de medidas sobre hogares por decil de gasto, antes de conclusión",
     "fuente": "Jairo Núñez Méndez (2026), tabla 1, p.8"
   }

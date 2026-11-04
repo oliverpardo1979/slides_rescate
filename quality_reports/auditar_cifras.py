@@ -22,7 +22,7 @@ anchors={
  8:'Las empresas vuelven a pagar aportes hoy exonerados',
  10:'Un cuarto del aporte a las cajas pasa a salud',
  11:'La reforma amplía el IVA y devuelve una parte',
- 12:'EfectIVA depende del IVA atribuible a cada persona',
+ 12:'EfectIVA tiene topes y garantías mínimas',
  14:'La tarifa empresarial general baja al 31',
  15:'RUGE ofrece tarifas menores a grandes inversiones',
  16:'La normalización ofrece un trato especial al incumplimiento',

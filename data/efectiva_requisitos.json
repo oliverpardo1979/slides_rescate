@@ -1,0 +1,18 @@
+{
+  "fuente": "PL477/2026C, arts.38–40, pp.241–247",
+  "vigencia": "1 enero 2028",
+  "elegibilidad": "Residentes identificados individualmente en pobreza extrema, pobreza o vulnerabilidad según focalización vigente o instrumentos diferenciales. Tramos reglamentados por DNP y Hacienda.",
+  "base_calculo": "IVA efectivamente pagado atribuible a la persona, con facturas electrónicas y documentos equivalentes.",
+  "pago_compra_contado": "No exige tarjeta como condición general.",
+  "credito": "Puede excluirse cuando no sea posible acreditar pago por medios electrónicos trazables.",
+  "porcentajes": [
+    100,
+    50,
+    40,
+    30
+  ],
+  "tope": "Hasta5,5UVT mensuales por persona, límite anual fijado por Hacienda. No es monto garantizado.",
+  "minimo_extrema": "Sí existe, aun sin IVA registrado. Cuantía fijada por Hacienda, no en el articulado. No se suma a devolución calculada.",
+  "garantia_transicion": "Hogares beneficiarios de compensación a31dic2027, continuidad sin interrupción y suma EfectIVA no inferior a compensación previa.",
+  "sin_producto_deposito": "Giro postal u otra modalidad en efectivo, mensual o bimestral según manual."
+}
